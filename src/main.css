@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer utilities {
+    * {
+        @apply transition-all ease-linear duration-500
+    }
+
+    body {
+        @apply antialiased bg-white text-slate-800 text-lg font-mulish
+    }
+
+    img {
+        @apply object-cover
+    }
+
+    .header {
+        @apply font-jost tracking-wider font-bold
+    }
+
+    .property-listing-image {
+        @apply rounded-t-xl h-[200px] w-full
+    }
+
+    .property-listing-summary {
+        @apply rounded-b-xl
+    }
+
+    .fr {
+        @apply relative top-0.5
+    }
+}

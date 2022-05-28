@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Jost";
+    src: url("./JostBold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("./Mulish.ttf");
+    font-display: swap;
+}
