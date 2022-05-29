@@ -1,7 +1,7 @@
-// Variable declarations
 let menuToggle = document.querySelector(".menu-toggle");
 let nav = document.querySelector("nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top");
+let modeToggle = document.querySelector(".mode-toggle");
 
 window.onscroll = () => {
 	if (
@@ -14,8 +14,30 @@ window.onscroll = () => {
 	}
 };
 
+window.onload = (() => {
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		document.documentElement.classList.add("dark");
+	} else {
+		document.documentElement.classList.add("light");
+	}
+});
+
+modeToggle.addEventListener("click", () => {
+	if (localStorage.getItem("theme") === "light") {
+		localStorage.setItem("theme", "dark");
+		document.documentElement.classList.replace("light", "dark");
+	} else {
+		localStorage.setItem("theme", "light");
+		document.documentElement.classList.replace("dark", "light");
+	}
+});
+
 menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("scale-100");
+    nav.classList.toggle("scale-0");
 });
 
 scrollToTopBtn.addEventListener("click", () => {
