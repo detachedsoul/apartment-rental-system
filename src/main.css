@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+@layer components {
     * {
-        @apply transition-all ease-linear duration-500
+        @apply transition-transform ease-linear duration-500
     }
 
     body {
@@ -28,7 +28,7 @@
     }
 
     .input {
-        @apply w-full text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none dark:bg-slate-900 dark:placeholder-slate-400 dark:text-slate-400
+        @apply w-full bg-white text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none dark:bg-slate-900 dark:placeholder-slate-400 dark:text-slate-400
     }
 
     .fr {
@@ -36,6 +36,6 @@
     }
 
     .disclaimer {
-        @apply hidden not-sr-only
+        @apply !static !hidden not-sr-only
     }
 }

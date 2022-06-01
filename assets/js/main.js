@@ -3,6 +3,7 @@ let nav = document.querySelector("nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top");
 let modeToggle = document.querySelector(".mode-toggle");
 let logo = document.querySelector(".logo");
+let disclaimer = document.querySelector(".disclaimer");
 
 window.onscroll = () => {
 	if (
@@ -35,6 +36,8 @@ window.onload = (() => {
 		);
 		// logo.src = "./assets/img/logo.png";
 	}
+
+	disclaimer.classList.add("disclaimer");
 });
 
 modeToggle.addEventListener("click", () => {
