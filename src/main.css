@@ -28,10 +28,14 @@
     }
 
     .input {
-        @apply w-full text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none
+        @apply w-full text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none dark:bg-slate-900 dark:placeholder-slate-400 dark:text-slate-400
     }
 
     .fr {
         @apply relative top-0.5
+    }
+
+    .disclaimer {
+        @apply hidden not-sr-only
     }
 }
