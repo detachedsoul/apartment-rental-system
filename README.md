@@ -6,10 +6,12 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 ## Stages
 
-- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.000webhostapp.app/](https://housingquest.000webhostapp.app/)
+- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.000webhostapp.com/](https://housingquest.000webhostapp.com/)
 
 - Made the contact, register, login, and reset password pages
 
 - Implemented a theme changer feature
 
 - Further improved the theme changer by changing the the theme toggle icon based on the selected theme and also harmonizing the styles across multiple pages
+
+- Created the details page for individual apartments
