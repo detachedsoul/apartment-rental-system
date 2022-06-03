@@ -8,7 +8,7 @@
     }
 
     body {
-        @apply antialiased bg-white text-slate-800 text-lg font-mulish
+        @apply antialiased bg-white text-slate-800 font-mulish
     }
 
     img {
@@ -16,7 +16,7 @@
     }
 
     .header {
-        @apply font-jost tracking-wider font-bold
+        @apply font-jost tracking-wider font-bold dark:text-white
     }
 
     .property-listing-image {

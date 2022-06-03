@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="hover:text-sky-500" href="/">
+                    <a class="hover:text-sky-500" href="/#about">
                         <i class="fr fi-rr-info pr-1.5"></i>
                         About Us
                     </a>

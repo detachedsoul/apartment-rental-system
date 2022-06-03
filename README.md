@@ -6,7 +6,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 ## Stages
 
-- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housing-quest.netlify.app/](https://housing-quest.netlify.app/)
+- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.000webhostapp.app/](https://housingquest.000webhostapp.app/)
 
 - Made the contact, register, login, and reset password pages
 

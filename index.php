@@ -2,7 +2,7 @@
     require_once("./includes/Header.php");
 ?>
 
-    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner px-4 bg-fixed bg-center bg-cover text-slate-200">
+    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner p-4 bg-fixed bg-center bg-cover text-slate-200">
         <div class="space-y-2.5 lg:w-3/5 lg:mx-auto">
             <h1 class="header text-3xl">
                 HousingQuest &mdash; Taking the pain out of seeking accommodation
@@ -13,8 +13,8 @@
         </div>
     </div>
 
-    <main class="dark:bg-slate-900 dark:text-white">
-        <section class="space-y-16 lg:space-y-20 px-4 lg:px-[10%] py-12 bg-slate-100 dark:bg-slate-800 dark:text-white">
+    <main class="dark:bg-slate-900 dark:text-slate-300">
+        <section class="space-y-16 lg:space-y-20 px-4 lg:px-[10%] py-12 bg-slate-100 dark:bg-slate-800 scroll-mt-12" id="about">
             <div class="text-center w-[90%] mx-auto lg:w-[70%]">
                 <h2 class="header text-xl">
                     About Us
@@ -100,7 +100,7 @@
                 <div class="lg:col-span-4">
                     <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat" width="100%" height="200">
 
-                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800 dark:text-white">
+                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
 
                         <div class="flex items-center flex-wrap gap-4 justify-between">
                             <span class="text-rose-500 dark:text-rose-400">
@@ -108,7 +108,7 @@
                                 For sale
                             </span>
 
-                            <span class="text-sky-500">
+                            <span class="text-sky-500 lining-nums font-semibold tracking-widest">
                                 ₦ 200,000.00
                             </span>
                         </div>
@@ -138,7 +138,7 @@
                     <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat"
                         width="100%" height="200">
 
-                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800 dark:text-white">
+                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
 
                         <div class="flex items-center flex-wrap gap-4 justify-between">
                             <span class="text-green-500 dark:text-green-400">
@@ -146,7 +146,7 @@
                                 For rent
                             </span>
 
-                            <span class="text-sky-500">
+                            <span class="text-sky-500 lining-nums font-semibold tracking-widest">
                                 ₦ 200,000.00
                             </span>
                         </div>
@@ -176,7 +176,7 @@
                     <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat"
                         width="100%" height="200">
 
-                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800 dark:text-white">
+                    <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
 
                         <div class="flex items-center flex-wrap gap-4 justify-between">
                             <span class="text-rose-500 dark:text-rose-400">
@@ -184,7 +184,7 @@
                                 For sale
                             </span>
 
-                            <span class="text-sky-500">
+                            <span class="text-sky-500 lining-nums font-semibold tracking-widest">
                                 ₦ 200,000.00
                             </span>
                         </div>
@@ -219,7 +219,7 @@
             </p>
         </section>
 
-        <section class="space-y-12 py-12 px-4 lg:px-[10%] bg-slate-100 dark:bg-slate-800 dark:text-white">
+        <section class="space-y-12 py-12 px-4 lg:px-[10%] bg-slate-100 dark:bg-slate-800">
             <div class="text-center w-[90%] mx-auto lg:w-[70%]">
                 <h2 class="header text-xl">
                     Testimonials
@@ -234,7 +234,7 @@
             </div>
 
             <div class="grid gap-8 lg:grid-cols-12 text-base">
-                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 dark:text-white">
+                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
                     <div class="space-y-1.5">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit numquam,
@@ -252,7 +252,7 @@
                     </h3>
                 </div>
 
-                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 dark:text-white">
+                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
                     <div class="space-y-1.5">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit
@@ -272,7 +272,7 @@
                     </h3>
                 </div>
 
-                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 dark:text-white">
+                <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
                     <div class="space-y-1.5">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit

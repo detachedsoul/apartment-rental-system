@@ -1,4 +1,4 @@
-    <footer class="bg-slate-900 text-white p-4 text-center items-center place-content-center flex gap-8 justify-between flex-wrap lg:py-8 lg:px-[10%]">
+<footer class="bg-slate-900 text-white p-4 text-center items-center place-content-center flex gap-8 justify-between flex-wrap lg:py-8 lg:px-[10%]">
         <div class="flex flex-wrap gap-4 items-center mx-auto lg:mx-0">
             <a class="border border-slate-300 px-1.5 pb-0.5 pt-1.5 hover:bg-sky-500 hover:border-sky-500" href="https://web.facebook.com/IamWisdomOjimah" title="Connect with me on Facebook" target="_blank" rel="noreferrer noopener">
                 <i class="fi fi-brands-facebook text-xl"></i>
