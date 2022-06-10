@@ -17,3 +17,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Created the details page for individual apartments
 
 - Started design of the admin dashboard
+
+- Finished a rough v1 of the admin dashboard homepage
+
+- Changed file extensions from ```.html``` to ```.php```
