@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "npx tailwindcss -i ./src/main.css -o ./assets/css/style.css --watch --minify"
+    "compile": "npx tailwindcss -i ./src/main.css -o ./assets/css/style.css --watch --minify",
+    "admin": "npx tailwindcss -i ./src/main.css -o ./admin/assets/css/style.css --watch --minify"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",

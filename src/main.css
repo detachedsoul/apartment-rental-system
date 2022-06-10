@@ -4,15 +4,56 @@
 
 @layer components {
     * {
-        @apply transition-transform ease-linear duration-500
+        @apply transition-transform ease-linear duration-500 custom-scrollbar
     }
 
     body {
-        @apply antialiased bg-white text-slate-800 font-mulish
+        @apply scroll-smooth antialiased bg-white text-slate-800 font-mulish
     }
 
     img {
         @apply object-cover
+    }
+
+    header {
+        @apply flex items-center justify-between gap-4 bg-white text-slate-900 z-50 drop-shadow-xl py-2 px-4 lg:px-[5%] sticky top-0 dark:bg-slate-900 dark:text-slate-100 dark:border-b dark:border-slate-800
+    }
+
+    nav {
+        @apply absolute drop-shadow-xl min-h-screen lg:min-h-full bg-white transition-transform ease-in-out duration-500 top-full left-0 p-4 w-full lg:static lg:p-0 lg:w-auto lg:bg-transparent lg:drop-shadow-none dark:bg-slate-900 dark:text-slate-100 dark:border-t dark:border-slate-800 dark:lg:bg-transparent dark:lg:border-t-0
+    }
+
+    .custom-scrollbar {
+        scrollbar-width: thin;
+        -ms-overflow-style: thin;
+        scrollbar-color: #38bdf8 #e5e5e5;
+        scrollbar-gutter: stable;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        height: .375rem;
+        width: .25rem;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar:vertical {
+        height: .75rem;
+        width: .5rem;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        border-radius: .375rem;
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246/var(--tw-bg-opacity));
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        box-sizing: border-box;
+        border-radius: .375rem;
+        border-width: 8px;
+        border-color: #0000;
+        --tw-bg-opacity: 1;
+        background-color: rgb(14 165 233/var(--tw-bg-opacity));
+        background-clip: content-box;
     }
 
     .header {
@@ -28,7 +69,7 @@
     }
 
     .input {
-        @apply w-full bg-white text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none dark:bg-slate-900 dark:placeholder-slate-400 dark:text-slate-400
+        @apply w-full bg-white text-slate-900 placeholder-slate-900 py-2 px-4 focus:outline-none transition-none dark:bg-slate-900 dark:placeholder-slate-300 dark:text-slate-400
     }
 
     .fr {

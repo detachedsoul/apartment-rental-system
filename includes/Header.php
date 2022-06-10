@@ -22,13 +22,12 @@
 </head>
 <body>
 
-    <header class="flex items-center justify-between gap-4 bg-white text-slate-900 z-50 drop-shadow-xl p-4 lg:px-[5%] sticky top-0 dark:bg-slate-900 dark:text-white dark:border-b dark:border-slate-800">
-        <a class="dark:text-white dark:fill-white" href="/">
-            <img class="w-20 lg:w-24 logo dark:text-white dark:fill-white" src="./assets/img/logo.svg" alt="HousingQuest" width="100" height="auto">
+    <header>
+        <a href="/">
+            <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="auto">
         </a>
 
-        <nav
-            class="absolute drop-shadow-xl min-h-screen lg:min-h-full bg-white transition-transform ease-in-out duration-500 scale-0 top-full left-0 p-4 w-full lg:static lg:p-0 lg:w-auto lg:scale-100 lg:bg-transparent lg:drop-shadow-none dark:bg-slate-900 dark:text-slate-100 dark:border-t dark:border-slate-800 dark:lg:bg-transparent dark:lg:border-t-0">
+        <nav class="scale-0 lg:scale-100">
             <ul class="flex flex-col gap-6 lg:gap-8 lg:flex-row">
                 <li>
                     <a class="hover:text-sky-500" href="/">
@@ -64,15 +63,15 @@
         </nav>
 
         <div class="flex items-center gap-4">
-            <button class="mode-toggle" type="button" aria-label="Theme toggle button">
+            <button class="mode-toggle text-xl" type="button" aria-label="Theme toggle button">
                 <i class="fr fi-rr-moon"></i>
             </button>
 
-            <button type="button" aria-label="Mobile search form togle button">
+            <button class="text-xl" type="button" aria-label="Mobile search form togle button">
                 <i class="fr fi-rr-search"></i>
             </button>
 
-            <button class="menu-toggle lg:hidden" type="button" aria-label="Mobile menu toggle button">
+            <button class="menu-toggle text-xl lg:hidden" type="button" aria-label="Mobile menu toggle button">
                 <i class="fr fi-rr-apps"></i>
             </button>
         </div>

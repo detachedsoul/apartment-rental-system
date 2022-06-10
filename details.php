@@ -1,7 +1,7 @@
 <?php $pageTitle = "Details"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
-    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
+    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-details-banner px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
         <h1 class="header text-3xl">
             Details Page
         </h1>

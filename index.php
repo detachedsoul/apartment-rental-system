@@ -1,6 +1,4 @@
-<?php
-    require_once("./includes/Header.php");
-?>
+<?php require_once("./includes/Header.php"); ?>
 
     <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner p-4 bg-fixed bg-center bg-cover text-slate-200">
         <div class="space-y-2.5 lg:w-3/5 lg:mx-auto">
@@ -24,13 +22,13 @@
                 </p>
 
                 <p class="mt-2">
-                    HousingQuest was born out of the desire to make selling and renting of properties stress-free and convenient. It takes away the pain of going through third parties who sometimes extort propective buyers. With <a class="text-sky-500 hover:underline underline-offset-4 hover:text-sky-600" href="">HousingQuest</a> this process is simplified to just 3 easy steps:
+                    <a class="text-sky-500 hover:underline underline-offset-4 hover:text-sky-600" href="">HousingQuest</a> was born out of the desire to make selling and renting of properties stress-free and convenient. It takes away the pain of going through third parties who sometimes extort propective buyers. With <a class="text-sky-500 hover:underline underline-offset-4 hover:text-sky-600" href="">HousingQuest</a> this process is simplified to just 3 easy steps:
                 </p>
             </div>
 
             <div class="grid gap-12 lg:grid-cols-12">
                 <div class="space-y-10 text-center lg:col-span-4">
-                    <span class="before:border relative before:absolute before:-top-[calc(100%+(calc(0.5rem/2)))] before:-left-[65%] before:border-green-300 before:bg-green-200 text-green-400 before:rotate-45 before:rounded-xl before:p-8">
+                    <span class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-green-300 before:bg-green-200 text-green-400 before:rotate-45 before:rounded-xl before:p-8">
                         <i class="fr fi-rr-document text-3xl"></i>
                     </span>
 
@@ -47,7 +45,7 @@
 
                 <div class="space-y-10 text-center lg:col-span-4">
                     <span
-                        class="before:border relative before:absolute before:-top-[calc(100%+(calc(0.5rem/2)))] before:-left-[65%] before:border-rose-300 before:bg-rose-200 text-rose-400 before:rotate-45 before:rounded-xl before:p-8">
+                        class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-rose-300 before:bg-rose-200 text-rose-400 before:rotate-45 before:rounded-xl before:p-8">
                         <i class="fr fi-rr-bookmark text-3xl"></i>
                     </span>
 
@@ -64,7 +62,7 @@
 
                 <div class="space-y-10 text-center lg:col-span-4">
                     <span
-                        class="before:border relative before:absolute before:-top-[calc(100%+(calc(0.5rem/2)))] before:-left-[65%] before:border-indigo-300 before:bg-indigo-200 text-indigo-400 before:rotate-45 before:rounded-xl before:p-8">
+                        class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-indigo-300 before:bg-indigo-200 text-indigo-400 before:rotate-45 before:rounded-xl before:p-8">
                         <i class="fr fi-rr-check text-3xl"></i>
                     </span>
 
@@ -128,7 +126,7 @@
                             Rivers State University
                         </p>
 
-                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-300" href="">
+                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
                             View Details
                         </a>
                     </div>
@@ -166,7 +164,7 @@
                             Rivers State University
                         </p>
 
-                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-300" href="">
+                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
                             View Details
                         </a>
                     </div>
@@ -204,7 +202,7 @@
                             Rivers State University
                         </p>
 
-                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-300" href="">
+                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
                             View Details
                         </a>
                     </div>
@@ -212,7 +210,7 @@
             </div>
 
             <p class="grid place-content-center">
-                <a class="rounded-lg py-1.5 px-4 bg-sky-500 text-white hover:bg-sky-600 border border-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-300"
+                <a class="rounded-lg py-1.5 px-4 bg-sky-500 text-white hover:bg-sky-600 border border-sky-500 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800"
                     href="">
                     Explore more properties
                 </a>

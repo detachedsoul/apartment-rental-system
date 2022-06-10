@@ -6,6 +6,9 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 
+ErrorDocument 404 /404
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^([^\.]+)$ $1.php [NC,L]

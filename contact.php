@@ -2,7 +2,7 @@
 <?php require_once("./includes/Header.php") ?>
 
     <main class="grid place-content-center min-h-screen py-8 px-4 dark:bg-slate-900 dark:text-slate-400">
-        <form class="bg-slate-100 py-12 px-4 rounded-xl lg:px-12 dark:bg-slate-800" method="POST">
+        <form class="bg-slate-100 py-8 px-4 rounded-xl lg:px-12 dark:bg-slate-800" method="POST">
             <div class="text-center mx-auto w-[90%] mb-8">
 
                 <h3 class="text-center header text-2xl">

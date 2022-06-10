@@ -15,3 +15,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Further improved the theme changer by changing the the theme toggle icon based on the selected theme and also harmonizing the styles across multiple pages
 
 - Created the details page for individual apartments
+
+- Started design of the admin dashboard
