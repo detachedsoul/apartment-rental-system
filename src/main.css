@@ -20,14 +20,13 @@
     }
 
     nav {
-        @apply absolute drop-shadow-xl min-h-screen lg:min-h-full bg-white transition-transform ease-in-out duration-500 top-full left-0 p-4 w-full lg:static lg:p-0 lg:w-auto lg:bg-transparent lg:drop-shadow-none dark:bg-slate-900 dark:text-slate-100 dark:border-t dark:border-slate-800 dark:lg:bg-transparent dark:lg:border-t-0
+        @apply absolute drop-shadow-xl min-h-screen lg:min-h-[auto] bg-white transition-transform ease-in-out duration-500 top-full left-0 p-4 w-full lg:static lg:p-0 lg:w-auto lg:bg-transparent lg:drop-shadow-none dark:bg-slate-900 dark:text-slate-100 dark:border-t dark:border-slate-800 dark:lg:bg-transparent dark:lg:border-t-0
     }
 
     .custom-scrollbar {
         scrollbar-width: thin;
         -ms-overflow-style: thin;
         scrollbar-color: #38bdf8 #e5e5e5;
-        scrollbar-gutter: stable;
     }
 
     .custom-scrollbar::-webkit-scrollbar {

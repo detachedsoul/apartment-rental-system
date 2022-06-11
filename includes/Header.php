@@ -23,8 +23,8 @@
 <body>
 
     <header>
-        <a href="/">
-            <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="auto">
+        <a href="/" aria-label="HousingQuest logo">
+            <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
         </a>
 
         <nav class="scale-0 lg:scale-100">

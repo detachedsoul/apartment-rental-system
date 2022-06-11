@@ -23,45 +23,49 @@
 <body>
 
     <div class="lg:grid lg:grid-cols-12">
-        <header class="lg:flex-col lg:items-start lg:justify-start lg:min-h-screen lg:drop-shadow-none lg:px-0 lg:col-span-3 lg:border-r lg:border-slate-100">
-            <a class="mx-4" href="/admin">
-                <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="auto">
+        <header class="lg:flex-col lg:drop-shadow-none lg:col-span-3 lg:border-r lg:border-slate-100 lg:p-0">
+            <a class="lg:hidden lg:not-sr-only" href="/admin">
+                <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
             </a>
 
-            <nav class="scale-0 lg:scale-100 bg-rose-500 lg:w-full min-h-full overflow-y-auto lg:sticky lg:top-0">
+            <nav class="scale-0 lg:scale-100 lg:w-full overflow-y-auto lg:sticky lg:top-0 lg:bottom-full lg:min-h-screen lg:space-y-2 lg:pt-2.5">
+                <a class="hidden not-sr-only lg:block" href="/admin" aria-label="HousingQuest logo">
+                    <img class="w-20 lg:w-24 logo lg:ml-4 lg:mb-3.5 hidden not-sr-only lg:block" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
+                </a>
+
                 <ul class="flex flex-col gap-1">
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin">
                             <i class="fr fi-rr-apps pr-1.5"></i>
                             Overview
                         </a>
                     </li>
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/properties">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/properties">
                             <i class="fr fi-rr-home pr-1.5"></i>
                             Properties
                         </a>
                     </li>
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/payment-history">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/payment-history">
                             <i class="fr fi-rr-document-signed pr-1.5"></i>
                             Payment History
                         </a>
                     </li>
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/tenants">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/tenants">
                             <i class="fr fi-rr-users pr-1.5"></i>
                             Tenants
                         </a>
                     </li>
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/messages">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/messages">
                             <i class="fr fi-rr-envelope pr-1.5"></i>
                             Messages
                         </a>
                     </li>
                     <li>
-                        <a class="p-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/settings">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/settings">
                             <i class="fr fi-rr-settings pr-1.5"></i>
                             Settings
                         </a>

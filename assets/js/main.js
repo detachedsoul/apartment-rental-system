@@ -2,7 +2,7 @@ let menuToggle = document.querySelector(".menu-toggle");
 let nav = document.querySelector("nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top");
 let modeToggles = document.querySelectorAll(".mode-toggle");
-let logo = document.querySelector(".logo");
+let logos = document.querySelectorAll(".logo");
 let disclaimer = document.querySelector(".disclaimer");
 
 window.onscroll = () => {
@@ -16,7 +16,7 @@ window.onscroll = () => {
 	}
 };
 
-window.onload = (() => {
+window.onload = () => {
 	if (
 		localStorage.theme === "dark" ||
 		(!("theme" in localStorage) &&
@@ -29,7 +29,9 @@ window.onload = (() => {
 				"fi-rr-sun",
 			);
 		});
-		logo.src = "./assets/img/logo-light.png";
+		logos.forEach((logo) => {
+			logo.src = "./assets/img/logo-light.png";
+		});
 	} else {
 		document.documentElement.classList.add("light");
 		modeToggles.forEach((modeToggle) => {
@@ -38,43 +40,52 @@ window.onload = (() => {
 				"fi-rr-moon",
 			);
 		});
-		logo.src = "./assets/img/logo.png";
+		logos.forEach((logo) => {
+			logo.src = "./assets/img/logo.png";
+		});
 	}
 
 	disclaimer.classList.add("disclaimer");
-});
+};
 
 modeToggles.forEach((modeToggle) => {
 	modeToggle.addEventListener("click", () => {
 		if (localStorage.getItem("theme") === "light") {
 			localStorage.setItem("theme", "dark");
 			document.documentElement.classList.replace("light", "dark");
-			logo.src = "./assets/img/logo.png";
-
-			modeToggle.firstElementChild.classList.replace(
-				"fi-rr-moon",
-				"fi-rr-sun",
-			);
+			logos.forEach((logo) => {
+				logo.src = "./assets/img/logo-light.png";
+			});
+			modeToggles.forEach((modeToggle) => {
+				modeToggle.firstElementChild.classList.replace(
+					"fi-rr-moon",
+					"fi-rr-sun",
+				);
+			});
 		} else {
 			localStorage.setItem("theme", "light");
 			document.documentElement.classList.replace("dark", "light");
-			logo.src = "./assets/img/logo-light.png";
-			modeToggle.firstElementChild.classList.replace(
-				"fi-rr-sun",
-				"fi-rr-moon",
-			);
+			logos.forEach((logo) => {
+				logo.src = "./assets/img/logo.png";
+			});
+			modeToggles.forEach((modeToggle) => {
+				modeToggle.firstElementChild.classList.replace(
+					"fi-rr-sun",
+					"fi-rr-moon",
+				);
+			});
 		}
 	});
 });
 
 menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("scale-0");
+	nav.classList.toggle("scale-0");
 });
 
 scrollToTopBtn.addEventListener("click", () => {
-    scrollTo({
+	scrollTo({
 		top: 0,
 		left: 0,
 		behavior: "smooth",
 	});
-})
+});
