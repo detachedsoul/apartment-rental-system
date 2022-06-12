@@ -28,7 +28,7 @@
         </a>
 
         <nav class="scale-0 lg:scale-100">
-            <ul class="flex flex-col gap-6 lg:gap-8 lg:flex-row">
+            <ul class="flex flex-col gap-8 lg:gap-8 lg:flex-row">
                 <li>
                     <a class="hover:text-sky-500" href="/">
                         <i class="fr fi-rr-home pr-1.5"></i>

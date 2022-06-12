@@ -1,8 +1,6 @@
 <?php $isActive = false; ?>
 <?php require_once("./includes/Header.php"); ?>
 
-
-            <div class="px-4 space-y-12 lg:px-[5%] py-8 bg-slate-100 dark:bg-slate-800 dark:text-slate-100">
                 <div class="rounded-xl p-8 lg:gap-8 space-y-4 bg-white dark:bg-slate-900 dark:text-slate-100">
                     <h3 class="header text-2xl text-rose-500 dark:text-rose-400">
                         <i class="fr fi-rr-megaphone relative top-1.5"></i>
@@ -92,13 +90,13 @@
 
                                 <tbody>
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Blessing Adindu
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Rivers State University
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-green-100 text-green-400 rounded-lg py-2 px-4 block">
                                                 Successful
                                             </span>
@@ -106,13 +104,13 @@
                                     </tr>
 
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Goodness Clark
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Yellowwolf Park
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-amber-100 text-amber-400 rounded-lg py-2 px-4 block">
                                                 Pending
                                             </span>
@@ -120,13 +118,13 @@
                                     </tr>
 
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Philip Jerry Chimezie
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Loner's Crib
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-rose-100 text-rose-400 rounded-lg py-2 px-4 block">
                                                 Failed
                                             </span>
@@ -172,19 +170,19 @@
 
                                 <tbody>
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             1
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Emmanuel Ikpokini
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             June 21, 2022
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             ₦1000
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-green-100 text-green-400 rounded-lg py-2 px-4 block">
                                                 Successful
                                             </span>
@@ -192,19 +190,19 @@
                                     </tr>
 
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             5
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Precious Ichenwo
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             June 10, 2022
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             ₦1000
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-amber-100 text-amber-400 rounded-lg py-2 px-4 block">
                                                 Pending
                                             </span>
@@ -212,19 +210,19 @@
                                     </tr>
 
                                     <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             12
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             Princewill Jaja
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             July 31, 2022
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200">
+                                        <td class="py-0.5 px-4 border border-gray-200">
                                             ₦1000
                                         </td>
-                                        <td class="py-1 px-4 border border-gray-200 font-semibold">
+                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
                                             <span class="bg-rose-100 text-rose-400 rounded-lg py-2 px-4 block">
                                                 Failed
                                             </span>
@@ -235,6 +233,4 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
     <?php require_once("./includes/Footer.php"); ?>

@@ -25,7 +25,7 @@
                         id="name" required autocomplete="off" />
                 </label>
 
-                <label class="flex items-center bg-white text-slate-900 rounded-lg lg:col-span-6 dark:bg-slate-900 dark:text-slate- shadow-sm border-1 border-slate-100" for="username">
+                <label class="flex items-center bg-white text-slate-900 rounded-lg lg:col-span-6 dark:bg-slate-900 dark:text-slate-400 shadow-sm border-1 border-slate-100" for="username">
                     <span class="rounded-l-lg pl-4">
                         <i class="fr fi-rr-user relative top-0.5"></i>
                     </span>

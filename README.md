@@ -21,3 +21,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Finished a rough v1 of the admin dashboard homepage
 
 - Changed file extensions from ```.html``` to ```.php```
+
+- Cleaned up the design of the admin dashboard homepage, unified the theme to switch the logo's when the theme is changed

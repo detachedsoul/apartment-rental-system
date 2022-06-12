@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HousingQuest | Admin Dashboard</title>
+    <title><?= isset($pageTitle) ? $pageTitle : "HousingQuest | Admin Dashboard" ?></title>
     <link rel="icon" href="../assets/img/logo.png">
 
     <!-- Preload stylesheets and JavaScript files -->
@@ -23,7 +23,7 @@
 <body>
 
     <div class="lg:grid lg:grid-cols-12">
-        <header class="lg:flex-col lg:drop-shadow-none lg:col-span-3 lg:border-r lg:border-slate-100 lg:p-0">
+        <header class="lg:flex-col lg:drop-shadow-none lg:col-span-3 lg:border-r lg:border-slate-200 lg:p-0">
             <a class="lg:hidden lg:not-sr-only" href="/admin">
                 <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
             </a>
@@ -34,6 +34,12 @@
                 </a>
 
                 <ul class="flex flex-col gap-1">
+                    <li>
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/" target="_blank" rel="noopener noreferrer">
+                            <i class="fr fi-rr-layers pr-1.5"></i>
+                            Home Page
+                        </a>
+                    </li>
                     <li>
                         <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin">
                             <i class="fr fi-rr-apps pr-1.5"></i>
@@ -88,8 +94,8 @@
             </div>
         </header>
 
-        <main class="lg:col-span-9">
-            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[5%] lg:py-2.5 lg:sticky lg:top-0 z-50 bg-white dark:bg-slate-900 dark:text-slate-100">
+        <main class="lg:col-span-9 bg-slate-100 dark:bg-slate-800 dark:text-slate-100">
+            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[5%] lg:py-2.5 lg:sticky lg:top-0 z-50 bg-white dark:bg-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700">
                 <div>
                     <h4 class="header text-lg">
                         Welcome back, Wisdom Ojimah 👋
@@ -121,3 +127,5 @@
                     </div>
                 </div>
             </div>
+
+            <div class="px-4 space-y-12 lg:px-[5%] py-8">
