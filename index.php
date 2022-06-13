@@ -94,7 +94,7 @@
                 </p>
             </div>
 
-            <div class="grid gap-8 lg:grid-cols-12 text-base">
+            <div class="grid gap-8 lg:grid-cols-12">
                 <div class="lg:col-span-4">
                     <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat" width="100%" height="200">
 

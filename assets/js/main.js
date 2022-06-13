@@ -4,6 +4,18 @@ let scrollToTopBtn = document.querySelector(".scroll-to-top");
 let modeToggles = document.querySelectorAll(".mode-toggle");
 let logos = document.querySelectorAll(".logo");
 let disclaimer = document.querySelector(".disclaimer");
+let deletePropertyBtn = document.querySelector(".delete-property");
+let confirmDeleteCard = document.querySelector(".confirm-delete");
+let cancelDeleteBtn = document.querySelector(".cancel-delete");
+
+const toggleConfirmDelete = () => {
+	if (confirmDeleteCard.classList.contains("scale-0")) {
+		document.querySelector("html").style.overflow = "hidden";
+	} else {
+		document.querySelector("html").style.overflow = "auto";
+	}
+	confirmDeleteCard.classList.toggle("scale-0");
+};
 
 window.onscroll = () => {
 	if (
@@ -89,3 +101,7 @@ scrollToTopBtn.addEventListener("click", () => {
 		behavior: "smooth",
 	});
 });
+
+deletePropertyBtn.addEventListener("click", () => toggleConfirmDelete());
+
+cancelDeleteBtn.addEventListener("click", () => toggleConfirmDelete());

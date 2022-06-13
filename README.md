@@ -23,3 +23,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Changed file extensions from ```.html``` to ```.php```
 
 - Cleaned up the design of the admin dashboard homepage, unified the theme to switch the logo's when the theme is changed
+
+- Made the admin property listing page, the admin view property page, as well as the confirm delete property dialog

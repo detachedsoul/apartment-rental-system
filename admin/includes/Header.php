@@ -28,7 +28,7 @@
                 <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
             </a>
 
-            <nav class="scale-0 lg:scale-100 lg:w-full overflow-y-auto lg:sticky lg:top-0 lg:bottom-full lg:min-h-screen lg:space-y-2 lg:pt-2.5">
+            <nav class="scale-0 lg:scale-100 lg:w-full overflow-y-auto lg:sticky lg:top-0 lg:bottom-full lg:min-h-screen lg:space-y-2 lg:pt-2.5 z-50">
                 <a class="hidden not-sr-only lg:block" href="/admin" aria-label="HousingQuest logo">
                     <img class="w-20 lg:w-24 logo lg:ml-4 lg:mb-3.5 hidden not-sr-only lg:block" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
                 </a>
@@ -95,7 +95,7 @@
         </header>
 
         <main class="lg:col-span-9 bg-slate-100 dark:bg-slate-800 dark:text-slate-100">
-            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[5%] lg:py-2.5 lg:sticky lg:top-0 z-50 bg-white dark:bg-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700">
+            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[2.5%] lg:py-2.5 lg:sticky lg:top-0 z-50 bg-white dark:bg-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700">
                 <div>
                     <h4 class="header text-lg">
                         Welcome back, Wisdom Ojimah 👋
@@ -128,4 +128,4 @@
                 </div>
             </div>
 
-            <div class="px-4 space-y-12 lg:px-[5%] py-8">
+            <div class="px-4 space-y-12 lg:px-[2.5%] py-8 relative">

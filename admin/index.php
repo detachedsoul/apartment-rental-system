@@ -12,7 +12,7 @@
                             Dear Wisdom Ojimah, to enjoy the full benefits of this platform, kindly click on the Add Property link below to advertise unlimited properties free.
                         </p>
 
-                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
+                        <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="/admin/add-property">
                             Add Property
                         </a>
                     </div>

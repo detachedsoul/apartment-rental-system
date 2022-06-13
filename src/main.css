@@ -8,7 +8,7 @@
     }
 
     body {
-        @apply scroll-smooth antialiased bg-white text-slate-800 font-mulish
+        @apply scroll-smooth antialiased text-base bg-white text-slate-800 font-mulish
     }
 
     img {
