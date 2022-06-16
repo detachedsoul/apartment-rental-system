@@ -1,7 +1,7 @@
 <?php $pageTitle = "HousingQuest | Property List"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
-                <div class="flex items-center gap-x-4 gap-y-2 justify-between flex-wrap">
+                <div class="flex items-center gap-x-4 gap-y-2 justify-between flex-wrap -mb-4">
                     <h3 class="header text-xl">
                         Properties List
                     </h3>
@@ -11,7 +11,7 @@
                     </a>
                 </div>
 
-                <div class="space-y-8 -mt-12">
+                <div class="space-y-8">
                     <form class="border border-slate-200 dark:border-slate-700 grid divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-slate-700 lg:grid-cols-5 items-center bg-white dark:bg-transparent" action="" method="POST">
                         <p class="px-4 hover:bg-slate-100 inline-block py-2 dark:hover:bg-slate-900">
                             <i class="fr fi-rr-filter relative top-0.5 pr-2"></i>

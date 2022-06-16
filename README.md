@@ -25,3 +25,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Cleaned up the design of the admin dashboard homepage, unified the theme to switch the logo's when the theme is changed
 
 - Made the admin property listing page, the admin view property page, as well as the confirm delete property dialog
+
+- Made the payment history page and also carried out minor design changes to the tables
+
+- Made the tenants listing page and also added the charts for monthly income

@@ -1,4 +1,4 @@
-<?php $pageTitle = "HousingQuest | Property"; ?>
+<?php $pageTitle = "HousingQuest | Edit Property"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
                 <div class="flex items-center gap-x-4 gap-y-2 justify-between flex-wrap">
@@ -33,30 +33,32 @@
                 </div>
 
                 <div class="grid gap-8 lg:grid-cols-12">
-                    <div class="bg-white space-y-1.5 rounded-xl p-4 dark:bg-slate-900 dark:text-slate-300 lg:col-span-5">
-                        <span class="text-rose-500 dark:text-rose-400 inline-block">
-                            <i class="fr fi-rr-thumbtack"></i>
-                            For sale
-                        </span>
-                        <h3 class="header text-3xl">
-                            Details of building
-                        </h3>
-                        <p>
-                            <i class="fr fi-rr-map-marker-home"></i>
-                            Rivers State University
-                        </p>
-                        <span class="text-sky-500 lining-nums font-semibold tracking-widest text-xl inline-block">
-                            ₦ 200,000.00
-                        </span>
-                    </div>
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="bg-white space-y-1.5 rounded-xl p-4 dark:bg-slate-900 dark:text-slate-300">
+                            <span class="text-rose-500 dark:text-rose-400 inline-block">
+                                <i class="fr fi-rr-thumbtack"></i>
+                                For sale
+                            </span>
+                            <h3 class="header text-3xl">
+                                Details of building
+                            </h3>
+                            <p>
+                                <i class="fr fi-rr-map-marker-home"></i>
+                                Rivers State University
+                            </p>
+                            <span class="text-sky-500 lining-nums font-semibold tracking-widest text-xl inline-block">
+                                ₦ 200,000.00
+                            </span>
+                        </div>
 
-                    <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300 lg:col-span-7">
-                        <h3 class="header text-2xl">
-                            Description
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro explicabo illum omnis expedita ratione sint laborum laudantium voluptatibus? Molestiae, a.
-                        </p>
+                        <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300">
+                            <h3 class="header text-2xl">
+                                Description
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro explicabo illum omnis expedita ratione sint laborum laudantium voluptatibus? Molestiae, a.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

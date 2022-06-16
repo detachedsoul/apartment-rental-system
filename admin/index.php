@@ -20,9 +20,15 @@
 
                 <div class="rounded-xl grid gap-8 p-8 lg:gap-8 lg:grid-cols-12 lg:items-center bg-white dark:bg-slate-900 dark:text-slate-100">
                     <div class="lg:col-span-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid illo, soluta hic molestiae saepe ducimus sint doloremque quod amet.
-                        </p>
+                        <h2 class="header text-2xl">
+                            Monthly Income
+                        </h2>
+
+                        <div class="w-full max-w-full">
+                            <div class="chart-area">
+                                <canvas class="h-[300px] lg:h-[inherit] max-w-full w-full px-0" id="myAreaChart"></canvas>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="lg:col-span-4 flex flex-col gap-4">
@@ -73,61 +79,55 @@
                         </div>
 
                         <div class="overflow-x-auto">
-                            <table class="w-full border-collapse whitespace-nowrap table-auto mb-2">
-                                <thead class="text-left border border-gray-300">
+                            <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
+                                <thead class="text-left border border-slate-600">
                                     <tr class="text-sm">
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Tenant Name
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Property
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Status
                                         </th>
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Blessing Adindu
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Rivers State University
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-green-100 text-green-400 rounded-lg py-2 px-4 block">
-                                                Successful
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-green-500">
+                                            Successful
                                         </td>
                                     </tr>
 
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Goodness Clark
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Yellowwolf Park
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-amber-100 text-amber-400 rounded-lg py-2 px-4 block">
-                                                Pending
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-amber-500">
+                                            Pending
                                         </td>
                                     </tr>
 
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Philip Jerry Chimezie
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Loner's Crib
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-rose-100 text-rose-400 rounded-lg py-2 px-4 block">
-                                                Failed
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-rose-500">
+                                            Failed
                                         </td>
                                     </tr>
                                 </tbody>
@@ -147,85 +147,79 @@
                         </div>
 
                         <div class="overflow-x-auto">
-                            <table class="w-full border-collapse whitespace-nowrap table-auto mb-2">
-                                <thead class="text-left border border-gray-300">
+                            <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
+                                <thead class="text-left border border-slate-600">
                                     <tr class="text-sm">
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Property ID
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Tenant Name
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Payment Date
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Amount
                                         </th>
-                                        <th class="py-4 px-4 border border-gray-200 header">
+                                        <th class="py-4 px-4 border border-slate-600 header">
                                             Status
                                         </th>
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             1
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Emmanuel Ikpokini
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             June 21, 2022
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             ₦1000
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-green-100 text-green-400 rounded-lg py-2 px-4 block">
-                                                Successful
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-green-500">
+                                            Successful
                                         </td>
                                     </tr>
 
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             5
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Precious Ichenwo
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             June 10, 2022
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             ₦1000
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-amber-100 text-amber-400 rounded-lg py-2 px-4 block">
-                                                Pending
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-amber-500">
+                                            Pending
                                         </td>
                                     </tr>
 
-                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-500 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             12
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             Princewill Jaja
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             July 31, 2022
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200">
+                                        <td class="py-2 px-4 border border-slate-600">
                                             ₦1000
                                         </td>
-                                        <td class="py-0.5 px-4 border border-gray-200 font-semibold">
-                                            <span class="bg-rose-100 text-rose-400 rounded-lg py-2 px-4 block">
-                                                Failed
-                                            </span>
+                                        <td class="py-2 px-4 border border-slate-600 text-rose-500">
+                                            Failed
                                         </td>
                                     </tr>
                                 </tbody>
@@ -233,4 +227,6 @@
                         </div>
                     </div>
                 </div>
+
+                <script src="../assets/js/chart.min.js" defer="true"></script>
     <?php require_once("./includes/Footer.php"); ?>
