@@ -24,7 +24,7 @@
 <body>
 
     <div class="lg:grid lg:grid-cols-12">
-        <header class="lg:flex-col lg:drop-shadow-none lg:col-span-3 lg:border-r lg:border-slate-200 lg:p-0">
+        <header class="lg:flex-col lg:drop-shadow-none lg:col-span-3 lg:border-r lg:border-r-slate-200 lg:dark:border-r-slate-700 lg:p-0">
             <a class="lg:hidden lg:not-sr-only" href="/admin">
                 <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
             </a>
@@ -66,13 +66,13 @@
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/messages">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/messages">
                             <i class="fr fi-rr-envelope pr-1.5"></i>
                             Messages
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/settings">
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/settings">
                             <i class="fr fi-rr-settings pr-1.5"></i>
                             Settings
                         </a>

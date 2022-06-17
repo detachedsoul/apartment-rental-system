@@ -63,7 +63,7 @@
                 </div>
 
                 <dialog class="grid place-content-center text-center fixed backdrop:bg-transparent top-[5%] lg:top-[15%] right-2 left-2 lg:right-[calc(85%/2)] lg:left-[calc(85%/2)] z-50 lg:w-[40%] mb-12 scale-0 confirm-delete bg-transparent">
-                    <div class="flex flex-col gap-2.5 w-full p-8 rounded-xl bg-white dark:bg-slate-900 dark:text-slate-300 lg:p-12 shadow-xl drop-shadow-xl">
+                    <div class="flex flex-col gap-2.5 w-full p-4 lg:p-8 rounded-xl bg-white dark:bg-slate-900 dark:text-slate-300 lg:p-12 shadow-xl drop-shadow-xl">
                         <div class="mb-2">
                             <span class="before:border relative before:absolute before:-top-[90%] before:-left-[calc(100%-(calc(1.9rem/2)))] before:border-rose-300 before:bg-rose-200 text-rose-400 before:rotate-45 before:rounded-xl before:p-6 before:mb-12">
                                 <i class="fr fi-rr-trash text-2xl relative left-[0.3rem]"></i>

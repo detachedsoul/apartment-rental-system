@@ -29,3 +29,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the payment history page and also carried out minor design changes to the tables
 
 - Made the tenants listing page and also added the charts for monthly income
+
+- Made the settings page and other minor changes

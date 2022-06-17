@@ -38,7 +38,7 @@
                         </button>
                     </form>
 
-                    <div class="bg-white p-8 rounded-xl dark:bg-slate-900 dark:text-slate-100 space-y-8">
+                    <div class="bg-white p-4 lg:p-8 rounded-xl dark:bg-slate-900 dark:text-slate-100 space-y-8">
                         <div class="overflow-x-auto">
                             <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
                                 <thead class="text-left border border-slate-600">

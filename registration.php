@@ -48,7 +48,7 @@
                         <i class="fr fi-rr-lock relative top-0.5"></i>
                     </span>
 
-                    <input class="rounded-r-lg input pl-2 bg-white" type="password" placeholder="Password" name="password"
+                    <input class="rounded-r-lg input pl-2" type="password" placeholder="Password" name="password"
                         id="password" required autocomplete="off" />
                 </label>
 
