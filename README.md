@@ -31,3 +31,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the tenants listing page and also added the charts for monthly income
 
 - Made the settings page and other minor changes
+
+- Made the edit property page
+
+- Made the add new property page

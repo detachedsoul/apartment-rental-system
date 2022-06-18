@@ -7,6 +7,32 @@ let disclaimer = document.querySelector(".disclaimer");
 let deletePropertyBtn = document.querySelector(".delete-property");
 let confirmDeleteCard = document.querySelector(".confirm-delete");
 let cancelDeleteBtn = document.querySelector(".cancel-delete");
+let pic1 = document.querySelector("#pic-1");
+let pic2 = document.querySelector("#pic-2");
+let pic3 = document.querySelector("#pic-3");
+let pic4 = document.querySelector("#pic-4");
+let pic5 = document.querySelector("#pic-5");
+let pic6 = document.querySelector("#pic-6");
+
+const showUploadedImage = (fileInputSelector) => {
+	let reader = new FileReader();
+
+	reader.onload = (e) => {
+		fileInputSelector.nextElementSibling.src = e.target.result;
+		fileInputSelector.nextElementSibling.classList.remove("opacity-0");
+	};
+	reader.readAsDataURL(fileInputSelector.files[0]);
+}
+
+pic1.addEventListener("change", () => showUploadedImage(pic1));
+pic2.addEventListener("change", () => showUploadedImage(pic2));
+pic3.addEventListener("change", () => showUploadedImage(pic3));
+pic4.addEventListener("change", () => showUploadedImage(pic4));
+pic4.addEventListener("change", () => showUploadedImage(pic4));
+pic4.addEventListener("change", () => showUploadedImage(pic4));
+pic5.addEventListener("change", () => showUploadedImage(pic5));
+pic6.addEventListener("change", () => showUploadedImage(pic6));
+
 
 const toggleConfirmDelete = () => {
 	if (confirmDeleteCard.classList.contains("scale-0")) {
@@ -105,3 +131,5 @@ scrollToTopBtn.addEventListener("click", () => {
 deletePropertyBtn.addEventListener("click", () => toggleConfirmDelete());
 
 cancelDeleteBtn.addEventListener("click", () => toggleConfirmDelete());
+
+// window.onchange = (e) => showUploadedImage("#pic-2");

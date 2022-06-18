@@ -1,4 +1,4 @@
-<?php $pageTitle = "Setting"; ?>
+<?php $pageTitle = "HousingQuest | Settings"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
                 <div class="grid gap-16 lg:gap-8 lg:grid-cols-12 lg:items-center">
@@ -11,9 +11,9 @@
                                 <input type="file" class="block w-full text-sm text-slate-500
                                 file:mr-4 file:py-2 file:px-4
                                 file:rounded-lg file:border-0
-                                file:text-sm file:font-semibold
-                                file:bg-violet-50 file:text-violet-700
-                                hover:file:bg-violet-400 hover:file:text-violet-50
+                                file:text-sm file:font-semibold file:text-slate-300 file:bg-violet-600 hover:file:bg-violet-700 hover:file:text-slate-300
+                                dark:file:bg-violet-50 dark:file:text-violet-700
+                                dark:hover:file:bg-violet-500 dark:hover:file:text-violet-50
                                 "/>
                             </label>
 
@@ -42,7 +42,7 @@
                                         Full Name
                                     </label>
 
-                                    <input class="rounded-lg input" type="tel" placeholder="Full name" name="name" id="name" required autocomplete="off" value="Wisdom Ojimah" />
+                                    <input class="rounded-lg input" type="text" placeholder="Full name" name="name" id="name" required autocomplete="off" value="Wisdom Ojimah" />
                                 </div>
 
                                 <div class="lg:col-span-6">
@@ -50,7 +50,7 @@
                                         Phone Number
                                     </label>
 
-                                    <input class="rounded-lg input" type="text" placeholder="Phone Number" name="name" id="phone-number" required autocomplete="off" value="+2348105008304" />
+                                    <input class="rounded-lg input" type="tel" placeholder="Phone Number" name="phone-number" id="phone-number" required autocomplete="off" value="+2348105008304" />
                                 </div>
 
                                 <div class="lg:col-span-6">
@@ -58,7 +58,7 @@
                                         Email Address
                                     </label>
 
-                                    <input class="rounded-lg input" type="text" placeholder="Email Adress" name="email-address" id="email-address" required autocomplete="off" value="vindicatedwisdom@gmail.com" />
+                                    <input class="rounded-lg input" type="email" placeholder="Email Adress" name="email-address" id="email-address" required autocomplete="off" value="vindicatedwisdom@gmail.com" />
                                 </div>
 
                                 <div class="lg:col-span-6">
@@ -66,7 +66,7 @@
                                         Change Password
                                     </label>
 
-                                    <input class="rounded-lg input" type="text" placeholder="Change Password" name="change-password" id="change-password" autocomplete="off" />
+                                    <input class="rounded-lg input" type="password" placeholder="Change Password" name="change-password" id="change-password" autocomplete="off" />
                                 </div>
 
                                 <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700"
