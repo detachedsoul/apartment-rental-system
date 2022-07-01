@@ -20,7 +20,9 @@
                     </div>
                 </div>
 
-                <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 mt-8 mb-8">
+                <img class="h-[200px] rounded-xl lg:h-[400px] w-full" src="../assets/img/details-banner.jpg" alt="" />
+
+                <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 -mt-12 mb-8">
                     <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[400px] lg:col-span-6" src="../assets/img/pic.jpg" alt="" />
 
                     <img class="h-[200px] col-span-12 rounded-xl lg:h-full lg:row-span-2 lg:col-span-3" src="../assets/img/pic.jpg" alt="" />

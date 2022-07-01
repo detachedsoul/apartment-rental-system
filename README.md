@@ -35,3 +35,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the edit property page
 
 - Made the add new property page
+
+- Carried out more refactoring and added finishing touches to certain things.
+
+- Friday July 1st, 2022. Made the registration system (for landloards). It checks if all necessary fields have been filled in, makes sure that the email is a valid one, and also makes sure that the phone number and/or email entered isn't one that has already been taken.

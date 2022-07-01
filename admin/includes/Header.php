@@ -96,7 +96,7 @@
         </header>
 
         <main class="lg:col-span-9 bg-slate-100 dark:bg-slate-800 dark:text-slate-100">
-            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[2.5%] lg:py-2.5 lg:sticky lg:top-0 z-50 bg-white dark:bg-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700">
+            <div class="flex items-center justify-between gap-x-8 gap-y-8 flex-wrap p-4 lg:px-[2.5%] lg:py-2.5 lg:sticky lg:top-0 bg-white dark:bg-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 z-[1024]">
                 <div>
                     <h4 class="header text-lg">
                         Welcome back, Wisdom Ojimah 👋
