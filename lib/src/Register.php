@@ -40,41 +40,26 @@ class Register
         return $this->password = isset($_POST['password']) ? password_hash($_POST['password'], PASSWORD_DEFAULT) : "";
     }
 
-    /**
-     * Checks if a variable is empty and set
-     * @param array $fields
-     * @return bool
-     */
-    public function is_empty($field): bool
-    {
-        if (!isset($field) || $field === "") {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
     public function registerUser()
     {
         if (isset($_POST['submit'])) {
 
             // Check if a name was entered and displays the appropriate feedback
-            if ($this->is_empty($this->setName())) {
+            if (is_empty($this->setName())) {
                 displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Name</span> field is required.");
 
                 return;
             }
 
             // Check if a phone number was entered and displays the appropriate feedback
-            if ($this->is_empty($this->setPhoneNumber())) {
+            if (is_empty($this->setPhoneNumber())) {
                 displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Phone Number</span> field is required.");
 
                 return;
             }
 
-            // Check if a name was entered and displays the appropriate feedback
-            if ($this->is_empty($this->setEmail())) {
+            // Check if a email was entered and displays the appropriate feedback
+            if (is_empty($this->setEmail())) {
                 displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Email</span> field is required.");
 
                 return;
@@ -89,7 +74,7 @@ class Register
             }
 
             // Check if a password was entered and displays the appropriate feedback
-            if ($this->is_empty($this->setPassword())) {
+            if (is_empty($this->setPassword())) {
                 displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Password</span> field is required.");
 
                 return;
@@ -134,11 +119,15 @@ class Register
                 }
             }
 
-            $registerUser = $this->con->insert("landlords", ["name", "phone", "email", "password"], ...$params);
+            $this->con->insert("landlords", ["name", "phone", "email", "password"], ...$params);
+
+            $setUserSession = $this->con->select("name", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
+
+            $_SESSION['user'] = $setUserSession->name;
 
             displayMessage("text-green-500", "Registration successful. You would be redirected to your dashboard shortly.");
 
-            header("Refresh: 3, ./admin");
+            header("Refresh: 3, ./admin", true, 301);
         }
         else {
             displayMessage("", "Create a free account today");

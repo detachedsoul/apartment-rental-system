@@ -5,11 +5,9 @@
     /**
      * Requires a specified page with optional data for the page
      * @param string $fileName
-     * @param array $data
-     *
-     * @return void
+     * @param $data
      */
-    function view (string $fileName, $data = null) : void {
+    function view (string $fileName, $data = null) {
         $fileFullPath = "./lib/pages/{$fileName}.php";
 
         if (file_exists($fileFullPath)) {
@@ -26,4 +24,18 @@
      */
     function displayMessage (string $class = "", string $message) {
         echo "<p class='{$class}'>{$message}</p>";
+    }
+
+    /**
+     * Checks if a variable is empty and set
+     * @param array $fields
+     * @return bool
+     */
+    function is_empty($field): bool {
+        if (!isset($field) || $field === "") {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
