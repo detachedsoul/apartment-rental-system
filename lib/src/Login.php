@@ -3,10 +3,6 @@ namespace app\src;
 
 use app\assets\DB;
 
-namespace app\src;
-
-use app\assets\DB;
-
 class Login
 {
     private $con;
@@ -21,7 +17,7 @@ class Login
     // Sets the phone number or email field of the form
     public function setPhoneEmail(): string
     {
-        return $this->phoneEmail = isset($_POST['phoneEmail']) ? trim(strip_tags($_POST['phoneEmail'])) : "";
+        return $this->phoneEmail = isset($_POST['phoneEmail']) ? strtolower(trim(strip_tags($_POST['phoneEmail']))) : "";
     }
 
     // Sets the password field of a form
@@ -36,14 +32,14 @@ class Login
 
             // Check if a email or phone number was entered and displays the appropriate feedback
             if (is_empty($this->setPhoneEmail())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Email or Phone Number</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Email or Phone Number</span> field is required.");
 
                 return;
             }
 
             // Check if a password was entered and displays the appropriate feedback
             if (is_empty($this->setPassword())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Password</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Password</span> field is required.");
 
                 return;
             }
@@ -61,7 +57,7 @@ class Login
             $checkIfUserExists = $this->con->select("password", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams);
 
             if ($checkIfUserExists->num_rows < 1) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "Incorrect <span class='font-bold'>Phone Number or Email</span>.");
+                displayMessage("text-rose-500", "Incorrect <span class='font-bold'>Phone Number or Email</span>.");
 
                 return;
             } else {
@@ -74,13 +70,13 @@ class Login
 
                     $_SESSION['user'] = $setUserSession->name;
 
-                    displayMessage("text-green-500", "Login successful. You would be redirected to your dashboard shortly");
+                    displayMessage("text-green-500", "Login successful. You would be redirected to your dashboard shortly.");
 
-                    header("Refresh: 3, ./admin", true, 301);
+                    header("Refresh: 3, /admin", false, 301);
 
                     return;
                 } else {
-                    displayMessage("text-rose-500 w-4/5 mx-auto", "Incorrect <span class='font-bold'>Password</span>.");
+                    displayMessage("text-rose-500", "Incorrect <span class='font-bold'>Password</span>.");
 
                     return;
                 }

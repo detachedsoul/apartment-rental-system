@@ -19,7 +19,7 @@ class Register
     // Sets the name field of the form
     public function setName(): string
     {
-        return $this->name = isset($_POST['name']) ? trim(strip_tags($_POST['name'])) : "";
+        return $this->name = isset($_POST['name']) ? ucwords(trim(strip_tags($_POST['name']))) : "";
     }
 
     // Sets the phone number field of a form
@@ -31,7 +31,7 @@ class Register
     // Sets the email field of a form
     public function setEmail(): string
     {
-        return $this->email = isset($_POST['email']) ? trim(strip_tags($_POST['email'])) : "";
+        return $this->email = isset($_POST['email']) ? strtolower(trim(strip_tags($_POST['email']))) : "";
     }
 
     // Sets the password field of a form
@@ -46,28 +46,28 @@ class Register
 
             // Check if a name was entered and displays the appropriate feedback
             if (is_empty($this->setName())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Name</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Name</span> field is required.");
 
                 return;
             }
 
             // Check if a phone number was entered and displays the appropriate feedback
             if (is_empty($this->setPhoneNumber())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Phone Number</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Phone Number</span> field is required.");
 
                 return;
             }
 
             // Check if a email was entered and displays the appropriate feedback
             if (is_empty($this->setEmail())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Email</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Email</span> field is required.");
 
                 return;
             }
             else {
                 // Checks if the entered email is a valid one and displays the appropriate feedback
                 if (!filter_var($this->setEmail(), FILTER_VALIDATE_EMAIL)) {
-                    displayMessage("text-rose-500 w-4/5 mx-auto", "Invalid email format. Please use a valid email.");
+                    displayMessage("text-rose-500", "Invalid email format. Please use a valid email.");
 
                     return;
                 }
@@ -75,7 +75,7 @@ class Register
 
             // Check if a password was entered and displays the appropriate feedback
             if (is_empty($this->setPassword())) {
-                displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Password</span> field is required.");
+                displayMessage("text-rose-500", "<span class='font-bold'>Password</span> field is required.");
 
                 return;
             }
@@ -98,23 +98,20 @@ class Register
                 $userExists = $checkIfUserExists->fetch_object();
 
                 if ($userExists->phone === $this->setPhoneNumber() && $userExists->email === $this->setEmail()) {
-                    displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Phone Number and Email</span> already exists.");
+                    displayMessage("text-rose-500", "<span class='font-bold'>Phone Number and Email</span> already exists.");
 
                     return;
                 }
                 else if ($userExists->email === $this->setEmail()) {
-                    displayMessage("text-rose-500 w-4/5 mx-auto", "<span class='font-bold'>Email</span> is already taken. Please use another one.");
+                    displayMessage("text-rose-500", "<span class='font-bold'>Email</span> is already taken. Please use another one.");
 
                     return;
                 }
                 else {
                     if ($userExists->phone === $this->setPhoneNumber()) {
-                        displayMessage("text-rose-500 w-4/5 mx-auto", "This <span class='font-bold'>Phone Number</span> already exists.");
+                        displayMessage("text-rose-500", "This <span class='font-bold'>Phone Number</span> already exists.");
 
                         return;
-                    }
-                    else {
-                        displayMessage("text-green-500 w-4/5 mx-auto", "Worked.");
                     }
                 }
             }
@@ -127,7 +124,7 @@ class Register
 
             displayMessage("text-green-500", "Registration successful. You would be redirected to your dashboard shortly.");
 
-            header("Refresh: 3, ./admin", true, 301);
+            header("Refresh: 3, /admin", false, 301);
         }
         else {
             displayMessage("", "Create a free account today");

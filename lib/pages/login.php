@@ -6,9 +6,9 @@ $loginUser = new Login();
 <?php $pageTitle = "Login"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
-    <main class="grid place-content-center min-h-screen py-8 px-4 dark:bg-slate-900 dark:text-slate-400">
-        <form class="bg-slate-100 py-8 px-4 rounded-xl lg:px-12 dark:bg-slate-800 lg:max-w-[80%] lg:mx-auto" method="POST">
-            <div class="text-center mx-auto w-[90%] mb-8 lg:w-4/5">
+    <main class="grid place-content-center min-h-screen py-8 px-4 dark:bg-slate-900 dark:text-slate-400 lg:px-[30%]">
+        <form class="bg-slate-100 py-8 px-4 rounded-xl lg:px-12 dark:bg-slate-800" method="POST">
+            <div class="text-center mx-auto w-[90%] mb-8">
 
                 <h3 class="text-center header text-2xl">
                     Sign In
@@ -29,7 +29,7 @@ $loginUser = new Login();
                     <input
                         class="rounded-r-lg input pl-2"
                         type="text"
-                        placeholder="Phone Number or Email"
+                        placeholder="Phone number or email"
                         name="phoneEmail"
                         id="phoneEmail"
                         value="<?= $loginUser->setPhoneEmail() ?>"
@@ -65,9 +65,12 @@ $loginUser = new Login();
 
             <div class="flex flex-wrap gap-2 items-center justify-between mt-4 max-w-fit">
                 <p>
-                    Don't have an account yet? <a
+                    Don't have an account yet?
+                    <a
                         class="text-sky-500 hover:text-sky-600 focus:text-sky-600 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4"
-                        href="/registration">Create one</a>
+                        href="/registration">
+                        Create one
+                    </a>
                 </p>
 
                 <a class="text-rose-500 hover:text-rose-600 focus:text-rose-600 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4"
