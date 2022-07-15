@@ -82,6 +82,15 @@
                             required autocomplete="off" />
                     </label>
 
+                    <label class="flex items-center bg-slate-200 text-slate-900 rounded-lg dark:bg-slate-900 dark:text-slate-400 border-1 border-slate-100" for="subject">
+                        <span class="rounded-l-lg pl-4">
+                            <i class="fr fi-rr-edit relative top-0.5"></i>
+                        </span>
+
+                        <input class="rounded-r-lg input pl-2 bg-slate-200" type="subject" placeholder="Subject" name="subject" id="subject"
+                            required autocomplete="off" />
+                    </label>
+
                     <label class="bg-slate-200 text-slate-900 rounded-lg border-1 border-slate-100" for="messageContent">
                         <textarea class="input block  bg-slate-200 text-slate-900 rounded-lg" name="messageContent"
                             id="messageContent" rows="4" placeholder="Message"></textarea>

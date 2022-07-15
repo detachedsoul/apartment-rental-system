@@ -19,10 +19,10 @@
 
     /**
      * Display a specified message with the specified format
-     * @param string $errorMessage
+     * @param string $message
      * @param string $class
      */
-    function displayMessage (string $class = "", string $message) {
+    function displayMessage (string $message, string $class = "") {
         echo "<p class='{$class}'>{$message}</p>";
     }
 

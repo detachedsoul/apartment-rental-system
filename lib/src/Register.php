@@ -46,28 +46,28 @@ class Register
 
             // Check if a name was entered and displays the appropriate feedback
             if (is_empty($this->setName())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Name</span> field is required.");
+                displayMessage( "<span class='font-bold'>Name</span> field is required.", "text-rose-500");
 
                 return;
             }
 
             // Check if a phone number was entered and displays the appropriate feedback
             if (is_empty($this->setPhoneNumber())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Phone Number</span> field is required.");
+                displayMessage( "<span class='font-bold'>Phone Number</span> field is required.", "text-rose-500");
 
                 return;
             }
 
             // Check if a email was entered and displays the appropriate feedback
             if (is_empty($this->setEmail())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Email</span> field is required.");
+                displayMessage( "<span class='font-bold'>Email</span> field is required.", "text-rose-500");
 
                 return;
             }
             else {
                 // Checks if the entered email is a valid one and displays the appropriate feedback
                 if (!filter_var($this->setEmail(), FILTER_VALIDATE_EMAIL)) {
-                    displayMessage("text-rose-500", "Invalid email format. Please use a valid email.");
+                    displayMessage( "Invalid email format. Please use a valid email.", "text-rose-500");
 
                     return;
                 }
@@ -75,7 +75,7 @@ class Register
 
             // Check if a password was entered and displays the appropriate feedback
             if (is_empty($this->setPassword())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Password</span> field is required.");
+                displayMessage( "<span class='font-bold'>Password</span> field is required.", "text-rose-500");
 
                 return;
             }
@@ -98,18 +98,18 @@ class Register
                 $userExists = $checkIfUserExists->fetch_object();
 
                 if ($userExists->phone === $this->setPhoneNumber() && $userExists->email === $this->setEmail()) {
-                    displayMessage("text-rose-500", "<span class='font-bold'>Phone Number and Email</span> already exists.");
+                    displayMessage( "<span class='font-bold'>Phone Number and Email</span> already exists.", "text-rose-500");
 
                     return;
                 }
                 else if ($userExists->email === $this->setEmail()) {
-                    displayMessage("text-rose-500", "<span class='font-bold'>Email</span> is already taken. Please use another one.");
+                    displayMessage( "<span class='font-bold'>Email</span> is already taken. Please use another one.", "text-rose-500");
 
                     return;
                 }
                 else {
                     if ($userExists->phone === $this->setPhoneNumber()) {
-                        displayMessage("text-rose-500", "This <span class='font-bold'>Phone Number</span> already exists.");
+                        displayMessage( "This <span class='font-bold'>Phone Number</span> already exists.", "text-rose-500");
 
                         return;
                     }
@@ -122,12 +122,31 @@ class Register
 
             $_SESSION['user'] = $setUserSession->name;
 
-            displayMessage("text-green-500", "Registration successful. You would be redirected to your dashboard shortly.");
+            // Send a welcome mail to the newly registered user
+            $receipientMail = $this->setEmail();
+            $subject = "<h1 class='text-green-500 text-xl'>Registration Successful</h1>";
+            $message = "
+                <!DOCTYPE html>
+                <html>
+                <body>
+                    <p>Registration was successful. Enjoy the HousingQuest platform from all of us at HousingQuest.</p>
+                </body>
+                </html>
+            ";
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+            $headers .= "From: <a class='text-sky-500' href='htpps://housingquest.000webhostapp.com'>HousingQuest.000webhostapp.com</a>";
+
+            if (mail($receipientMail, $subject, $message, $headers)) {
+                displayMessage( "Registration successful. You would be redirected to your dashboard shortly. Please check your mail for a confirmation message.", "text-green-500");
+            } else {
+                displayMessage( "Registration successful. You would be redirected to your dashboard shortly.", "text-green-500");
+            }
 
             header("Refresh: 3, /admin", false, 301);
         }
         else {
-            displayMessage("", "Create a free account today");
+            displayMessage( "Create a free account today");
         }
     }
 }

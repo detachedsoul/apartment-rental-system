@@ -39,7 +39,7 @@ class ForgotPassword
             $checkIfUserExists = $this->con->select("phone, email", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams);
 
             if ($checkIfUserExists->num_rows < 1) {
-                displayMessage("text-rose-500", "Incorrect <span class='font-bold'>Phone Number or Email</span>.");
+                displayMessage("Incorrect <span class='font-bold'>Phone Number or Email</span>.", "text-rose-500");
 
                 return;
             }
@@ -70,16 +70,16 @@ class ForgotPassword
                 $headers .= "From: <a class='text-sky-500' href='htpps://housingquest.000webhostapp.com'>HousingQuest.000webhostapp.com</a>";
 
                 if (mail($receipientMail, $subject, $message, $headers)) {
-                    displayMessage("text-green-500", "Password reset successfully. Please check your email for the new password. If you can't find the mail please check your span folder.");
+                    displayMessage("Password reset successfully. Please check your email for the new password. If you can't find the mail please check your span folder.", "text-green-500");
 
-                    // header("Refresh: 5, /login", false, 301);
+                    header("Refresh: 5, /login", false, 301);
                 } else {
-                    displayMessage("text-rose-500", "Password reset failed. Please try again.");
+                    displayMessage("Password reset failed. Please try again.", "text-rose-500");
                 }
             }
         }
         else {
-            displayMessage("", "Reset your password");
+            displayMessage("Reset your password");
         }
     }
 }

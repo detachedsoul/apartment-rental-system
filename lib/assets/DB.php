@@ -3,7 +3,6 @@
 namespace app\assets;
 
 use mysqli_result;
-use app\assets\Config;
 
 class DB {
     private static $instance   =   null;
@@ -50,7 +49,7 @@ class DB {
         string $sql,
         string $paramType,
         ...$paramValues
-    ) {
+    ) : mysqli_result | bool {
         $stmt = $this->con->prepare($sql);
         $stmt->bind_param($paramType, ...$paramValues);
         $stmt->execute();
@@ -101,7 +100,7 @@ class DB {
      *
      * @param string $row
      * @param string $table
-     * @param array $conditions
+     * @param string $conditions
      * @param mixed ...$params
      *
      * @return void|object $stmt
