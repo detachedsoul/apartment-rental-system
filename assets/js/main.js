@@ -73,8 +73,6 @@ window.onload = () => {
 			logo.src = "./assets/img/logo.png";
 		});
 	}
-
-	disclaimer.classList.add("disclaimer");
 };
 
 modeToggles.forEach((modeToggle) => {

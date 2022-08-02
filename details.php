@@ -14,7 +14,7 @@
         </a>
 
         <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 mt-8 mb-8">
-            <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[400px] lg:col-span-6" src="./assets/img/pic.jpg" alt="" />
+            <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-full lg:col-span-6" src="./assets/img/pic.jpg" alt="" />
 
             <img class="h-[200px] col-span-12 rounded-xl lg:h-full lg:row-span-2 lg:col-span-3" src="./assets/img/pic.jpg" alt="" />
 
@@ -79,6 +79,15 @@
                         </span>
 
                         <input class="rounded-r-lg input pl-2 bg-slate-200" type="email" placeholder="Email" name="email" id="email"
+                            required autocomplete="off" />
+                    </label>
+
+                    <label class="flex items-center bg-slate-200 text-slate-900 rounded-lg dark:bg-slate-900 dark:text-slate-400 border-1 border-slate-100" for="subject">
+                        <span class="rounded-l-lg pl-4">
+                            <i class="fr fi-rr-edit relative top-0.5"></i>
+                        </span>
+
+                        <input class="rounded-r-lg input pl-2 bg-slate-200" type="subject" placeholder="Subject" name="subject" id="subject"
                             required autocomplete="off" />
                     </label>
 

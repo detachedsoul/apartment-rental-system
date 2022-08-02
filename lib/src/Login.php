@@ -32,14 +32,14 @@ class Login
 
             // Check if a email or phone number was entered and displays the appropriate feedback
             if (is_empty($this->setPhoneEmail())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Email or Phone Number</span> field is required.");
+                displayMessage("<span class='font-bold'>Email or Phone Number</span> field is required.", "text-rose-500");
 
                 return;
             }
 
             // Check if a password was entered and displays the appropriate feedback
             if (is_empty($this->setPassword())) {
-                displayMessage("text-rose-500", "<span class='font-bold'>Password</span> field is required.");
+                displayMessage("<span class='font-bold'>Password</span> field is required.", "text-rose-500");
 
                 return;
             }
@@ -57,7 +57,7 @@ class Login
             $checkIfUserExists = $this->con->select("password", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams);
 
             if ($checkIfUserExists->num_rows < 1) {
-                displayMessage("text-rose-500", "Incorrect <span class='font-bold'>Phone Number or Email</span>.");
+                displayMessage("Incorrect <span class='font-bold'>Phone Number or Email</span>.", "text-rose-500");
 
                 return;
             } else {
@@ -66,24 +66,26 @@ class Login
                 if (
                     password_verify($this->setPassword(), $userExists->password)
                 ) {
-                    $setUserSession = $this->con->select("name", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
+                    $setUserSession = $this->con->select("name, id", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
 
                     $_SESSION['user'] = $setUserSession->name;
+                    $_SESSION['id'] = $setUserSession->id;
+                    $_SESSION['loggedUser'] = strtolower($setUserSession->name . $setUserSession->id);
 
-                    displayMessage("text-green-500", "Login successful. You would be redirected to your dashboard shortly.");
+                    displayMessage("Login successful. You would be redirected to your dashboard shortly.", "text-green-500");
 
                     header("Refresh: 3, /admin", false, 301);
 
                     return;
                 } else {
-                    displayMessage("text-rose-500", "Incorrect <span class='font-bold'>Password</span>.");
+                    displayMessage("Incorrect <span class='font-bold'>Password</span>.", "text-rose-500");
 
                     return;
                 }
             }
         }
         else {
-            displayMessage("", "You need to sign in to access your dashboard");
+            displayMessage("You need to sign in to access your dashboard");
         }
     }
 }
