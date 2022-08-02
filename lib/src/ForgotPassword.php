@@ -20,8 +20,7 @@ class ForgotPassword
         return $this->phoneEmail = isset($_POST['phoneEmail']) ? strtolower(trim(strip_tags($_POST['phoneEmail']))) : "";
     }
 
-    public function resetPassword()
-    {
+    public function resetPassword() {
         if (isset($_POST['submit'])) {
 
             // Check if a email or phone number was entered and displays the appropriate feedback
@@ -56,21 +55,34 @@ class ForgotPassword
                 $this->con->update("landlords", "password = ?", "WHERE phone = ? OR email = ?", ...$userCheckParams);
 
                 $receipientMail = $checkIfUserExists->fetch_object()->email;
-                $subject = "<h1 class='text-green-500 text-xl'>Password Reset Successful</h1>";
+                $subject = "Password Reset Successful";
                 $message = "
-                    <!DOCTYPE html>
                     <html>
-                    <body>
-                        <p>Your password was currently reset. Use {$newPassword} to access your portal.</p>
-                    </body>
+                        <head>
+                            <title>Password Reset Successful</title>
+                        </head>
+                        <body>
+                            <p>
+                                Your password was currently reset.
+                            </p>
+                            <p>
+                                 Use <b>{$newPassword}</b> to access your portal.
+                            </p>
+                            <p>
+                                You can change this later in the settings section of your portal.
+                            </p>
+                        </body>
                     </html>
                 ";
+                $message = wordwrap($message, 70);
                 $headers = "MIME-Version: 1.0" . "\r\n";
-                $headers .= "Conten-type: text/html; charset=UTF-8" . "\r\n";
-                $headers .= "From: <a class='text-sky-500' href='htpps://housingquest.000webhostapp.com'>HousingQuest.000webhostapp.com</a>";
+                $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+                $headers .= "From: Wisdom Ojimah ojimahwisdom@gmail.com";
 
                 if (mail($receipientMail, $subject, $message, $headers)) {
-                    displayMessage("Password reset successfully. Please check your email for the new password. If you can't find the mail please check your span folder.", "text-green-500");
+                    displayMessage("Password reset successfully. Please check your email for the new password. If you can't find the mail please check your spam or trash folder.", "text-green-500");
+
+                    $this->phoneEmail = "";
 
                     header("Refresh: 5, /login", false, 301);
                 } else {

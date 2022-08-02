@@ -74,8 +74,4 @@
     .fr {
         @apply relative top-0.5
     }
-
-    .disclaimer {
-        @apply !static !hidden not-sr-only
-    }
 }

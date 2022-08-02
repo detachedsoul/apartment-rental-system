@@ -34,6 +34,7 @@ $resetPassword = new ForgotPassword();
                         id="phoneEmail"
                         required
                         autocomplete="off"
+                        value="<?= $resetPassword->setPhoneEmail() ?>"
                     />
 
                 </label>

@@ -1,4 +1,18 @@
 <?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
+<?php
+    // Check if the page was accessed by an authenticated user
+    if (!isset($_SESSION['loggedUser'])) {
+        header("Location: ../");
+    }
+
+    if (!isset($_SESSION['id'])) {
+        header("Location: ../");
+    }
+
+    if (!isset($_SESSION['user'])) {
+        header("Location: ../");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

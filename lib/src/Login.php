@@ -66,9 +66,11 @@ class Login
                 if (
                     password_verify($this->setPassword(), $userExists->password)
                 ) {
-                    $setUserSession = $this->con->select("name", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
+                    $setUserSession = $this->con->select("name, id", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
 
                     $_SESSION['user'] = $setUserSession->name;
+                    $_SESSION['id'] = $setUserSession->id;
+                    $_SESSION['loggedUser'] = strtolower($setUserSession->name . $setUserSession->id);
 
                     displayMessage("Login successful. You would be redirected to your dashboard shortly.", "text-green-500");
 

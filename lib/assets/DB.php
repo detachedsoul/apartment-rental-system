@@ -2,6 +2,7 @@
 
 namespace app\assets;
 
+use app\assets\Config;
 use mysqli_result;
 
 class DB {

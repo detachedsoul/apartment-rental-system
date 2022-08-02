@@ -45,3 +45,9 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Saturday July 2nd, 2022. Implemented the password reset feature. It sends a mail to the user that contains the new password.
 
 - Carried out minor fixes to the overall design of the website.
+
+- Implemented the add new property feature.
+
+- Implemented the add new property feature.
+
+- Corrected the broken stylesheets and JavaScript files links.

@@ -118,27 +118,34 @@ class Register
 
             $this->con->insert("landlords", ["name", "phone", "email", "password"], ...$params);
 
-            $setUserSession = $this->con->select("name", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
+            $setUserSession = $this->con->select("name, id", "landlords", "WHERE phone = ? OR email = ?", ...$userCheckParams)->fetch_object();
 
             $_SESSION['user'] = $setUserSession->name;
+            $_SESSION['id'] = $setUserSession->id;
+            $_SESSION['loggedUser'] = strtolower($setUserSession->name . $setUserSession->id);
 
             // Send a welcome mail to the newly registered user
             $receipientMail = $this->setEmail();
-            $subject = "<h1 class='text-green-500 text-xl'>Registration Successful</h1>";
+            $subject = "Registration Successful";
+            $messageBody = wordwrap("Registration was successful. Enjoy the HousingQuest platform from all of us at HousingQuest.", 70);
             $message = "
-                <!DOCTYPE html>
                 <html>
+                <head>
+                    <title>Registration Successful</title>
+                </head>
                 <body>
-                    <p>Registration was successful. Enjoy the HousingQuest platform from all of us at HousingQuest.</p>
+                    <p>
+                        {$messageBody}
+                    </p>
                 </body>
                 </html>
             ";
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-            $headers .= "From: <a class='text-sky-500' href='htpps://housingquest.000webhostapp.com'>HousingQuest.000webhostapp.com</a>";
+            $headers .= "From: Wisdom Ojimah ojimahwisdom@gmail.com";
 
             if (mail($receipientMail, $subject, $message, $headers)) {
-                displayMessage( "Registration successful. You would be redirected to your dashboard shortly. Please check your mail for a confirmation message.", "text-green-500");
+                displayMessage( "Registration successful. You would be redirected to your dashboard shortly. Please check your mail for a confirmation message. If you can't find the mail please check your spam or trash folder.", "text-green-500");
             } else {
                 displayMessage( "Registration successful. You would be redirected to your dashboard shortly.", "text-green-500");
             }
