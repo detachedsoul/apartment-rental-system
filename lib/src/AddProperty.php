@@ -107,6 +107,7 @@ class AddProperty
 
             $uploadFolder = "../assets/img/";
             $renamedImages = [];
+            $reversedImageNames = [];
 
             // Get all fields and check if they are empty
             $fields = [
@@ -157,15 +158,20 @@ class AddProperty
             // Rename the images, uploads it and then insert the values from the form.
             $propertyName = strtolower(str_replace(' ', '-', $this->setPropertyName()));
 
+            foreach ($imagesNames as $imageName => $key) {
+                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $imageName . '.jpg';
+
+                array_push($renamedImages, $imageName);
+            }
+
             foreach ($imagesNames as $imageName) {
-                foreach ($imagesTempNames as $tempName) {
-                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . mt_rand(00000, 99999) . '.jpg';
+                foreach ($imagesTempNames as $tempName => $key) {
+                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $tempName . '.jpg';
 
                     $imageFullPath = $uploadFolder . $imageName;
 
-                    move_uploaded_file($tempName, $imageFullPath);
+                    move_uploaded_file($key, $imageFullPath);
                 }
-                array_push($renamedImages, $imageName);
             }
 
             $propertyFields = [
@@ -177,7 +183,7 @@ class AddProperty
             $this->con->insert("properties", ["title", "location", "price", "type", "summary", "description", "index_img", "img_1", "img_2", "img_3", "img_4", "img_5", "owner_id"], ...$propertyFields);
 
             displayMessage("Property added successfully.", "text-emerald-500");
-            header("Refresh: 3, /admin/properties");
+            header("Refresh: 2, /admin/properties");
         } else {
             displayMessage("Property Details");
         }

@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= isset($pageTitle) ? $pageTitle : "HousingQuest | Admin Dashboard" ?></title>
-    <link rel="icon" href="../assets/img/logo.png">
+    <link rel="icon" href="../assets/img/logo-light.png">
 
     <!-- Preload stylesheets and JavaScript files -->
     <link rel="preload" href="<?= realpath('../assets/css/style.css') ?>" as="style">

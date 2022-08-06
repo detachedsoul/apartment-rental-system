@@ -3,7 +3,6 @@ let nav = document.querySelector("nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top");
 let modeToggles = document.querySelectorAll(".mode-toggle");
 let logos = document.querySelectorAll(".logo");
-let disclaimer = document.querySelector(".disclaimer");
 let deletePropertyBtn = document.querySelector(".delete-property");
 let confirmDeleteCard = document.querySelector(".confirm-delete");
 let cancelDeleteBtn = document.querySelector(".cancel-delete");

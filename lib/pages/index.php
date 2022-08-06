@@ -1,13 +1,10 @@
+<?php require_once("./includes/Header.php"); ?>
 <?php
 
 use app\src\Index;
 
 $indexHouses = new Index();
-$indexHouses->showIndexHouses();
 ?>
-<?php require_once("./includes/Header.php"); ?>
-
-<?= print_r($houses); ?>
 
 <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner p-4 bg-fixed bg-center bg-cover text-slate-200">
     <div class="space-y-2.5 lg:w-3/5 lg:mx-auto">
@@ -102,120 +99,13 @@ $indexHouses->showIndexHouses();
         </div>
 
         <div class="grid gap-8 lg:grid-cols-12">
-            <div class="lg:col-span-4">
-                <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat" width="100%" height="200">
 
-                <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
-
-                    <div class="flex items-center flex-wrap gap-4 justify-between">
-                        <span class="text-rose-500 dark:text-rose-400">
-                            <i class="fr fi-rr-thumbtack"></i>
-                            For sale
-                        </span>
-
-                        <span class="text-sky-500 lining-nums font-semibold tracking-widest">
-                            ₦ 200,000.00
-                        </span>
-                    </div>
-
-                    <div>
-                        <h2 class="header">
-                            4 Bedroom Flat
-                        </h2>
-
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-
-                    <p>
-                        <i class="fr fi-rr-map-marker-home"></i>
-                        Rivers State University
-                    </p>
-
-                    <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
-                        View Details
-                    </a>
-                </div>
-            </div>
-
-            <div class="lg:col-span-4">
-                <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat" width="100%" height="200">
-
-                <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
-
-                    <div class="flex items-center flex-wrap gap-4 justify-between">
-                        <span class="text-green-500 dark:text-green-400">
-                            <i class="fr fi-rr-recycle"></i>
-                            For rent
-                        </span>
-
-                        <span class="text-sky-500 lining-nums font-semibold tracking-widest">
-                            ₦ 200,000.00
-                        </span>
-                    </div>
-
-                    <div>
-                        <h2 class="header">
-                            4 Bedroom Flat
-                        </h2>
-
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-
-                    <p>
-                        <i class="fr fi-rr-map-marker-home"></i>
-                        Rivers State University
-                    </p>
-
-                    <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
-                        View Details
-                    </a>
-                </div>
-            </div>
-
-            <div class="lg:col-span-4">
-                <img class="property-listing-image" src="./assets/img/pic.jpg" alt="4 Bedroom Flat" title="4 Bedroom Flat" width="100%" height="200">
-
-                <div class="property-listing-summary p-4 bg-slate-100 space-y-3 dark:bg-slate-800">
-
-                    <div class="flex items-center flex-wrap gap-4 justify-between">
-                        <span class="text-rose-500 dark:text-rose-400">
-                            <i class="fr fi-rr-thumbtack"></i>
-                            For sale
-                        </span>
-
-                        <span class="text-sky-500 lining-nums font-semibold tracking-widest">
-                            ₦ 200,000.00
-                        </span>
-                    </div>
-
-                    <div>
-                        <h2 class="header">
-                            4 Bedroom Flat
-                        </h2>
-
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-
-                    <p>
-                        <i class="fr fi-rr-map-marker-home"></i>
-                        Rivers State University
-                    </p>
-
-                    <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
-                        View Details
-                    </a>
-                </div>
-            </div>
+            <?php $indexHouses->showIndexHouses() ?>
+            
         </div>
 
         <p class="grid place-content-center">
-            <a class="rounded-lg py-1.5 px-4 bg-sky-500 text-white hover:bg-sky-600 border border-sky-500 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="">
+            <a class="rounded-lg py-1.5 px-4 bg-sky-500 text-white hover:bg-sky-600 border border-sky-500 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="/properties">
                 Explore more properties
             </a>
         </p>
@@ -297,8 +187,8 @@ $indexHouses->showIndexHouses();
     </section>
 </main>
 
-<?php
-    ob_get_flush();
-?>
+<!-- <?php
+        //ob_get_flush();
+        ?> -->
 
 <?php require_once("./includes/Footer.php") ?>

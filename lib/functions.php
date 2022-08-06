@@ -7,7 +7,7 @@
      * @param string $fileName
      * @param $data
      */
-    function view (string $fileName, $data = null) {
+    function view (string $fileName) {
         $fileFullPath = "./lib/pages/{$fileName}.php";
 
         if (file_exists($fileFullPath)) {
@@ -22,8 +22,8 @@
      * @param string $message
      * @param string $class
      */
-    function displayMessage (string $message, string $class = "") {
-        echo "<p class='{$class}'>{$message}</p>";
+    function displayMessage (string $message, string $class = "", string $tag = "p") {
+        echo "<{$tag} class='{$class}'>{$message}</{$tag}>";
     }
 
     /**
