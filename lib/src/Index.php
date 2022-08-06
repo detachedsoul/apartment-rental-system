@@ -1,24 +1,25 @@
 <?php
+
 namespace app\src;
 
 use app\assets\DB;
 
-class Index {
+class Index
+{
 
     /**
      * Get recent houses in desc order for the index page
      */
-    public function showIndexHouses () {
+    public function showIndexHouses()
+    {
         $con = DB::getInstance();
 
-        // $houses = $con->select("id, index_img, price, summary, location, status", "properties");
+        $houses = $con->select("id, index_img, price, summary, location, type", "properties", "ORDER BY id DESC");
 
-        $houses = $con->select("*", "landlords");
+        while ($rows = $houses->fetch_object()) {
+            print_r($rows->id);
+        }
 
-        // return view("index", $houses);
-    }
-
-    public function sayHellow(string $configParam) {
-        echo $configParam;
+        // return $houses;
     }
 }

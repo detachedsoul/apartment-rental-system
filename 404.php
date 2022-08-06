@@ -2,18 +2,18 @@
 // Set the correct resource paths based on the current route.
 $params = explode("/", $_SERVER["REQUEST_URI"]);
 if ($params[1] !== "assets") {
-    $cssResourcePath =  "../assets/css/";
-    $fontsResourcePath =  "../assets/fonts/";
-    $iconsResourcePath =  "../assets/icons/";
-    $jsResourcePath =  "../assets/js/";
-    $imgResourcePath =  "../assets/img/";
+    $cssResourcePath =  "../assets/css";
+    $fontsResourcePath =  "../assets/fonts";
+    $iconsResourcePath =  "../assets/icons";
+    $jsResourcePath =  "../assets/js";
+    $imgResourcePath =  "../assets/img";
 } else {
-    $cssResourcePath = "../css/";
-    $fontsResourcePath = "../fonts/";
+    $cssResourcePath = "../css";
+    $fontsResourcePath = "../fonts";
     $iconsResourcePath = "../icons/";
-    $jsResourcePath = "../js/";
-    $jsResourcePath = "../js/";
-    $imgResourcePath = "../img/";
+    $jsResourcePath = "../js";
+    $jsResourcePath = "../js";
+    $imgResourcePath = "../img";
 }
 
 // Check if the not found page was encountered in the admin dashboard or not and redirect the user to the appropriate page.

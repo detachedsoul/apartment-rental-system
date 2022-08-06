@@ -1,4 +1,5 @@
 <?php
+
 namespace app\src;
 
 use app\assets\DB;
@@ -105,6 +106,7 @@ class AddProperty
         if (isset($_POST['add-property'])) {
 
             $uploadFolder = "../assets/img/";
+            $renamedImages = [];
 
             // Get all fields and check if they are empty
             $fields = [
@@ -115,9 +117,6 @@ class AddProperty
                 $this->setPropertySummary(),
                 $this->setPropertyDescription(),
             ];
-
-            $params = [];
-
             foreach ($fields as $field) {
                 if (is_empty($field)) {
                     displayMessage("All fields are required.", "text-rose-500");
@@ -126,7 +125,7 @@ class AddProperty
                 }
             }
 
-            // Get all images
+            // Get all images names
             $imagesNames = [
                 $this->setBannerImage()['name'],
                 $this->setDetailsOnePic()['name'],
@@ -159,28 +158,28 @@ class AddProperty
             $propertyName = strtolower(str_replace(' ', '-', $this->setPropertyName()));
 
             foreach ($imagesNames as $imageName) {
-                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . mt_rand(00000, 99999) . '.jpg';
-
-                array_push($params, $imageName);
-            }
-
-            foreach ($params as $imageName) {
                 foreach ($imagesTempNames as $tempName) {
+                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . mt_rand(00000, 99999) . '.jpg';
+
                     $imageFullPath = $uploadFolder . $imageName;
+
                     move_uploaded_file($tempName, $imageFullPath);
                 }
+                array_push($renamedImages, $imageName);
             }
 
             $propertyFields = [
                 ...$fields,
-                ...$params,
+                ...$renamedImages,
                 $_SESSION['id']
             ];
 
             $this->con->insert("properties", ["title", "location", "price", "type", "summary", "description", "index_img", "img_1", "img_2", "img_3", "img_4", "img_5", "owner_id"], ...$propertyFields);
-        }
-        else {
-            displayMessage( "Property Details");
+
+            displayMessage("Property added successfully.", "text-emerald-500");
+            header("Refresh: 3, /admin/properties");
+        } else {
+            displayMessage("Property Details");
         }
     }
 }

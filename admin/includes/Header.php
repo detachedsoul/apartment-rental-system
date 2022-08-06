@@ -23,7 +23,7 @@
     <link rel="icon" href="../assets/img/logo.png">
 
     <!-- Preload stylesheets and JavaScript files -->
-    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="<?= realpath('../assets/css/style.css') ?>" as="style">
     <link rel="preload" href="../assets/fonts/fonts.min.css" as="style">
     <link rel="preload" href="../assets/icons/uicons-brands/css/uicons-brands.min.css" as="style">
     <link rel="preload" href="../assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css" as="style">

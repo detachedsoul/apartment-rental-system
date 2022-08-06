@@ -119,7 +119,7 @@
                         </label>
                     </div>
 
-                    <div class="grid gap-4 lg:w-4/5 lg:mx-auto lg:gap-8 mt-8" action="/admin/properties" method="POST">
+                    <div class="grid gap-4 lg:w-4/5 lg:mx-auto lg:gap-8 mt-8">
                         <h3 class="header text-xl -mb-4">
                             <?php $addProperty->addNewProperty(); ?>
                         </h3>
@@ -155,8 +155,8 @@
                                 </label>
 
                                 <select class="form-select input rounded-lg border-none focus:ring-transparent w-full" name="property-category" id="property-category">
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For rent</option>
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For sale</option>
+                                    <option class="bg-white dark:bg-transparent" value="For rent">For Rent</option>
+                                    <option class="bg-white dark:bg-transparent" value="For rent">For Sale</option>
                                 </select>
                             </div>
 

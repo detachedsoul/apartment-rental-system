@@ -51,3 +51,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Implemented the add new property feature.
 
 - Corrected the broken stylesheets and JavaScript files links.
+
+- Corrected a bug where only the last selected image was uploaded in the add new property page.
