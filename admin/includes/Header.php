@@ -1,20 +1,21 @@
 <?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
 <?php
-    // Check if the page was accessed by an authenticated user
-    if (!isset($_SESSION['loggedUser'])) {
-        header("Location: ../");
-    }
+// Check if the page was accessed by an authenticated user
+if (!isset($_SESSION['loggedUser'])) {
+    header("Location: ../");
+}
 
-    if (!isset($_SESSION['id'])) {
-        header("Location: ../");
-    }
+if (!isset($_SESSION['id'])) {
+    header("Location: ../");
+}
 
-    if (!isset($_SESSION['user'])) {
-        header("Location: ../");
-    }
+if (!isset($_SESSION['user'])) {
+    header("Location: ../");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +37,7 @@
     <link rel="stylesheet" href="../assets/icons/uicons-brands/css/uicons-brands.min.css">
     <link rel="stylesheet" href="../assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css">
 </head>
+
 <body>
 
     <div class="lg:grid lg:grid-cols-12">
@@ -90,6 +92,12 @@
                         <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/settings">
                             <i class="fr fi-rr-settings pr-1.5"></i>
                             Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/logout">
+                            <i class="fr fi-rr-sign-out pr-1.5"></i>
+                            Logout
                         </a>
                     </li>
                 </ul>

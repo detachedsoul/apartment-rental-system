@@ -24,7 +24,7 @@
 
         <span>
             Created with all the <i class="fi fi-rr-heart text-rose-500 top-[0.2rem] relative"></i> in the world by
-            <a class="text-sky-400 hover:underline hover:underline-offset-4 underline-sky-400" href="https://web.facebook.com/IamWisdomOjimah" target="_blank" rel="noreferrer noopener">
+            <a class="text-sky-400 hover:underline hover:underline-offset-4" href="https://web.facebook.com/IamWisdomOjimah" target="_blank" rel="noreferrer noopener">
                 Wisdom Ojimah
             </a>
         </span>

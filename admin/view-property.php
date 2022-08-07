@@ -1,5 +1,5 @@
-<?php $pageTitle = "HousingQuest | Property"; ?>
 <?php require_once("./includes/Header.php"); ?>
+<?php $pageTitle = "HousingQuest | Property"; ?>
 
                 <div class="flex items-center gap-x-4 gap-y-2 justify-between flex-wrap">
                     <a class="text-sky-500 hover:text-sky-600 focus:text-sky-600 dark:text-sky-600 dark:hover:text-sky-700" href="/admin/properties">

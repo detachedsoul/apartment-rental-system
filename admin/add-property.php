@@ -1,10 +1,9 @@
-<?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
+<?php $pageTitle = "HousingQuest | Add Property"; ?>
+<?php require_once("./includes/Header.php"); ?>
 <?php
     use app\src\AddProperty;
     $addProperty = new AddProperty();
 ?>
-<?php $pageTitle = "HousingQuest | Add Property"; ?>
-<?php require_once("./includes/Header.php"); ?>
 
                 <a class="text-sky-500 hover:text-sky-600 focus:text-sky-600 dark:text-sky-600 dark:hover:text-sky-700" href="/admin/properties">
                     <i class="fr fi-rr-arrow-small-left"></i>

@@ -98,11 +98,11 @@ $indexHouses = new Index();
             </p>
         </div>
 
-        <div class="grid gap-8 lg:grid-cols-12">
+        <section class="grid gap-8 lg:grid-cols-12">
 
             <?php $indexHouses->showIndexHouses() ?>
-            
-        </div>
+
+        </section>
 
         <p class="grid place-content-center">
             <a class="rounded-lg py-1.5 px-4 bg-sky-500 text-white hover:bg-sky-600 border border-sky-500 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="/properties">

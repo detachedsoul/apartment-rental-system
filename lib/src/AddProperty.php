@@ -107,7 +107,6 @@ class AddProperty
 
             $uploadFolder = "../assets/img/";
             $renamedImages = [];
-            $reversedImageNames = [];
 
             // Get all fields and check if they are empty
             $fields = [
@@ -183,7 +182,7 @@ class AddProperty
             $this->con->insert("properties", ["title", "location", "price", "type", "summary", "description", "index_img", "img_1", "img_2", "img_3", "img_4", "img_5", "owner_id"], ...$propertyFields);
 
             displayMessage("Property added successfully.", "text-emerald-500");
-            header("Refresh: 2, /admin/properties");
+            header("Refresh: 2, /admin/properties", true, 301);
         } else {
             displayMessage("Property Details");
         }

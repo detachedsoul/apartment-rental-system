@@ -53,3 +53,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Corrected the broken stylesheets and JavaScript files links.
 
 - Corrected a bug where only the last selected image was uploaded in the add new property page.
+
+- Added the index page apartment listing functionality and fixed an inconsistent image names issue.
+
+- Made the view properties functionality for property owners and logout functionality.
