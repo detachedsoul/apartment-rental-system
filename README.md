@@ -57,3 +57,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Added the index page apartment listing functionality and fixed an inconsistent image names issue.
 
 - Made the view properties functionality for property owners and logout functionality.
+
+- Made the contact form functionality

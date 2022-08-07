@@ -187,8 +187,4 @@ $indexHouses = new Index();
     </section>
 </main>
 
-<!-- <?php
-        //ob_get_flush();
-        ?> -->
-
 <?php require_once("./includes/Footer.php") ?>
