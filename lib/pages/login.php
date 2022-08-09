@@ -6,8 +6,8 @@ $loginUser = new Login();
 <?php $pageTitle = "Login"; ?>
 <?php require_once("./includes/Header.php"); ?>
 
-    <main class="grid place-content-center min-h-screen py-8 px-4 dark:bg-slate-900 dark:text-slate-400 lg:px-[30%]">
-        <form class="bg-slate-100 py-8 px-4 rounded-xl lg:px-12 dark:bg-slate-800" method="POST">
+    <main class="grid place-items-center w-full min-h-screen py-8 px-4 dark:bg-slate-900 dark:text-slate-400 lg:px-[30%]">
+        <form class="bg-slate-100 py-8 px-4 w-full rounded-xl lg:px-12 dark:bg-slate-800" method="POST">
             <div class="text-center mx-auto w-[90%] mb-8">
 
                 <h3 class="text-center header text-2xl">

@@ -7,10 +7,12 @@ use app\assets\DB;
 class ViewProperties
 {
     private $ownerID;
+    private $con;
 
     public function __construct()
     {
         $this->ownerID = $_SESSION['id'];
+        $this->con = DB::getInstance();
     }
 
 
@@ -20,9 +22,7 @@ class ViewProperties
     public function showAdminProperties()
     {
 
-        $con = DB::getInstance();
-
-        $houses = $con->select("id, title, index_img, price, summary, location, type", "properties", "WHERE owner_id = ? ORDER BY id DESC LIMIT 6", $this->ownerID);
+        $houses = $this->con->select("id, title, index_img, price, summary, location, type", "properties", "WHERE owner_id = ? ORDER BY id DESC LIMIT 6", $this->ownerID);
 
         // Check if there is any available apartment
         if ($houses->num_rows < 1) : ?>

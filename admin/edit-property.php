@@ -1,4 +1,3 @@
-<?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
 <?php $pageTitle = "HousingQuest | Edit Property"; ?>
 <?php require_once("./includes/Header.php"); ?>
 <?php

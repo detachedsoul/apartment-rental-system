@@ -53,49 +53,49 @@ if (!isset($_SESSION['user'])) {
 
                 <ul class="flex flex-col gap-1">
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/" target="_blank" rel="noopener noreferrer">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/" target="_blank" rel="noopener noreferrer">
                             <i class="fr fi-rr-layers pr-1.5"></i>
                             Home Page
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin">
                             <i class="fr fi-rr-apps pr-1.5"></i>
                             Overview
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/properties">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/properties">
                             <i class="fr fi-rr-home pr-1.5"></i>
                             Properties
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/payment-history">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/payment-history">
                             <i class="fr fi-rr-document-signed pr-1.5"></i>
                             Payment History
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/tenants">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/tenants">
                             <i class="fr fi-rr-users pr-1.5"></i>
                             Tenants
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/messages">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/messages">
                             <i class="fr fi-rr-envelope pr-1.5"></i>
                             Messages
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/settings">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/settings">
                             <i class="fr fi-rr-settings pr-1.5"></i>
                             Settings
                         </a>
                     </li>
                     <li>
-                        <a class="py-3 px-4 w-full <?= $isActive ? 'bg-admin-nav border-slate-900 dark:border-slate-700 font-bold' : 'hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold' ?> block border-l-4 border-transparent" href="/admin/logout">
+                        <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/logout">
                             <i class="fr fi-rr-sign-out pr-1.5"></i>
                             Logout
                         </a>

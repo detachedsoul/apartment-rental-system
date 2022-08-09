@@ -59,3 +59,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the view properties functionality for property owners and logout functionality.
 
 - Made the contact form functionality
+
+- Made the view total owned properties and tenants feature for the admin index page, and also the view tenants table for the tenants page in the admin dashboard
