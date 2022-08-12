@@ -88,13 +88,13 @@ class AddProperty
     // Sets the property summary field of a form
     public function setPropertySummary(): string
     {
-        return $this->propertySummary = isset($_POST['property-summary']) ? strtolower(trim(strip_tags($_POST['property-summary']))) : "";
+        return $this->propertySummary = isset($_POST['property-summary']) ? ucwords(strtolower(trim(strip_tags($_POST['property-summary'])))) : "";
     }
 
     // Sets the property description field of a form
     public function setPropertyDescription(): string
     {
-        return $this->propertyDescription = isset($_POST['property-description']) ? strtolower(trim(strip_tags($_POST['property-description']))) : "";
+        return $this->propertyDescription = isset($_POST['property-description']) ? ucwords(strtolower(trim(strip_tags($_POST['property-description'])))) : "";
     }
 
     /**
@@ -107,6 +107,14 @@ class AddProperty
 
             $uploadFolder = "../assets/img/";
             $renamedImages = [];
+            $allowedExtensions = [
+                "png",
+                "jpeg",
+                "jpg",
+                "webp",
+                "jfif",
+                "gif"
+            ];
 
             // Get all fields and check if they are empty
             $fields = [
@@ -154,11 +162,20 @@ class AddProperty
                 }
             }
 
+            // Check if the file extension is a valid image extension
+            foreach ($imagesNames as $image) {
+                if (!in_array(pathinfo($image, PATHINFO_EXTENSION), $allowedExtensions)) {
+                    displayMessage("Invalid image extension. Please select a valid image with either a png, jpg, jpeg, or webp extension.", "text-rose-500");
+
+                    return;
+                }
+            }
+
             // Rename the images, uploads it and then insert the values from the form.
             $propertyName = strtolower(str_replace(' ', '-', $this->setPropertyName()));
 
             foreach ($imagesNames as $imageName => $key) {
-                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $imageName . '.jpg';
+                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $imageName . '.' . pathinfo($key, PATHINFO_EXTENSION);
 
                 array_push($renamedImages, $imageName);
             }

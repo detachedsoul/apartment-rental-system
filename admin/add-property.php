@@ -154,8 +154,8 @@
                                 </label>
 
                                 <select class="form-select input rounded-lg border-none focus:ring-transparent w-full" name="property-category" id="property-category">
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For Rent</option>
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For Sale</option>
+                                    <option class="bg-white dark:bg-transparent" value="For Rent">For Rent</option>
+                                    <option class="bg-white dark:bg-transparent" value="For Sale">For Sale</option>
                                 </select>
                             </div>
 

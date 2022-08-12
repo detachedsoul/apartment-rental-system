@@ -8,33 +8,33 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 - Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.000webhostapp.com/](https://housingquest.000webhostapp.com/)
 
-- Made the contact, register, login, and reset password pages
+- Made the contact, register, login, and reset password pages.
 
-- Implemented a theme changer feature
+- Implemented a theme changer feature.
 
-- Further improved the theme changer by changing the the theme toggle icon based on the selected theme and also harmonizing the styles across multiple pages
+- Further improved the theme changer by changing the the theme toggle icon based on the selected theme and also harmonizing the styles across multiple pages.
 
-- Created the details page for individual apartments
+- Created the details page for individual apartments.
 
-- Started design of the admin dashboard
+- Started design of the admin dashboard.
 
-- Finished a rough v1 of the admin dashboard homepage
+- Finished a rough v1 of the admin dashboard homepage.
 
-- Changed file extensions from ```.html``` to ```.php```
+- Changed file extensions from ```.html``` to ```.php```.
 
-- Cleaned up the design of the admin dashboard homepage, unified the theme to switch the logo's when the theme is changed
+- Cleaned up the design of the admin dashboard homepage, unified the theme to switch the logo's when the theme is changed.
 
-- Made the admin property listing page, the admin view property page, as well as the confirm delete property dialog
+- Made the admin property listing page, the admin view property page, as well as the confirm delete property dialog.
 
-- Made the payment history page and also carried out minor design changes to the tables
+- Made the payment history page and also carried out minor design changes to the tables.
 
-- Made the tenants listing page and also added the charts for monthly income
+- Made the tenants listing page and also added the charts for monthly income.
 
-- Made the settings page and other minor changes
+- Made the settings page and other minor changes.
 
-- Made the edit property page
+- Made the edit property page.
 
-- Made the add new property page
+- Made the add new property page.
 
 - Carried out more refactoring and added finishing touches to certain things.
 
@@ -58,6 +58,8 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 - Made the view properties functionality for property owners and logout functionality.
 
-- Made the contact form functionality
+- Made the contact form functionality.
 
-- Made the view total owned properties and tenants feature for the admin index page, and also the view tenants table for the tenants page in the admin dashboard
+- Made the view total owned properties and tenants feature for the admin index page, and also the view tenants table for the tenants page in the admin dashboard.
+
+- Made the update profile picture feature.

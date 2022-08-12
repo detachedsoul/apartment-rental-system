@@ -35,7 +35,7 @@ class AdminIndex
         </p>
 
         <p>
-            Properties
+            Propert<?= ($propertyCount > 1) ? "ies" : "y" ?>
         </p>
         <?php
     }
