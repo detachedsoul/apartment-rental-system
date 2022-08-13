@@ -62,4 +62,6 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 - Made the view total owned properties and tenants feature for the admin index page, and also the view tenants table for the tenants page in the admin dashboard.
 
-- Made the update profile picture feature.
+- Made the update profile picture feature and added file extension checks before uploading images.
+
+- Made the user's details update feature (records such as name, phone number, email, and password can now be changed).

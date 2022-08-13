@@ -31,7 +31,7 @@ $userDetails = new UserProfile();
             <span class="sr-only">Choose profile photo</span>
             <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl z-50 image-selector" id="profile-pic" name="profile-pic">
 
-            <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full" src="../assets/img/pic.jpg" alt="Wisdom Ojimah" />
+            <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full" src="../<?= (!file_exists('../admin/assets/$userDetails->getUserDetails()->fetch_object()->profile_pic')) ? 'admin/' : '' ?>assets/img/<?= $userDetails->getUserDetails()->fetch_object()->profile_pic ?>" alt="<?= $userDetails->getUserDetails()->fetch_object()->name; ?>" />
         </label>
 
         <?php $userDetails->updateUserProfilePicture(); ?>
@@ -49,9 +49,7 @@ $userDetails = new UserProfile();
                     Profile Information
                 </h3>
 
-                <p>
-                    View and edit your profile information
-                </p>
+                <?php $userDetails->updateUserDetails() ?>
             </div>
 
             <div class="grid gap-4 lg:grid-cols-12">
@@ -60,7 +58,7 @@ $userDetails = new UserProfile();
                         Full Name
                     </label>
 
-                    <input class="rounded-lg input" type="text" placeholder="Full name" name="name" id="name" required autocomplete="off" value="Wisdom Ojimah" />
+                    <input class="rounded-lg input" type="text" placeholder="Full name" name="name" id="name" autocomplete="off" />
                 </div>
 
                 <div class="lg:col-span-6">
@@ -68,7 +66,7 @@ $userDetails = new UserProfile();
                         Phone Number
                     </label>
 
-                    <input class="rounded-lg input" type="tel" placeholder="Phone Number" name="phone-number" id="phone-number" required autocomplete="off" value="+2348105008304" />
+                    <input class="rounded-lg input" type="tel" placeholder="Phone Number" name="phone-number" id="phone-number" autocomplete="off" />
                 </div>
 
                 <div class="lg:col-span-6">
@@ -76,7 +74,7 @@ $userDetails = new UserProfile();
                         Email Address
                     </label>
 
-                    <input class="rounded-lg input" type="email" placeholder="Email Adress" name="email-address" id="email-address" required autocomplete="off" value="vindicatedwisdom@gmail.com" />
+                    <input class="rounded-lg input" type="email" placeholder="Email Adress" name="email-address" id="email-address" autocomplete="off" />
                 </div>
 
                 <div class="lg:col-span-6">
@@ -87,7 +85,7 @@ $userDetails = new UserProfile();
                     <input class="rounded-lg input" type="password" placeholder="Change Password" name="change-password" id="change-password" autocomplete="off" />
                 </div>
 
-                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700" type="submit">
+                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700" type="submit" name="update-details">
                     Save Changes
                 </button>
             </div>
