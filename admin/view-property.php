@@ -1,5 +1,5 @@
-<?php $pageTitle = "HousingQuest | Property"; ?>
 <?php require_once("./includes/Header.php"); ?>
+<?php $pageTitle = "HousingQuest | Property"; ?>
 
                 <div class="flex items-center gap-x-4 gap-y-2 justify-between flex-wrap">
                     <a class="text-sky-500 hover:text-sky-600 focus:text-sky-600 dark:text-sky-600 dark:hover:text-sky-700" href="/admin/properties">
@@ -23,7 +23,7 @@
                 <img class="h-[200px] rounded-xl lg:h-[400px] w-full" src="../assets/img/details-banner.jpg" alt="" />
 
                 <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 -mt-12 mb-8">
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[400px] lg:col-span-6" src="../assets/img/pic.jpg" alt="" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-full lg:col-span-6" src="../assets/img/pic.jpg" alt="" />
 
                     <img class="h-[200px] col-span-12 rounded-xl lg:h-full lg:row-span-2 lg:col-span-3" src="../assets/img/pic.jpg" alt="" />
 

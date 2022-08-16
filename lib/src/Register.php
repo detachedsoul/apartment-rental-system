@@ -150,7 +150,7 @@ class Register
                 displayMessage( "Registration successful. You would be redirected to your dashboard shortly.", "text-green-500");
             }
 
-            header("Refresh: 3, /admin", false, 301);
+            header("Refresh: 3, /admin", true, 301);
         }
         else {
             displayMessage( "Create a free account today");

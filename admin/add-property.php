@@ -1,10 +1,9 @@
-<?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
+<?php $pageTitle = "HousingQuest | Add Property"; ?>
+<?php require_once("./includes/Header.php"); ?>
 <?php
     use app\src\AddProperty;
     $addProperty = new AddProperty();
 ?>
-<?php $pageTitle = "HousingQuest | Add Property"; ?>
-<?php require_once("./includes/Header.php"); ?>
 
                 <a class="text-sky-500 hover:text-sky-600 focus:text-sky-600 dark:text-sky-600 dark:hover:text-sky-700" href="/admin/properties">
                     <i class="fr fi-rr-arrow-small-left"></i>
@@ -37,7 +36,7 @@
                         </div>
 
                         <span class="sr-only">Choose profile photo</span>
-                        <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl z-50 image-selector" id="pic-1" name="pic-1" >
+                        <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl z-50 image-selector" required id="pic-1" name="pic-1" >
 
                         <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                     </label>
@@ -53,7 +52,7 @@
                             </div>
 
                             <span class="sr-only">Choose profile photo</span>
-                            <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl z-50 image-selector" id="pic-2" name="pic-2" >
+                            <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl z-50 image-selector" id="pic-2" required name="pic-2" >
 
                             <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                         </label>
@@ -68,7 +67,7 @@
 
                             <span class="sr-only">Choose profile photo</span>
                             <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl image-selector
-                            " id="pic-3" name="pic-3" >
+                            " id="pic-3" required name="pic-3" >
 
                             <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                         </label>
@@ -83,7 +82,7 @@
 
                             <span class="sr-only">Choose profile photo</span>
                             <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl image-selector
-                            " id="pic-4" name="pic-4" >
+                            " id="pic-4" required name="pic-4" >
 
                             <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                         </label>
@@ -98,7 +97,7 @@
 
                             <span class="sr-only">Choose profile photo</span>
                             <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl image-selector
-                            " id="pic-5" name="pic-5" >
+                            " id="pic-5" required name="pic-5" >
 
                             <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                         </label>
@@ -113,13 +112,13 @@
 
                             <span class="sr-only">Choose profile photo</span>
                             <input type="file" class="h-full cursor-pointer opacity-0 absolute top-0 left-0 w-full rounded-xl image-selector
-                            " id="pic-6" name="pic-6" >
+                            " id="pic-6" required name="pic-6" >
 
                             <img class="col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:col-span-6 absolute top-0 left-0 w-full h-full not-sr-only opacity-0" src="" alt="" />
                         </label>
                     </div>
 
-                    <div class="grid gap-4 lg:w-4/5 lg:mx-auto lg:gap-8 mt-8" action="/admin/properties" method="POST">
+                    <div class="grid gap-4 lg:w-4/5 lg:mx-auto lg:gap-8 mt-8">
                         <h3 class="header text-xl -mb-4">
                             <?php $addProperty->addNewProperty(); ?>
                         </h3>
@@ -130,7 +129,7 @@
                                     Property Name
                                 </label>
 
-                                <input class="rounded-lg input" type="text" placeholder="Property Name" name="property-name" id="property-name" autocomplete="off" value="<?= $addProperty->setPropertyName() ?>" />
+                                <input class="rounded-lg input" type="text" placeholder="Property Name" name="property-name" id="property-name" autocomplete="off" required value="<?= $addProperty->setPropertyName() ?>" />
                             </div>
 
                             <div class="lg:col-span-6">
@@ -138,7 +137,7 @@
                                     Property Location
                                 </label>
 
-                                <input class="rounded-lg input" type="text" placeholder="Property Location" name="property-location" id="location"  autocomplete="off" value="<?= $addProperty->setPropertyLocation() ?>" />
+                                <input class="rounded-lg input" type="text" placeholder="Property Location" name="property-location" id="location" required  autocomplete="off" value="<?= $addProperty->setPropertyLocation() ?>" />
                             </div>
 
                             <div class="lg:col-span-6">
@@ -146,7 +145,7 @@
                                     Price
                                 </label>
 
-                                <input class="rounded-lg input" type="number" placeholder="Price" name="property-price" id="property-price"  autocomplete="off" value="<?= $addProperty->setPropertyPrice() ?>" />
+                                <input class="rounded-lg input" type="number" placeholder="Price" name="property-price" id="property-price" required  autocomplete="off" value="<?= $addProperty->setPropertyPrice() ?>" />
                             </div>
 
                             <div class="lg:col-span-6">
@@ -155,8 +154,8 @@
                                 </label>
 
                                 <select class="form-select input rounded-lg border-none focus:ring-transparent w-full" name="property-category" id="property-category">
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For rent</option>
-                                    <option class="bg-white dark:bg-transparent" value="For rent">For sale</option>
+                                    <option class="bg-white dark:bg-transparent" value="For Rent">For Rent</option>
+                                    <option class="bg-white dark:bg-transparent" value="For Sale">For Sale</option>
                                 </select>
                             </div>
 
@@ -165,7 +164,7 @@
                                     Property Summary
                                 </label>
 
-                                <textarea class="input rounded-lg" name="property-summary" id="property-summary" rows="4" placeholder="Property Summary"><?= $addProperty->setPropertySummary() ?></textarea>
+                                <textarea class="input rounded-lg" name="property-summary" id="property-summary" required rows="4" placeholder="Property Summary"><?= $addProperty->setPropertySummary() ?></textarea>
                             </div>
 
                             <div class="lg:col-span-6">
@@ -173,7 +172,7 @@
                                     Property Description
                                 </label>
 
-                                <textarea class="input rounded-lg" name="property-description" id="property-description" rows="4" placeholder="Property Description"><?= $addProperty->setPropertyDescription() ?></textarea>
+                                <textarea class="input rounded-lg" name="property-description" id="property-description" required rows="4" placeholder="Property Description"><?= $addProperty->setPropertyDescription() ?></textarea>
                             </div>
 
                             <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 lg:mx-auto dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700"
