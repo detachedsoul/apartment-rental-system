@@ -98,9 +98,9 @@ class ContactForm
             ";
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-            $headers .= "From: Wisdom Ojimah ojimahwisdom@gmail.com";
+            $headers .= "From: {$this->setName()} {$this->setEmail()}";
 
-            if (!mail($receipientMail, $subject, $message, $headers)) {
+            if (mail($receipientMail, $subject, $message, $headers)) {
                 displayMessage("Your message has been sent successfully. Please be assured that we would address the issues raised ASAP!", "text-green-500");
             } else {
                 displayMessage("Your message was not sent successfully. Please try again.", "text-rose-500");
