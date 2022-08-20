@@ -1,6 +1,7 @@
 <?php
 // Set the correct resource paths based on the current route.
 $params = explode("/", $_SERVER["REQUEST_URI"]);
+
 $cssResourcePath =  "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}/assets/css";
 $fontsResourcePath =  "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}/assets/fonts";
 $iconsResourcePath =  "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}/assets/icons";
@@ -21,7 +22,7 @@ if ($params[1] !== "admin") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page not found</title>
+    <title>Access denied</title>
     <link rel="stylesheet" href="<?= $cssResourcePath ?>/style.css">
     <link rel="stylesheet" href="<?= $fontsResourcePath ?>/fonts.min.css">
     <link rel="stylesheet" href="<?= $iconsResourcePath ?>/uicons-regular-rounded/css/uicons-regular-rounded.min.css">
@@ -34,17 +35,17 @@ if ($params[1] !== "admin") {
         <div class="text-center space-y-4">
 
             <p class="text-rose-600 tracking-wider">
-                404 ERROR
+                403 ERROR
             </p>
 
             <div class="space-y-1">
 
                 <h1 class="header text-4xl">
-                    Page not found
+                    Access denied
                 </h1>
 
                 <p>
-                    Sorry, we couldn't find the page you're looking for.
+                    Sorry, you don't have permission to access the specified resource.
                 </p>
 
             </div>

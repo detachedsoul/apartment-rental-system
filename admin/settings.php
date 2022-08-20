@@ -40,7 +40,6 @@ $userDetails = new UserProfile();
             Save Change
         </button>
     </form>
-    <!-- </div> -->
 
     <div class="lg:col-span-6">
         <form method="POST">

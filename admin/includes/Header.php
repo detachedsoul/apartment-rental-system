@@ -1,5 +1,11 @@
 <?php require_once(realpath('../vendor') . DIRECTORY_SEPARATOR . 'autoload.php'); ?>
 <?php
+
+use app\src\UserProfile;
+
+$userDetails = new UserProfile();
+?>
+<?php
 // Check if the page was accessed by an authenticated user
 if (!isset($_SESSION['loggedUser'])) {
     header("Location: ../");
@@ -139,7 +145,7 @@ if (!isset($_SESSION['user'])) {
                     </a>
 
                     <div class="flex flex-wrap items-center gap-x-2 gap-y-2">
-                        <img class="rounded-full w-10 h-10" src="./assets/img/wisdom.jpg" alt="Wisdom Ojimah" width="40" height="40">
+                        <img class="rounded-full w-10 h-10" src="../<?= (!file_exists('../admin/assets/$userDetails->getUserDetails()->fetch_object()->profile_pic')) ? 'admin/' : '' ?>assets/img/<?= $userDetails->getUserDetails()->fetch_object()->profile_pic ?>" alt="<?= $userDetails->getUserDetails()->fetch_object()->name; ?>" width="40" height="40" />
                         <span class="-space-y-1">
                             <h4 class="header">
                                 <?= $_SESSION['user'] ?>

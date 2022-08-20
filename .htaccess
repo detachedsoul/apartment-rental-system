@@ -3,12 +3,15 @@ php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:19894376:
 
 Options +FollowSymLinks
+Options -Indexes
+
 RewriteEngine On
 RewriteBase /
 
 ErrorDocument 404 /404
+ErrorDocument 403 /403
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.php/ [NC,L]
