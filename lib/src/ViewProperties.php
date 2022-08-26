@@ -22,7 +22,7 @@ class ViewProperties
     public function showAdminProperties()
     {
 
-        $houses = $this->con->select("id, title, index_img, price, summary, location, type", "properties", "WHERE owner_id = ? ORDER BY id DESC LIMIT 6", $this->ownerID);
+        $houses = $this->con->select("id, title, index_img, price, summary, location, type, link", "properties", "WHERE owner_id = ? ORDER BY id DESC LIMIT 6", $this->ownerID);
 
         // Check if there is any available apartment
         if ($houses->num_rows < 1) : ?>
@@ -65,7 +65,7 @@ class ViewProperties
                         <?= $house->location ?>
                     </address>
 
-                    <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="/details/<?= $house->id ?>/<?= strtolower(str_replace(' ', '-', $house->title)) ?>">
+                    <a class="inline-block rounded-lg py-1.5 px-3 text-white bg-sky-500 hover:bg-sky-600 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" href="view-property?propertyID=<?= $house->id ?>&propertyName=<?= $house->link ?>">
                         View Details
                     </a>
                 </div>

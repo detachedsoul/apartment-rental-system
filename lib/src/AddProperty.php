@@ -88,13 +88,13 @@ class AddProperty
     // Sets the property summary field of a form
     public function setPropertySummary(): string
     {
-        return $this->propertySummary = isset($_POST['property-summary']) ? ucwords(strtolower(trim(strip_tags($_POST['property-summary'])))) : "";
+        return $this->propertySummary = isset($_POST['property-summary']) ? ucfirst(strtolower(trim(strip_tags($_POST['property-summary'])))) : "";
     }
 
     // Sets the property description field of a form
     public function setPropertyDescription(): string
     {
-        return $this->propertyDescription = isset($_POST['property-description']) ? ucwords(strtolower(trim(strip_tags($_POST['property-description'])))) : "";
+        return $this->propertyDescription = isset($_POST['property-description']) ? ucfirst(strtolower(trim(strip_tags($_POST['property-description'])))) : "";
     }
 
     /**
@@ -174,29 +174,32 @@ class AddProperty
             // Rename the images, uploads it and then insert the values from the form.
             $propertyName = strtolower(str_replace(' ', '-', $this->setPropertyName()));
 
-            foreach ($imagesNames as $imageName => $key) {
-                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $imageName . '.' . pathinfo($key, PATHINFO_EXTENSION);
+            foreach ($imagesNames as $key => $images) {
+                $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $key . '.jpg';
 
                 array_push($renamedImages, $imageName);
             }
 
-            foreach ($imagesNames as $imageName) {
-                foreach ($imagesTempNames as $tempName => $key) {
-                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $tempName . '.jpg';
+            foreach ($imagesNames as $images) {
+                foreach ($imagesTempNames as $key => $tempName) {
+                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $key . '.jpg';
 
                     $imageFullPath = $uploadFolder . $imageName;
 
-                    move_uploaded_file($key, $imageFullPath);
+                    move_uploaded_file($tempName, $imageFullPath);
                 }
             }
+
+            $propertyLink = strtolower(str_replace(' ', '-', $this->propertyName));
 
             $propertyFields = [
                 ...$fields,
                 ...$renamedImages,
-                $_SESSION['id']
+                $_SESSION['id'],
+                $propertyLink
             ];
 
-            $this->con->insert("properties", ["title", "location", "price", "type", "summary", "description", "index_img", "img_1", "img_2", "img_3", "img_4", "img_5", "owner_id"], ...$propertyFields);
+            $this->con->insert("properties", ["title", "location", "price", "type", "summary", "description", "index_img", "img_1", "img_2", "img_3", "img_4", "img_5", "owner_id", "link"], ...$propertyFields);
 
             displayMessage("Property added successfully.", "text-emerald-500");
             header("Refresh: 2, /admin/properties", true, 301);
