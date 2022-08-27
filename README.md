@@ -65,3 +65,7 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the update profile picture feature and added file extension checks before uploading images.
 
 - Made the user's details update feature (records such as name, phone number, email, and password can now be changed).
+
+- Made the view individual property details functionality for both the index and admin dashboard.
+
+- Made the delete property functionality
