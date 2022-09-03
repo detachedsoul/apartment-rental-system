@@ -18,14 +18,16 @@ class UserProfile
     {
         $this->ownerID = $_SESSION['id'];
         $this->con = DB::getInstance();
+
         $this->userImage = isset($_FILES['profile-pic']) ? $_FILES['profile-pic'] : "";
-        $this->name = isset($_POST['name']) ? $_POST['name'] : $this->getUserDetails()->fetch_object()->name;
-        $this->phoneNumber = isset($_POST['phone-number']) ? $_POST['phone-number'] :
-            $this->getUserDetails()->fetch_object()->phone;
-        $this->email = isset($_POST['email-address']) ? $_POST['email-address'] :
-            $this->getUserDetails()->fetch_object()->email;
-        $this->password = isset($_POST['change-password']) ? password_hash($_POST['change-password'], PASSWORD_DEFAULT) :
-            "";
+
+        $this->name = isset($_POST['name']) ? ucwords(strtolower($_POST['name'])) : $this->getUserDetails()->fetch_object()->name;
+
+        $this->phoneNumber = isset($_POST['phone-number']) ? $_POST['phone-number'] : $this->getUserDetails()->fetch_object()->phone;
+
+        $this->email = isset($_POST['email-address']) ? strtolower($_POST['email-address']) : $this->getUserDetails()->fetch_object()->email;
+
+        $this->password = isset($_POST['change-password']) ? password_hash($_POST['change-password'], PASSWORD_DEFAULT) : null;
     }
 
     public function getUserDetails()
@@ -114,8 +116,8 @@ class UserProfile
                 }
             }
 
-            // Check if a password was entered and displays the appropriate feedback
-            if (!is_empty($this->getUserPassword())) {
+            // Check if a password was entered and adds it to te array
+            if (is_empty($this->getUserPassword())) {
                 array_push($params, $this->getUserPassword());
             }
 
@@ -134,6 +136,8 @@ class UserProfile
             if (in_array($this->getUserPassword(), $params)) {
                 $this->con->update("landlords", "password = ?", "WHERE id = ?", ...[$this->getUserPassword(), $this->ownerID]);
             }
+
+            $_SESSION['user'] = $this->getUserName();
 
             displayMessage("Profile updated successfully.", "text-emerald-500");
 

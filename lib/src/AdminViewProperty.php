@@ -19,7 +19,8 @@ class AdminViewProperty
         $this->con = DB::getInstance();
     }
 
-    public function getpropertyID () {
+    public function getpropertyID()
+    {
         return $this->propertyID;
     }
 
@@ -40,7 +41,7 @@ class AdminViewProperty
             header("Location: /404", true, 301);
         }
 
-        $getHouse = $this->con->select("id, index_img, img_1, img_2, img_3, img_4, img_5, title, price, description, location, type, owner_id, summary", "properties", "WHERE id = ? AND link = ?", ...[$this->propertyID, $this->propertyName]);
+        $getHouse = $this->con->select("id, index_img, img_1, img_2, img_3, img_4, img_5, title, price, description, location, type, owner_id, summary", "properties", "WHERE id = ? AND link = ? AND owner_id = ?", ...[$this->propertyID, $this->propertyName, $this->ownerID]);
 
         // Check if there is any available apartment
         if ($getHouse->num_rows < 1) {
@@ -48,18 +49,18 @@ class AdminViewProperty
         }
 
         while ($house = $getHouse->fetch_object()) : ?>
-            <img class="h-[200px] rounded-xl lg:h-[400px] w-full" src="../assets/img/<?= $house->index_img ?>" alt="<?= $house->title ?>" />
+            <img class="h-[200px] rounded-xl lg:h-[400px] w-full" src="../assets/img/<?= $house->index_img ?>" alt="" />
 
-            <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 -mt-12 mb-8">
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-full lg:col-span-6" src="../assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
+            <div class="grid gap-4 lg:grid-rows-4 grid-cols-12">
+                <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[calc(1035px/2)] lg:col-span-6" src="../assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="../assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="../assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="../assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="../assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
             </div>
 
             <div class="grid gap-8 items-start lg:grid-cols-12">
@@ -105,7 +106,8 @@ class AdminViewProperty
     /**
      * Deletes a particular property
      */
-    public function deleteProperty () {
+    public function deleteProperty()
+    {
         if (isset($_POST['delete-property'])) {
             $sql = "DELETE FROM properties WHERE id = ? AND link = ? AND owner_id = ?";
             $paramTypes = "sss";
@@ -118,7 +120,6 @@ class AdminViewProperty
             $this->con->prepare($sql, $paramTypes, ...$values);
 
             header("Location: /admin/properties", true, 301);
-
         }
     }
 }
