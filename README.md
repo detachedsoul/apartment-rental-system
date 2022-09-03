@@ -68,4 +68,6 @@ The aim of this work is to ease the process of searching for situatable accomoda
 
 - Made the view individual property details functionality for both the index and admin dashboard.
 
-- Made the delete property functionality
+- Made the delete property functionality.
+
+- Made the edit property functionality (This took a lot of time to figure out as I had to look for a way to keep track of what was being updated and update the tables in the database accordingly).

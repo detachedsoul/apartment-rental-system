@@ -50,15 +50,15 @@ class PropertyDetails
                 </a>
 
                 <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 mt-8 mb-8">
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-full lg:col-span-6" src="./assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[calc(1035px/2)] lg:col-span-6" src="./assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="./assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="./assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="./assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3" src="./assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
                 </div>
 
                 <div class="grid gap-8 lg:grid-cols-12">
