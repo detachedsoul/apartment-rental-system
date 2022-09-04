@@ -26,11 +26,14 @@ class Index
         endif;
 
         while ($house = $houses->fetch_object()) : ?>
-            <article class="lg:col-span-4">
-                <img class="property-listing-image" src="./assets/img/<?= $house->index_img ?>" alt="<?= $house->title ?>" title="<?= $house->title ?>" width="100%" height="200">
+            <article class="lg:col-span-4 space-y-3">
+                <div class="relative">
+                    <img class="property-listing-image" src="./assets/img/<?= $house->index_img ?>" alt="<?= $house->title ?>" title="<?= $house->title ?>" width="100%" height="200">
 
-                <div class="property-listing-summary p-4 bg-slate-200 space-y-3 dark:bg-slate-800">
+                    <i class="fr fi-rr-heart absolute top-2.5 right-4 text-2xl text-white"></i>
+                </div>
 
+                <div class="px-2 space-y-3">
                     <div class="flex items-center flex-wrap gap-x-4 gap-y-1.5 justify-between">
                         <span class=<?= $house->type === 'For Rent' ? "text-green-500 dark:text-green-400" : "text-rose-500 dark:text-rose-400" ?>>
                             <i class="fr <?= $house->type === 'For Rent' ? 'fi-rr-recycle' : 'fi-rr-thumbtack' ?>"></i>

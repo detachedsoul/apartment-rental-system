@@ -6,7 +6,6 @@
     * {
         @apply transition-transform ease-linear duration-500 custom-scrollbar
     }
-
     body {
         @apply scroll-smooth antialiased text-base bg-white text-slate-800 font-mulish
     }
@@ -60,11 +59,7 @@
     }
 
     .property-listing-image {
-        @apply rounded-t-xl h-[200px] w-full
-    }
-
-    .property-listing-summary {
-        @apply rounded-b-xl
+        @apply rounded-xl h-[200px] w-full
     }
 
     .input {

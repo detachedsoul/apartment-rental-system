@@ -71,3 +71,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the delete property functionality.
 
 - Made the edit property functionality (This took a lot of time to figure out as I had to look for a way to keep track of what was being updated and update the tables in the database accordingly).
+
+- Added a WYSIWYG editor to provide text formatting for inputs.

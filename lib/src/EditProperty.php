@@ -278,9 +278,9 @@ class EditProperty
 
             $this->propertyCategory = ucwords(strtolower(trim(strip_tags($_POST['property-category']))));
 
-            $this->propertySummary = ucfirst(strtolower(trim(strip_tags($_POST['property-summary']))));
+            $this->propertySummary = ucfirst(trim($_POST['property-summary']));
 
-            $this->propertyDescription = ucfirst(strtolower(trim(strip_tags($_POST['property-description']))));
+            $this->propertyDescription = ucfirst(trim($_POST['property-description']));
 
             // Get all fields and check if they are empty
             $fields = [
