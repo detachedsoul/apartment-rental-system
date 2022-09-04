@@ -88,9 +88,8 @@ class PropertyDetails
                         </div>
                     </div>
 
-                    <div class="lg:col-span-4 sticky top-0">
-                        <div class="">
-
+                    <div class="lg:col-span-4 max-w-full [display:unset]">
+                        <div class="sticky top-8">
                             <div class="rounded-t-xl bg-emerald-500 text-white p-4">
                                 <h4 class="header text-xl">
                                     Signify Interest
@@ -100,8 +99,7 @@ class PropertyDetails
                                 </p>
                             </div>
 
-                            <form class="bg-white grid gap-4 rounded-b-xl p-4 dark:bg-slate-800" action="" method="POST">
-
+                            <form class="bg-white grid gap-4 rounded-b-xl p-4 dark:bg-slate-800" method="POST">
                                 <label class="flex items-center bg-slate-200 text-slate-900 rounded-lg dark:bg-slate-900 dark:text-slate-400 border-1 border-slate-100" for="name">
                                     <span class="rounded-l-lg pl-4">
                                         <i class="fr fi-rr-user relative top-0.5"></i>
@@ -127,7 +125,7 @@ class PropertyDetails
                                 </label>
 
                                 <label class="bg-slate-200 text-slate-900 rounded-lg border-1 border-slate-100" for="messageContent">
-                                    <textarea class="input block  bg-slate-200 text-slate-900 rounded-lg" name="messageContent" id="messageContent" rows="4" placeholder="Message"></textarea>
+                                    <textarea class="input block rounded-lg" name="messageContent" id="messageContent" rows="4" placeholder="Message Content"></textarea>
                                 </label>
 
                                 <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700" type="submit">

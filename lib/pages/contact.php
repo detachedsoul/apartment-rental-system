@@ -47,7 +47,7 @@ $contactForm = new ContactForm();
             </label>
 
             <label class="bg-white text-slate-900 rounded-lg lg:col-span-12 dark:bg-slate-900 dark:text-slate-400 shadow-sm border-1 border-slate-100">
-                <textarea class="input block border-none outline-none bg-white text-slate-900 rounded-lg" name="messageContent" id="messageContent" required rows="5" placeholder="Message"><?= $contactForm->setMessage() ?></textarea>
+                <textarea class="input rounded-lg" name="messageContent" id="messageContent" rows="5" placeholder="Message Content"><?= $contactForm->setMessage() ?></textarea>
             </label>
 
         </div>
@@ -58,4 +58,9 @@ $contactForm = new ContactForm();
     </form>
 </main>
 
+<script src="assets/editor/ckeditor.js"></script>
+<script src="assets/js/editor.js"></script>
+<script>
+    createEditor('messageContent');
+</script>
 <?php require_once("./includes/Footer.php") ?>

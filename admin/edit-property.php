@@ -28,4 +28,11 @@ $house = new EditProperty();
 <form class="grid gap-8" method="POST" enctype="multipart/form-data">
     <?php $house->showProperty(); ?>
 </form>
+
+<script src="../assets/editor/ckeditor.js"></script>
+<script src="../assets/js/editor.js"></script>
+<script>
+    createEditor('property-description');
+    createEditor('property-summary');
+</script>
 <?php require_once("./includes/Footer.php"); ?>

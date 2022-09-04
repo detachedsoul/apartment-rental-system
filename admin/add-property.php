@@ -164,7 +164,7 @@
                                     Property Summary
                                 </label>
 
-                                <textarea class="input rounded-lg" name="property-summary" id="property-summary" required rows="4" placeholder="Property Summary"><?= $addProperty->setPropertySummary() ?></textarea>
+                                <textarea class="input rounded-lg" name="property-summary" id="property-summary" rows="4" placeholder="Property Summary"><?= $addProperty->setPropertySummary() ?></textarea>
                             </div>
 
                             <div class="lg:col-span-6">
@@ -172,7 +172,7 @@
                                     Property Description
                                 </label>
 
-                                <textarea class="input rounded-lg" name="property-description" id="property-description" required rows="4" placeholder="Property Description"><?= $addProperty->setPropertyDescription() ?></textarea>
+                                <textarea class="input rounded-lg" name="property-description" id="property-description" rows="4" placeholder="Property Description"><?= $addProperty->setPropertyDescription() ?></textarea>
                             </div>
 
                             <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 lg:mx-auto dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700"
@@ -182,4 +182,11 @@
                         </div>
                     </div>
                 </form>
+
+    <script src="../assets/editor/ckeditor.js"></script>
+    <script src="../assets/js/editor.js"></script>
+    <script>
+        createEditor('property-description');
+        createEditor('property-summary');
+    </script>
     <?php require_once("./includes/Footer.php"); ?>

@@ -88,13 +88,13 @@ class AddProperty
     // Sets the property summary field of a form
     public function setPropertySummary(): string
     {
-        return $this->propertySummary = isset($_POST['property-summary']) ? ucfirst(strtolower(trim(strip_tags($_POST['property-summary'])))) : "";
+        return $this->propertySummary = isset($_POST['property-summary']) ? ucfirst(trim($_POST['property-summary'])) : "";
     }
 
     // Sets the property description field of a form
     public function setPropertyDescription(): string
     {
-        return $this->propertyDescription = isset($_POST['property-description']) ? ucfirst(strtolower(trim(strip_tags($_POST['property-description'])))) : "";
+        return $this->propertyDescription = isset($_POST['property-description']) ? ucfirst(trim($_POST['property-description'])) : "";
     }
 
     /**
