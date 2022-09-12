@@ -7,6 +7,14 @@ let deletePropertyBtn = document.querySelector(".delete-property");
 let confirmDeleteCard = document.querySelector(".confirm-delete");
 let cancelDeleteBtn = document.querySelector(".cancel-delete");
 let imageSlector = document.querySelectorAll(".image-selector");
+let searchbarToggle = document.querySelectorAll(".searchbar-toggle");
+let searchInputContainer = document.querySelector(".search-input-container");
+
+searchbarToggle.forEach((searchbar) => {
+	searchbar.addEventListener("click", () => {
+		searchInputContainer.classList.toggle("scale-0");
+	});
+});
 
 const showUploadedImage = (fileInputSelector) => {
 	let reader = new FileReader();

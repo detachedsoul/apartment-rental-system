@@ -38,7 +38,7 @@ class ContactForm
     // Sets the message content field of a form
     public function setMessage(): string
     {
-        return $this->message = isset($_POST['messageContent']) ? $_POST['messageContent'] : "";
+        return $this->message = isset($_POST['messageContent']) ? ucfirst(trim($_POST['messageContent'])) : "";
     }
 
     public function sendContactMail()

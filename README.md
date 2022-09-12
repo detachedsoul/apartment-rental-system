@@ -2,7 +2,7 @@
 
 ## Intro
 
-The aim of this work is to ease the process of searching for situatable accomodation. This work consists of a general hompage where prospective tenants can go through listings of available accomodation. They can also search for accomodation based on the price range, location, and type of accomodation. This README would be updated as I complete different sections of this project.
+The aim of this work is to ease the process of searching for suitable accomodation. This work consists of a general hompage where prospective tenants can go through listings of available accomodation. They can also search for accomodation based on the price range, location, and type of accomodation. This README would be updated as I complete different sections of this project.
 
 ## Stages
 
@@ -73,3 +73,5 @@ The aim of this work is to ease the process of searching for situatable accomoda
 - Made the edit property functionality (This took a lot of time to figure out as I had to look for a way to keep track of what was being updated and update the tables in the database accordingly).
 
 - Added a WYSIWYG editor to provide text formatting for inputs.
+
+- Designed the search input that allows cutomers search for available apartments

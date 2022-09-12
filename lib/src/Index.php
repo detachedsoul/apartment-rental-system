@@ -14,7 +14,7 @@ class Index
     {
         $con = DB::getInstance();
 
-        $houses = $con->select("id, title, index_img, price, summary, location, type, link", "properties", "ORDER BY id DESC LIMIT 6");
+        $houses = $con->select("id, title, index_img, price, summary, location, type, link", "properties", "WHERE status = 'available' ORDER BY id DESC LIMIT 6");
 
         // Check if there is any available apartment
         if ($houses->num_rows < 1) : ?>
@@ -30,7 +30,7 @@ class Index
                 <div class="relative">
                     <img class="property-listing-image" src="./assets/img/<?= $house->index_img ?>" alt="<?= $house->title ?>" title="<?= $house->title ?>" width="100%" height="200">
 
-                    <i class="fr fi-rr-heart absolute top-2.5 right-4 text-2xl text-white"></i>
+                    <i class="fr fi-rr-heart absolute top-2.5 right-4 text-2xl text-rose-500 dark:text-white"></i>
                 </div>
 
                 <div class="px-2 space-y-3">
