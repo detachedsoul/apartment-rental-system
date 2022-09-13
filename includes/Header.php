@@ -78,7 +78,7 @@
             </button>
         </div>
 
-        <form class="min-h-screen left-0 right-0 top-0 lg:top-16 overscroll-contain fixed bottom-0 overflow-y-auto z-50 bg-white dark:bg-slate-800 scale-0 px-4 pt-20 lg:pt-12 transition duration-700 search-input-container ease-in" method="GET">
+        <form class="min-h-screen left-0 right-0 top-0 lg:top-16 overscroll-contain fixed bottom-0 overflow-y-auto z-50 bg-white dark:bg-slate-800 scale-0 px-4 pt-20 pb-8 lg:pt-12 transition-transform duration-700 search-input-container ease-in" method="GET" action="/search">
             <button class="border border-gray-200 inline-block rounded-lg px-2 py-1.5 absolute right-4 top-4 hover:bg-gray-200 hover:text-slate-800 lg:hidden searchbar-toggle" type="button" aria-label="Mobile search form togle button">
                 <i class="fr fi-rr-cross"></i>
             </button>
@@ -87,15 +87,11 @@
                 <div class="grid gap-4 lg:grid-cols-12 min-h-full">
                     <label class="space-y-1.5 lg:col-span-12" for="search-input">
                         <span class="block w-full">
-                            Search For Property
+                            Property Name
                         </span>
 
-                        <input class="input bg-slate-300 rounded-lg" type="search" name="search-input" id="search-input" placeholder="Search for properties">
+                        <input class="input bg-slate-300 rounded-lg" type="search" name="search-input" id="search-input" placeholder="Property name">
                     </label>
-
-                    <p class="my-4 lg:col-span-12 text-center bg-orange-600 text-white rounded-lg p-2">
-                        You can narrow down your search conditions using any of the conditions below
-                    </p>
 
                     <div class="grid gap-2 lg:gap-4 items-center lg:grid-cols-12 lg:col-span-12" for="date-added">
                         <label class="lg:col-span-5 space-y-1.5" for="min-price">

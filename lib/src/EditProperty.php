@@ -259,7 +259,6 @@ class EditProperty
         if (isset($_POST['edit-property'])) {
             $uploadFolder = "../assets/img/";
             $selectedImages = [];
-            $updatedImages = [];
             $renamedImages = [];
             $allowedExtensions = [
                 "png",

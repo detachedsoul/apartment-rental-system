@@ -16,6 +16,8 @@ module.exports = {
 					"linear-gradient(90deg, rgba(255, 186, 104, 0.05) 0%, rgba(13, 26, 38, 0.05) 117.12%)",
 				"light-details-banner":
 					"linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/details-banner.jpg)",
+				"search-result":
+					"linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/search-result.jpg)",
 			},
 		},
 	},
