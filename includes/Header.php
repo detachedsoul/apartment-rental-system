@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="./assets/icons/uicons-brands/css/uicons-brands.min.css">
     <link rel="stylesheet" href="./assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css">
 </head>
+
 <body>
 
     <header>
@@ -67,7 +69,7 @@
                 <i class="fr fi-rr-moon"></i>
             </button>
 
-            <button class="text-xl" type="button" aria-label="Mobile search form togle button">
+            <button class="text-xl searchbar-toggle" type="button" aria-label="Mobile search form togle button">
                 <i class="fr fi-rr-search"></i>
             </button>
 
@@ -75,4 +77,78 @@
                 <i class="fr fi-rr-apps"></i>
             </button>
         </div>
+
+        <form class="min-h-screen left-0 right-0 top-0 lg:top-16 overscroll-contain fixed bottom-0 overflow-y-auto z-50 bg-white dark:bg-slate-800 scale-0 px-4 pt-20 lg:pt-12 transition duration-700 search-input-container ease-in" method="GET">
+            <button class="border border-gray-200 inline-block rounded-lg px-2 py-1.5 absolute right-4 top-4 hover:bg-gray-200 hover:text-slate-800 lg:hidden searchbar-toggle" type="button" aria-label="Mobile search form togle button">
+                <i class="fr fi-rr-cross"></i>
+            </button>
+
+            <div class="grid place-content-center">
+                <div class="grid gap-4 lg:grid-cols-12 min-h-full">
+                    <label class="space-y-1.5 lg:col-span-12" for="search-input">
+                        <span class="block w-full">
+                            Search For Property
+                        </span>
+
+                        <input class="input bg-slate-300 rounded-lg" type="search" name="search-input" id="search-input" placeholder="Search for properties">
+                    </label>
+
+                    <p class="my-4 lg:col-span-12 text-center bg-orange-600 text-white rounded-lg p-2">
+                        You can narrow down your search conditions using any of the conditions below
+                    </p>
+
+                    <div class="grid gap-2 lg:gap-4 items-center lg:grid-cols-12 lg:col-span-12" for="date-added">
+                        <label class="lg:col-span-5 space-y-1.5" for="min-price">
+                            <span class="block w-full">
+                                Minimum Price
+                            </span>
+
+                            <input class="input bg-slate-300 rounded-lg" type="number" name="min-price" id="min-price" placeholder="Minimum price" min="0">
+                        </label>
+
+                        <span class="lg:col-span-2 text-center lg:mt-6">
+                            to
+                        </span>
+
+                        <label class="lg:col-span-5 space-y-1.5" for="max-price">
+                            <span class="block w-full">
+                                Maximum Price
+                            </span>
+
+                            <input class="input bg-slate-300 rounded-lg" type="number" name="max-price" id="max-price" placeholder="Maximum price" min="1">
+                        </label>
+                    </div>
+
+                    <label class="lg:col-span-6 space-y-1.5" for="property-type">
+                        <span>
+                            Property Type
+                        </span>
+
+                        <select class="form-select rounded-lg bg-slate-300 dark:bg-slate-900 border-none focus:ring-transparent w-full" name="property-type" id="property-type">
+                            <option class="bg-white dark:bg-transparent" value="For Rent">For Rent</option>
+                            <option class="bg-white dark:bg-transparent" value="For Sale">For Sale</option>
+                        </select>
+                    </label>
+
+                    <label class="space-y-1.5 lg:col-span-6" for="property-location">
+                        <span class="block w-full">
+                            Property Location
+                        </span>
+
+                        <input class="input bg-slate-300 rounded-lg" type="text" name="property-location" id="property-location" placeholder="Property Location">
+                    </label>
+
+                    <label class="lg:col-span-12 flex gap-2 items-center cursor-pointer" for="strict-search">
+                        <input class="form-radio cursor-pointer" type="radio" name="strict-search" id="strict-search">
+                        <span>
+                            Enable strict search
+                        </span>
+                    </label>
+
+                    <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800 lg:col-span-12 lg:mx-auto mb-20" type="submit">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </form>
     </header>

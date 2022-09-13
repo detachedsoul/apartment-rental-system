@@ -217,10 +217,10 @@ class EditProperty
                         <select class="form-select input rounded-lg border-none focus:ring-transparent w-full" name="property-category" id="property-category">
                             <?php if ($house->type === "For Rent") : ?>
                                 <option class="bg-white dark:bg-transparent" value="<?= $house->type ?>"><?= $house->type ?></option>
-                                <option class="bg-white dark:bg-transparent" value="For rent">For Sale</option>
+                                <option class="bg-white dark:bg-transparent" value="For Sale">For Sale</option>
                             <?php else : ?>
                                 <option class="bg-white dark:bg-transparent" value="<?= $house->type ?>"><?= $house->type ?></option>
-                                <option class="bg-white dark:bg-transparent" value="For rent">For Rent</option>
+                                <option class="bg-white dark:bg-transparent" value="For Rent">For Rent</option>
                             <?php endif; ?>
                         </select>
                     </div>
@@ -241,7 +241,7 @@ class EditProperty
                         <textarea class="input rounded-lg" name="property-description" id="property-description" rows="4" placeholder="Property Description"><?= $house->description ?></textarea>
                     </div>
 
-                    <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 lg:mx-auto dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700" type="submit" name="edit-property">
+                    <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg lg:col-span-12 lg:mx-auto dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" type="submit" name="edit-property">
                         Edit Property
                     </button>
                 </div>
@@ -356,19 +356,13 @@ class EditProperty
 
             foreach ($selectedImages as $images) {
                 foreach ($imagesTempNames as $key => $tempName) {
-                    if (!is_empty($tempName)) {
-                        $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $key . '.jpg';
+                    $imageName = $propertyName . '-' . str_replace(' ', '-', strtolower(str_replace(" ", "-", $_SESSION['user']))) . '-' . $_SESSION['id'] . '-' . strtolower(str_replace(" ", "-", date('l F Y'))) . '-' . $key . '.jpg';
 
-                        $imageFullPath = $uploadFolder . $imageName;
+                    $imageFullPath = $uploadFolder . $imageName;
 
-                        if (!move_uploaded_file($tempName, $imageFullPath)) {
-                            displayMessage("There was an error uploading this image. Please try again later.", "text-rose-500");
-
-                            return;
-                        }
-                    }
-
+                    move_uploaded_file($tempName, $imageFullPath);
                 }
+
             }
 
             foreach ($imagesTempNames as $key => $tempName) {

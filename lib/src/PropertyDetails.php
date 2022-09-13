@@ -89,7 +89,7 @@ class PropertyDetails
                     </div>
 
                     <div class="lg:col-span-4 max-w-full [display:unset]">
-                        <div class="sticky top-8">
+                        <div class="sticky top-20">
                             <div class="rounded-t-xl bg-emerald-500 text-white p-4">
                                 <h4 class="header text-xl">
                                     Signify Interest
@@ -128,7 +128,7 @@ class PropertyDetails
                                     <textarea class="input block rounded-lg" name="messageContent" id="messageContent" rows="4" placeholder="Message Content"></textarea>
                                 </label>
 
-                                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700" type="submit">
+                                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" type="submit">
                                     Submit Request
                                 </button>
                             </form>
