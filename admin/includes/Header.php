@@ -52,7 +52,7 @@ if (!isset($_SESSION['user'])) {
                 <img class="w-20 lg:w-24 logo" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
             </a>
 
-            <nav class="scale-0 lg:scale-100 lg:w-full overflow-y-auto lg:sticky lg:top-0 lg:bottom-full lg:min-h-screen lg:space-y-2 lg:pt-2.5 z-50">
+            <nav class="scale-0 lg:scale-100 lg:w-full lg:sticky lg:top-0 lg:bottom-full lg:min-h-screen lg:space-y-2 lg:pt-2.5 z-50">
                 <a class="hidden not-sr-only lg:block" href="/admin" aria-label="HousingQuest logo">
                     <img class="w-20 lg:w-24 logo lg:ml-4 lg:mb-3.5 hidden not-sr-only lg:block" src="./assets/img/logo.png" alt="HousingQuest" width="100" height="100">
                 </a>
