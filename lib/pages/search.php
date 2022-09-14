@@ -6,7 +6,7 @@ use app\src\SearchProperty;
 
 $search = new SearchProperty();
 ?>
-    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center dark:bg-search-result bg-light-details-banner px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
+    <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center dark:bg-search-result bg-light-search-result px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
         <h1 class="header text-3xl">
             Search Results
         </h1>

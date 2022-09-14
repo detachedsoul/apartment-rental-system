@@ -9,12 +9,40 @@ class PropertyDetails
     private $propertyID;
     private $propertyName;
     private $con;
+    private $name;
+    private $subject;
+    private $email;
+    private $message;
 
     public function __construct()
     {
         $this->propertyID = $_GET['propertyID'];
         $this->propertyName = $_GET['propertyName'];
         $this->con = DB::getInstance();
+    }
+
+    // Sets the name field of the form
+    public function setName(): string
+    {
+        return $this->name = isset($_POST['name']) ? ucwords(trim(strip_tags($_POST['name']))) : "";
+    }
+
+    // Sets the email field of a form
+    public function setEmail(): string
+    {
+        return $this->email = isset($_POST['email']) ? strtolower(trim(strip_tags($_POST['email']))) : "";
+    }
+
+    // Sets the subject field of a form
+    public function setSubject(): string
+    {
+        return $this->subject = isset($_POST['subject']) ? ucwords(strtolower(trim(strip_tags($_POST['subject'])))) : "";
+    }
+
+    // Sets the message content field of a form
+    public function setMessage(): string
+    {
+        return $this->message = isset($_POST['messageContent']) ? ucfirst(trim($_POST['messageContent'])) : "";
     }
 
 
@@ -94,9 +122,7 @@ class PropertyDetails
                                 <h4 class="header text-xl">
                                     Signify Interest
                                 </h4>
-                                <p>
-                                    Fill out the form below and the owner of the apartment would reach out to you.
-                                </p>
+                                <?php $this->sendRequest() ?>
                             </div>
 
                             <form class="bg-white grid gap-4 rounded-b-xl p-4 dark:bg-slate-800" method="POST">
@@ -105,7 +131,7 @@ class PropertyDetails
                                         <i class="fr fi-rr-user relative top-0.5"></i>
                                     </span>
 
-                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="text" placeholder="Name" name="name" id="name" required autocomplete="off" />
+                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="text" placeholder="Name" name="name" id="name" required autocomplete="off" value="<?= $this->setName() ?>" />
                                 </label>
 
                                 <label class="flex items-center bg-slate-200 text-slate-900 rounded-lg dark:bg-slate-900 dark:text-slate-400 border-1 border-slate-100" for="email">
@@ -113,7 +139,7 @@ class PropertyDetails
                                         <i class="fr fi-rr-envelope relative top-0.5"></i>
                                     </span>
 
-                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="email" placeholder="Email" name="email" id="email" required autocomplete="off" />
+                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="email" placeholder="Email" name="email" id="email" required autocomplete="off" value="<?= $this->setEmail() ?>" />
                                 </label>
 
                                 <label class="flex items-center bg-slate-200 text-slate-900 rounded-lg dark:bg-slate-900 dark:text-slate-400 border-1 border-slate-100" for="subject">
@@ -121,14 +147,14 @@ class PropertyDetails
                                         <i class="fr fi-rr-edit relative top-0.5"></i>
                                     </span>
 
-                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="subject" placeholder="Subject" name="subject" id="subject" required autocomplete="off" />
+                                    <input class="rounded-r-lg input pl-2 bg-slate-200" type="subject" placeholder="Subject" name="subject" id="subject" required autocomplete="off" value="<?= $this->setSubject() ?>" />
                                 </label>
 
                                 <label class="bg-slate-200 text-slate-900 rounded-lg border-1 border-slate-100" for="messageContent">
-                                    <textarea class="input block rounded-lg" name="messageContent" id="messageContent" rows="4" placeholder="Message Content"></textarea>
+                                    <textarea class="input block rounded-lg" name="messageContent" id="messageContent" rows="4" placeholder="Message Content"><?= $this->setMessage() ?></textarea>
                                 </label>
 
-                                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" type="submit">
+                                <button class="bg-sky-500 hover:bg-sky-600 focus:bg-sky-600 py-2 w-auto px-4 text-white rounded-lg dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:bg-sky-700 hover:ring-1 hover:ring-sky-500 ring-offset-2 active:ring-1 active:ring-sky-500 dark:ring-offset-slate-800" type="submit" name="submit-request">
                                     Submit Request
                                 </button>
                             </form>
@@ -138,5 +164,79 @@ class PropertyDetails
             </main>
 <?php
         endwhile;
+    }
+
+    public function sendRequest () {
+        $sql = "SELECT email FROM landlords l JOIN properties p WHERE p.id = ? AND p.link = ? AND p.owner_id = l.id";
+
+        $ownerDetails = $this->con->prepare($sql, "ss", ...[$this->propertyID, $this->propertyName])->fetch_object()->email;
+
+        $this->sendRequestMessage($ownerDetails);
+    }
+
+    public function sendRequestMessage(string $recepientEmail)
+    {
+        if (isset($_POST['submit-request'])) {
+
+            // Check if a name was entered and displays the appropriate feedback
+            if (is_empty($this->setName())) {
+                displayMessage("<span class='font-bold'>Name</span> field is required.", "text-rose-500");
+
+                return;
+            }
+
+            // Check if a email was entered and displays the appropriate feedback
+            if (is_empty($this->setEmail())) {
+                displayMessage("<span class='font-bold'>Email</span> field is required.", "text-rose-500");
+
+                return;
+            } else {
+                // Checks if the entered email is a valid one and displays the appropriate feedback
+                if (!filter_var($this->setEmail(), FILTER_VALIDATE_EMAIL)) {
+                    displayMessage("Invalid email format. Please use a valid email.", "text-rose-500");
+
+                    return;
+                }
+            }
+
+            // Check if a subject was entered and displays the appropriate feedback
+            if (is_empty($this->setSubject())) {
+                displayMessage("<span class='font-bold'>Subject</span> field is required.", "text-rose-500");
+
+                return;
+            }
+
+            // Check if a message content was entered and displays the appropriate feedback
+            if (is_empty($this->setMessage())) {
+                displayMessage("Please type in your message content.", "text-rose-500");
+
+                return;
+            }
+
+            // Send a welcome mail to the newly registered user
+            $subject = $this->setSubject();
+            $messageBody = wordwrap($this->setMessage(), 70);
+            $message = "
+                <html>
+                <head>
+                    <title>{$this->setSubject()}</title>
+                </head>
+                <body>
+                    {$messageBody}
+                </body>
+                </html>
+            ";
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+            $headers .= "From: {$this->setName()} {$this->setEmail()}";
+
+            if (mail($recepientEmail, $subject, $message, $headers)) {
+                displayMessage("Your message has been sent successfully. You would be contacted by the property owner as soon as possible. Thanks for using HousingQuest!");
+            } else {
+                displayMessage("Your message was not sent successfully. Please try again.");
+            }
+        } else {
+            displayMessage("Fill out the form below and the owner of the apartment would reach out to you.", "h3");
+        }
     }
 }

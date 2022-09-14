@@ -18,6 +18,8 @@ module.exports = {
 					"linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/details-banner.jpg)",
 				"search-result":
 					"linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/search-result.jpg)",
+				"light-search-result":
+					"linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/search-result.jpg)",
 			},
 		},
 	},

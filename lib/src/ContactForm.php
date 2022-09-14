@@ -90,9 +90,7 @@ class ContactForm
                     <title>{$this->setSubject()}</title>
                 </head>
                 <body>
-                    <p>
-                        {$messageBody}
-                    </p>
+                    {$messageBody}
                 </body>
                 </html>
             ";
