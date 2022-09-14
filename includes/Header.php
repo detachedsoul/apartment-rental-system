@@ -78,7 +78,7 @@
             </button>
         </div>
 
-        <form class="min-h-screen left-0 right-0 top-0 lg:top-16 overscroll-contain fixed bottom-0 overflow-y-auto z-50 bg-white dark:bg-slate-800 scale-0 px-4 pt-20 pb-8 lg:pt-12 transition-transform duration-700 search-input-container ease-in" method="GET" action="/search">
+        <form class="min-h-screen left-0 right-0 top-0 lg:top-16 overscroll-contain fixed bottom-0 overflow-y-auto z-50 bg-white dark:bg-slate-800 scale-0 px-4 pt-20 pb-8 lg:pt-12 transition-transform duration-700 search-input-container ease-in" method="POST" action="/search">
             <button class="border border-gray-200 inline-block rounded-lg px-2 py-1.5 absolute right-4 top-4 hover:bg-gray-200 hover:text-slate-800 lg:hidden searchbar-toggle" type="button" aria-label="Mobile search form togle button">
                 <i class="fr fi-rr-cross"></i>
             </button>

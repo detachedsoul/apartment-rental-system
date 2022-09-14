@@ -76,7 +76,7 @@ if (!isset($_SESSION['user'])) {
                             Properties
                         </a>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/payment-history">
                             <i class="fr fi-rr-document-signed pr-1.5"></i>
                             Payment History
@@ -88,7 +88,7 @@ if (!isset($_SESSION['user'])) {
                             Tenants
                         </a>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/messages">
                             <i class="fr fi-rr-envelope pr-1.5"></i>
                             Messages
@@ -140,7 +140,7 @@ if (!isset($_SESSION['user'])) {
                         <i class="fr fi-rr-moon"></i>
                     </button>
 
-                    <a class="hidden text-xl relative before:content-['1'] before:absolute before:text-xs before:bg-rose-600 before:text-white before:rounded-full before:py-[0.1rem] before:px-1.5 before:z-50 before:-top-[30%] before:-right-[50%] lg:block" href="/admin/messages" aria-label="Messages" title="View messages">
+                    <a class="hidden text-xl relative before:content-['1'] before:absolute before:text-xs before:bg-rose-600 before:text-white before:rounded-full before:py-[0.1rem] before:px-1.5 before:z-50 before:-top-[30%] before:-right-[50%]" href="/admin/messages" aria-label="Messages" title="View messages">
                         <i class="fr fi-rr-envelope"></i>
                     </a>
 

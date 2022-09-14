@@ -16,7 +16,7 @@
             </div>
 
             <div class="space-y-8">
-                <form class="border border-slate-200 dark:border-slate-700 grid divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-slate-700 lg:grid-cols-5 items-center bg-white dark:bg-transparent" action="" method="POST">
+                <form class="border border-slate-200 dark:border-slate-700 grid divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-slate-700 lg:grid-cols-5 items-center bg-white dark:bg-transparent hidden" action="" method="POST">
                     <p class="px-4 hover:bg-slate-100 inline-block py-2 dark:hover:bg-slate-900">
                         <i class="fr fi-rr-filter relative top-0.5 pr-2"></i>
                         Filter By

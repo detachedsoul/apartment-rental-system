@@ -16,20 +16,24 @@ class SearchProperty {
     public function __construct() {
         $this->con = DB::getInstance();
 
-        $this->searchInput = (isset($_GET['search-input'])) ? strtolower(strip_tags(trim($_GET['search-input']))) : "";
+        $this->searchInput = (isset($_POST['search-input'])) ? strtolower(strip_tags(trim($_POST['search-input']))) : "";
 
-        $this->minPrice = (isset($_GET['min-price'])) ? strtolower(strip_tags(trim($_GET['min-price']))) : "";
+        $this->minPrice = (isset($_POST['min-price'])) ? strtolower(strip_tags(trim($_POST['min-price']))) : "";
 
-        $this->maxPrice = (isset($_GET['max-price'])) ? strtolower(strip_tags(trim($_GET['max-price']))) : "";
+        $this->maxPrice = (isset($_POST['max-price'])) ? strtolower(strip_tags(trim($_POST['max-price']))) : "";
 
-        $this->propertyType = (isset($_GET['property-type'])) ? strtolower(strip_tags(trim($_GET['property-type']))) : "";
+        $this->propertyType = (isset($_POST['property-type'])) ? strtolower(strip_tags(trim($_POST['property-type']))) : "";
 
-        $this->propertyLocation = (isset($_GET['property-location'])) ? strtolower(strip_tags(trim($_GET['property-location']))) : "";
+        $this->propertyLocation = (isset($_POST['property-location'])) ? strtolower(strip_tags(trim($_POST['property-location']))) : "";
 
-        $this->strictSearch = (isset($_GET['strict-search'])) ? strtolower(strip_tags(trim($_GET['strict-search']))) : "";
+        $this->strictSearch = (isset($_POST['strict-search'])) ? strtolower(strip_tags(trim($_POST['strict-search']))) : "";
     }
 
     public function searchProperty () {
+        if (is_empty($this->searchInput) && is_empty($this->minPrice) && is_empty($this->maxPrice) && is_empty($this->propertyType) && is_empty($this->propertyLocation) && is_empty($this->strictSearch)) {
+            header("Location: /", true, 301);
+        }
+
         $params = [];
         $conditions = "WHERE status = 'available' AND";
 
