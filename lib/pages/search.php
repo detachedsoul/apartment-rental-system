@@ -1,4 +1,4 @@
-
+<?php $pageTitle = "Search Results"; ?>
 <?php require_once("./includes/Header.php"); ?>
 <?php
 

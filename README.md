@@ -79,3 +79,5 @@ The aim of this work is to ease the process of searching for suitable accomodati
 - Implemented the search for property feature. Users have the option to either enable strict search which would make sure the search results match exactly with what they're expecting or they can disable strict search which would make sure that the search results contain the search term. There are also certain fields such as property type, location of the property, and price range that can be used to narrow down the search results.
 
 - Implemented the contact property owner feature for individual apartments (the form to signify interest for an apartment)
+
+ - Created the view all properties page where all available properties are listed.
