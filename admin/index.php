@@ -2,8 +2,10 @@
 <?php
 
 use app\src\AdminIndex;
+use app\src\ViewTransactionHistory;
 
 $adminIndex = new AdminIndex();
+$adminIndexHistory = new ViewTransactionHistory();
 ?>
 
 <div class="rounded-xl p-4 lg:p-8 lg:gap-8 space-y-4 bg-white dark:bg-slate-900 dark:text-slate-100">
@@ -68,59 +70,7 @@ $adminIndex = new AdminIndex();
         </div>
 
         <div class="overflow-x-auto">
-            <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
-                <thead class="text-left border border-slate-600">
-                    <tr class="text-sm">
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Tenant Name
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Property
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Status
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            Blessing Adindu
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Rivers State University
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-green-500">
-                            Successful
-                        </td>
-                    </tr>
-
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            Goodness Clark
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Yellowwolf Park
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-amber-500">
-                            Pending
-                        </td>
-                    </tr>
-
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            Philip Jerry Chimezie
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Loner's Crib
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-rose-500">
-                            Failed
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <?= $adminIndexHistory->showIndexTenants() ?>
         </div>
     </div>
 
@@ -136,83 +86,7 @@ $adminIndex = new AdminIndex();
         </div>
 
         <div class="overflow-x-auto">
-            <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
-                <thead class="text-left border border-slate-600">
-                    <tr class="text-sm">
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Property ID
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Tenant Name
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Payment Date
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Amount
-                        </th>
-                        <th class="py-4 px-4 border border-slate-600 header">
-                            Status
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            1
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Emmanuel Ikpokini
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            June 21, 2022
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            ₦1000
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-green-500">
-                            Successful
-                        </td>
-                    </tr>
-
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            5
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Precious Ichenwo
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            June 10, 2022
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            ₦1000
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-amber-500">
-                            Pending
-                        </td>
-                    </tr>
-
-                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
-                        <td class="py-2 px-4 border border-slate-600">
-                            12
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            Princewill Jaja
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            July 31, 2022
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600">
-                            ₦1000
-                        </td>
-                        <td class="py-2 px-4 border border-slate-600 text-rose-500">
-                            Failed
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <?= $adminIndexHistory->showIndexTransactions() ?>
         </div>
     </div>
 </div>

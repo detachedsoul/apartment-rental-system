@@ -20,7 +20,7 @@ class ViewTenants
      */
     public function showTenants()
     {
-        $tenants = $this->con->select("tenant_name, agreement_date, property_bought, property_id", "tenants", "WHERE landlord = ?", $this->ownerID);
+        $tenants = $this->con->select("tenant_name, agreement_date, property_bought, property_id", "tenants", "WHERE landlord = ? ORDER BY id DESC", $this->ownerID);
 
         if ($tenants->num_rows < 1) : ?>
             <p class="font-bold">

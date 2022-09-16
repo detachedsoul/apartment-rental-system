@@ -72,7 +72,8 @@ class AddTenant
             $addTransactionHistory = $this->con->insert("transaction", ["buyer_name", "payment_date", "amount", "property_id", "tenant_id"], ...[$this->tenantName, $this->agreementDate, $this->amountPaid, $getSpecificID, $tenantID]);
 
             $this->con->update("properties", "status = 'taken'", "WHERE id = ?", ...[$getSpecificID]);
-            displayMessage("Tenant added successfully.", "text-green-500");
+            
+            displayMessage("Tenant added successfully.", "text-green-500 header text-xl text-center mb-4 lg:col-span-12");
 
             header("Refresh: 3, /admin/tenants", true, 301);
 

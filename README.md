@@ -83,3 +83,5 @@ The aim of this work is to ease the process of searching for suitable accomodati
 - Created the view all properties page where all available properties are listed.
 
 - Implemented the add new tenant feature. After adding a new tenant it uses the data from the `add tenant` form to populate the transaction table accordingly. It finally sets the status of the property that has just been purchased/rented to `taken`.
+
+- Added a feature to show the a summary of new tenants/transactions in the admin homepage. 
