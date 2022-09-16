@@ -60,7 +60,7 @@ class AdminIndex
         </p>
 
         <p>
-            Tenants
+            Tenant<?= ($tenants > 1) ? "s" : "" ?>
         </p>
 <?php
     }

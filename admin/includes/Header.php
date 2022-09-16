@@ -76,7 +76,7 @@ if (!isset($_SESSION['user'])) {
                             Properties
                         </a>
                     </li>
-                    <li class="hidden">
+                    <li>
                         <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/payment-history">
                             <i class="fr fi-rr-document-signed pr-1.5"></i>
                             Payment History
@@ -102,7 +102,7 @@ if (!isset($_SESSION['user'])) {
                     </li>
                     <li>
                         <a class="py-3 px-4 w-full hover:bg-admin-nav hover:border-l-4 hover:border-slate-900 hover:dark:border-slate-700 hover:font-bold ?> block border-l-4 border-transparent" href="/admin/logout">
-                            <i class="fr fi-rr-sign-out pr-1.5"></i>
+                            <i class="fr fi-rr-exit pr-1.5"></i>
                             Logout
                         </a>
                     </li>
