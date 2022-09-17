@@ -27,8 +27,8 @@ $house = new AdminViewProperty();
 </div>
 
 <?php
-    $house->deleteProperty();
-    $house->showProperty();
+$house->deleteProperty();
+$house->showProperty();
 ?>
 
 <dialog class="grid place-content-center text-center fixed backdrop:bg-transparent top-[5%] lg:top-[15%] right-2 left-2 lg:right-[calc(85%/2)] lg:left-[calc(85%/2)] z-50 lg:w-[40%] mb-12 scale-0 confirm-delete bg-transparent">

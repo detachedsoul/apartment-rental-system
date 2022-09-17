@@ -26,7 +26,7 @@ class Index
         endif;
 
         while ($house = $houses->fetch_object()) : ?>
-            <article class="lg:col-span-4 space-y-3">
+            <article class="lg:col-span-4 space-y-3 sm:col-span-6">
                 <div class="relative">
                     <img class="property-listing-image" src="./assets/img/<?= $house->index_img ?>" alt="<?= $house->title ?>" title="<?= $house->title ?>" width="100%" height="200">
 

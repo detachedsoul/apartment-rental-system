@@ -13,7 +13,7 @@
     <link rel="preload" href="./assets/fonts/fonts.min.css" as="style">
     <link rel="preload" href="./assets/icons/uicons-brands/css/uicons-brands.min.css" as="style">
     <link rel="preload" href="./assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css" as="style">
-    <link rel="preload" href="./assets/js/main.js" as="script">
+    <link rel="preload" href="./assets/js/main.min.js" as="script">
 
     <!-- Important stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -121,6 +121,7 @@
                         </span>
 
                         <select class="form-select rounded-lg bg-slate-300 dark:bg-slate-900 border-none focus:ring-transparent w-full" name="property-type" id="property-type">
+                            <option class="bg-white dark:bg-transparent" value="Property Type">Property Type</option>
                             <option class="bg-white dark:bg-transparent" value="For Rent">For Rent</option>
                             <option class="bg-white dark:bg-transparent" value="For Sale">For Sale</option>
                         </select>

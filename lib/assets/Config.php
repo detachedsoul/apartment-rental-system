@@ -4,7 +4,8 @@ namespace app\assets;
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-class Config {
+class Config
+{
 
     /**
      * Application's essential credentials
@@ -30,7 +31,8 @@ class Config {
      *
      * @return string $config
      */
-    public static function get(string $param) {
+    public static function get(string $param)
+    {
         $paths      =   explode('/', $param);
         $config     =   static::$config;
 

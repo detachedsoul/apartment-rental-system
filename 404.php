@@ -58,7 +58,7 @@ if ($params[1] !== "admin") {
 
     </div>
 
-    <script src="<?= $jsResourcePath ?>/main.js" defer="true"></script>
+    <script src="<?= $jsResourcePath ?>/main.min.js" defer="true"></script>
 </body>
 
 </html>

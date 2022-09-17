@@ -142,7 +142,6 @@ class UserProfile
             displayMessage("Profile updated successfully.", "text-emerald-500");
 
             header("Refresh: 3, ../admin/settings", true, 301);
-
         } else {
             displayMessage("View and edit your profile information");
         }

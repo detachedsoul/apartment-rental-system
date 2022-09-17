@@ -1,4 +1,5 @@
 <?php
+
 namespace app\src;
 
 use app\assets\DB;
@@ -83,8 +84,7 @@ class Login
                     return;
                 }
             }
-        }
-        else {
+        } else {
             displayMessage("You need to sign in to access your dashboard");
         }
     }

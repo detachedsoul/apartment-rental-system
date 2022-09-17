@@ -1,6 +1,5 @@
-
 <?php
-    $pageTitle = ucwords(str_replace('-', ' ', $_GET['propertyName']));
+$pageTitle = ucwords(str_replace('-', ' ', $_GET['propertyName']));
 ?>
 <?php require_once("./includes/Header.php"); ?>
 <?php

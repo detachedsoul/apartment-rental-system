@@ -34,7 +34,7 @@ if (!isset($_SESSION['user'])) {
     <link rel="preload" href="../assets/fonts/fonts.min.css" as="style">
     <link rel="preload" href="../assets/icons/uicons-brands/css/uicons-brands.min.css" as="style">
     <link rel="preload" href="../assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css" as="style">
-    <link rel="preload" href="../assets/js/main.js" as="script">
+    <link rel="preload" href="../assets/js/main..min.js" as="script">
     <link rel="preload" href="../assets/js/chart.min.js" as="script">
 
     <!-- Important stylesheets -->
@@ -110,7 +110,7 @@ if (!isset($_SESSION['user'])) {
             </nav>
 
             <div class="flex items-center gap-4 lg:hidden">
-                <a class="text-xl relative before:content-['1'] before:absolute before:text-xs before:bg-rose-600 before:text-white before:rounded-full before:py-[0.1rem] before:px-1.5 before:z-50 before:-top-[30%] before:-right-[50%]" href="/admin/messages" aria-label="Messages" title="View messages">
+                <a class="text-xl relative before:content-['1'] before:absolute before:text-xs before:bg-rose-600 before:text-white before:rounded-full before:py-[0.1rem] before:px-1.5 before:z-50 before:-top-[30%] before:-right-[50%] hidden" href="/admin/messages" aria-label="Messages" title="View messages">
                     <i class="fr fi-rr-envelope"></i>
                 </a>
 

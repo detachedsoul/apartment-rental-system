@@ -49,22 +49,22 @@ class AdminViewProperty
         }
 
         while ($house = $getHouse->fetch_object()) : ?>
-            <img class="h-[200px] rounded-xl lg:h-[400px] w-full" src="../assets/img/<?= $house->index_img ?>" alt="" />
+            <img class="h-[200px] rounded-xl sm:h-[400px] w-full" src="../assets/img/<?= $house->index_img ?>" alt="" />
 
-            <div class="grid gap-4 lg:grid-rows-4 grid-cols-12">
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[calc(1035px/2)] lg:col-span-6" src="../assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
+            <div class="grid gap-4 sm:grid-rows-4 grid-cols-12">
+                <img class="h-[200px] col-span-12 rounded-xl sm:row-start-1 sm:row-end-5 sm:h-[calc(1035px/2)] sm:col-span-6" src="../assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="../assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="../assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="../assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
 
-                <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="../assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
+                <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="../assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
             </div>
 
-            <div class="grid gap-8 items-start lg:grid-cols-12">
-                <div class="bg-white space-y-1.5 rounded-xl p-4 dark:bg-slate-900 dark:text-slate-300 lg:col-span-5">
+            <div class="grid gap-8 items-start sm:grid-cols-12">
+                <div class="bg-white space-y-1.5 rounded-xl p-4 dark:bg-slate-900 dark:text-slate-300 sm:col-span-5">
                     <span class=<?= $house->type === 'For Rent' ? "text-green-500 dark:text-green-400" : "text-rose-500 dark:text-rose-400" ?>>
                         <i class="fr <?= $house->type === 'For Rent' ? 'fi-rr-recycle' : 'fi-rr-thumbtack' ?>"></i>
                         <?= $house->type ?>
@@ -81,7 +81,7 @@ class AdminViewProperty
                     </span>
                 </div>
 
-                <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300 lg:col-span-7">
+                <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300 sm:col-span-7">
                     <h3 class="header text-2xl">
                         Summary
                     </h3>
@@ -90,7 +90,7 @@ class AdminViewProperty
                     </p>
                 </div>
 
-                <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300 lg:col-span-12">
+                <div class="bg-white rounded-xl p-4 space-y-2 dark:bg-slate-900 dark:text-slate-300 sm:col-span-12">
                     <h3 class="header text-2xl">
                         Description
                     </h3>

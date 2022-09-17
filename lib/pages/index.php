@@ -6,8 +6,8 @@ use app\src\Index;
 $indexHouses = new Index();
 ?>
 
-<div class="min-h-[80vh] h-[80vh] grid place-content-center text-center bg-index-banner p-4 bg-fixed bg-center bg-cover text-slate-200">
-    <div class="space-y-2.5 lg:w-3/5 lg:mx-auto">
+<div class="min-h-[60vh] lg:min-h-[70vh] grid place-content-center text-center bg-index-banner p-4 bg-fixed bg-center bg-cover text-slate-200">
+    <div class="space-y-2.5 md:w-3/4 lg:w-3/5 md:mx-auto">
         <h1 class="header text-3xl">
             HousingQuest &mdash; Taking the pain out of seeking accommodation
         </h1>
@@ -32,8 +32,8 @@ $indexHouses = new Index();
             </p>
         </div>
 
-        <div class="grid gap-12 lg:grid-cols-12">
-            <div class="space-y-10 text-center lg:col-span-4">
+        <div class="grid gap-12 sm:grid-cols-12">
+            <div class="space-y-10 text-center lg:col-span-4 sm:col-span-6">
                 <span class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-green-300 before:bg-green-200 text-green-400 before:rotate-45 before:rounded-xl before:p-8">
                     <i class="fr fi-rr-document text-3xl"></i>
                 </span>
@@ -49,7 +49,7 @@ $indexHouses = new Index();
                 </div>
             </div>
 
-            <div class="space-y-10 text-center lg:col-span-4">
+            <div class="space-y-10 text-center lg:col-span-4 sm:col-span-6">
                 <span class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-rose-300 before:bg-rose-200 text-rose-400 before:rotate-45 before:rounded-xl before:p-8">
                     <i class="fr fi-rr-bookmark text-3xl"></i>
                 </span>
@@ -65,7 +65,7 @@ $indexHouses = new Index();
                 </div>
             </div>
 
-            <div class="space-y-10 text-center lg:col-span-4">
+            <div class="space-y-10 text-center lg:col-span-4 sm:col-span-6">
                 <span class="before:border relative before:absolute before:-top-[calc(100%+(calc(1rem/2)))] before:-left-[60%] before:border-indigo-300 before:bg-indigo-200 text-indigo-400 before:rotate-45 before:rounded-xl before:p-8">
                     <i class="fr fi-rr-check text-3xl"></i>
                 </span>
@@ -98,7 +98,7 @@ $indexHouses = new Index();
             </p>
         </div>
 
-        <section class="grid gap-8 lg:grid-cols-12">
+        <section class="grid gap-8 sm:grid-cols-12">
 
             <?php $indexHouses->showIndexHouses() ?>
 
@@ -125,8 +125,8 @@ $indexHouses = new Index();
             </p>
         </div>
 
-        <div class="grid gap-8 lg:grid-cols-12 text-base">
-            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
+        <div class="grid gap-8 sm:grid-cols-12 text-base">
+            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 sm:col-span-6">
                 <div class="space-y-1.5">
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit numquam,
@@ -144,7 +144,7 @@ $indexHouses = new Index();
                 </h3>
             </div>
 
-            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
+            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 sm:col-span-6">
                 <div class="space-y-1.5">
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit
@@ -164,7 +164,7 @@ $indexHouses = new Index();
                 </h3>
             </div>
 
-            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900">
+            <div class="lg:col-span-4 rounded-xl space-y-8 bg-white text-center py-8 px-4 dark:bg-slate-900 sm:col-span-6">
                 <div class="space-y-1.5">
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique animi rem commodi reprehenderit

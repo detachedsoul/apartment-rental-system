@@ -28,7 +28,7 @@ class ViewTenants
             </p>
         <?php
             return;
-            endif;
+        endif;
         ?>
         <table class="w-full border-separate whitespace-nowrap table-auto mb-2">
             <thead class="text-left border border-slate-600">
@@ -49,8 +49,8 @@ class ViewTenants
             </thead>
 
             <tbody>
-            <?php while ($tenant = $tenants->fetch_object()) : ?>
-                <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
+                <?php while ($tenant = $tenants->fetch_object()) : ?>
+                    <tr class="odd:bg-white even:bg-slate-50 hover:bg-slate-50 dark:odd:bg-slate-700 dark:even:bg-slate-800 dark:hover:bg-slate-800">
                         <td class="py-2 px-4 border border-slate-600">
                             <?= $tenant->tenant_name ?>
                         </td>
@@ -64,7 +64,7 @@ class ViewTenants
                             <?= $tenant->property_id ?>
                         </td>
                     </tr>
-            <?php endwhile; ?>
+                <?php endwhile; ?>
             </tbody>
         </table>
 <?php

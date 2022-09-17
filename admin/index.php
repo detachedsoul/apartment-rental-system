@@ -25,8 +25,8 @@ $adminIndexHistory = new ViewTransactionHistory();
     </div>
 </div>
 
-<div class="rounded-xl grid gap-8 p-4 lg:p-8 lg:gap-8 lg:grid-cols-12 bg-white dark:bg-slate-900 dark:text-slate-100">
-    <div class="lg:col-span-8 overflow-x-auto">
+<div class="rounded-xl grid gap-8 p-4 lg:p-8 lg:gap-8 md:grid-cols-12 bg-white dark:bg-slate-900 dark:text-slate-100">
+    <div class="md:col-span-8 overflow-x-auto">
         <h2 class="header text-2xl">
             Monthly Income
         </h2>
@@ -34,7 +34,7 @@ $adminIndexHistory = new ViewTransactionHistory();
         <canvas class="!h-[200px] !md:h-[inherit]" id="myAreaChart"></canvas>
     </div>
 
-    <div class="lg:col-span-4 flex flex-col gap-4">
+    <div class="md:col-span-4 flex flex-col gap-4 sm:grid sm:grid-cols-2 md:flex">
         <div class="rounded-xl bg-white shadow flex gap-4 items-center py-8 px-4 dark:bg-slate-800 dark:text-slate-100">
             <span class="rounded-full inline-block bg-green-100 text-green-500 py-1.5 px-2.5">
                 <i class="fr fi-rr-home"></i>
@@ -57,7 +57,7 @@ $adminIndexHistory = new ViewTransactionHistory();
     </div>
 </div>
 
-<div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
     <div class="bg-white p-4 lg:p-8 rounded-xl dark:bg-slate-900 dark:text-slate-100 space-y-8">
         <div class="flex flex-wrap justify-between gap-y-2 gap-x-4 items-center">
             <h2 class="text-2xl header">

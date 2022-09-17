@@ -84,4 +84,50 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Implemented the add new tenant feature. After adding a new tenant it uses the data from the `add tenant` form to populate the transaction table accordingly. It finally sets the status of the property that has just been purchased/rented to `taken`.
 
-- Added a feature to show the a summary of new tenants/transactions in the admin homepage. 
+- Added a feature to show the a summary of new tenants/transactions in the admin homepage.
+
+- Fixed a bug where the price column was a string and as such the search form wasn't comparing the values correctly.
+
+- Carried out minor desig harmonization.
+
+## Features
+
+- Admin (property owner login)
+- Property upload
+- Prospective tenant and property owner chat using emails
+- Poperty details modification
+- Property deletion
+- Admin profile management (names, emails, phone numbers, profile picture, etc can be changed anytime)
+- Other features that make usage of this system enjoyable
+
+## Installation
+
+This system uses Apache and MySQL. It is therefore necessary to have an Apache server (XAMP or Laragon would do). PHP 8 or later is also required. For XAMP it comes automatically with the latest version of the software. For Laragon download th latest version of PHP from [https://www.php.net/downloads.php](https://www.php.net/downloads.php). In most cases you also need to update your Apache. Nothing a quick Google search won't solve (you can [reach me if you have issues setting it up on your own](https://w.me/+2348105008304)).
+
+After setting up your local server, copy clone this repo to the `www` folder in Laragon. To get this folder go the `C:\laragon`. Inside the cloned repo there is an `installation folder.` Open the folder, open your database management system (MySQL Workbench or the database that comes with either XAMP or Laragon would do) and create a new database called `housingquest` and then import the `db.sql` file that's found in the `installation folder.`
+
+If everything is set up right, open your browser and go to `localhost/hosuingquest` for XAMP users or `housingquest.test` for Laragon users.
+
+## Screenshots
+
+Below are snapshots of some parts of the system:
+
+![Light Mode Hompage](./installation/light-homepage.png)
+
+![Dark Mode Hompage](./installation/dark-homepage.png)
+
+![Light Admin Hompage](./installation/light-admin.png)
+
+![Dark Admin Hompage](./installation/dark-admin.png)
+
+![Light Property Details](./installation/light-property-details.png)
+
+![Dark Property Details](./installation/dark-property-details.png)
+
+![Light Admin Property Listing](./installation/light-admin-property-listing.png)
+
+![Dark Admin Property Listing](./installation/dark-admin-property-listing.png)
+
+## Going Forward
+
+After the defense of this work, I would be a graduate. Aside PHP, I also work with JavaScript and its frameworks (React, React Native, NextJs and a some I'll learn after now). I'm need of a job. You can go through my GitHub account and see some other projects I've worked on. You can reach me via [WhatsApp](https://w.me/+2348105008304), [Email](https://mailto:vindicatedwisdom@gmail.com) or via [Phone Call](https://tel:+2348105008304).
