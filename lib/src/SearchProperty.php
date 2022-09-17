@@ -4,7 +4,8 @@ namespace app\src;
 
 use app\assets\DB;
 
-class SearchProperty {
+class SearchProperty
+{
     private $con;
     public $searchInput;
     public $minPrice;
@@ -13,7 +14,8 @@ class SearchProperty {
     public $propertyLocation;
     public $strictSearch;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->con = DB::getInstance();
 
         $this->searchInput = (isset($_POST['search-input'])) ? strtolower(strip_tags(trim($_POST['search-input']))) : "";
@@ -29,7 +31,8 @@ class SearchProperty {
         $this->strictSearch = (isset($_POST['strict-search'])) ? strtolower(strip_tags(trim($_POST['strict-search']))) : "";
     }
 
-    public function searchProperty () {
+    public function searchProperty()
+    {
         if (is_empty($this->searchInput) && is_empty($this->minPrice) && is_empty($this->maxPrice) && is_empty($this->propertyType) && is_empty($this->propertyLocation) && is_empty($this->strictSearch)) {
             header("Location: /", true, 301);
         }
@@ -45,14 +48,12 @@ class SearchProperty {
             }
 
             if (!is_empty($this->minPrice)) {
-                $this->minPrice = "%$this->minPrice%";
-                $conditions .= " LOWER(price) >= ? OR";
+                $conditions .= " CAST(`price` AS SIGNED) <= ? OR";
                 array_push($params, $this->minPrice);
             }
 
             if (!is_empty($this->maxPrice)) {
-                $this->maxPrice = "%$this->maxPrice%";
-                $conditions .= " LOWER(price) <= ? OR";
+                $conditions .= " CAST(`price` AS SIGNED) <= ? OR";
                 array_push($params, $this->maxPrice);
             }
 
@@ -68,6 +69,7 @@ class SearchProperty {
                 array_push($params, $this->propertyLocation);
             }
 
+            // Remove the last OR from the last conditions variable
             $conditions = substr($conditions, 0, -3);
             $conditions .= " ORDER BY id DESC";
 
@@ -80,15 +82,15 @@ class SearchProperty {
                 array_push($params, $this->searchInput);
             }
 
+            // Price value is stored as string. Cast it to INT before comparing
             if (!is_empty($this->minPrice)) {
-                $this->minPrice = "%$this->minPrice%";
-                $conditions .= " LOWER(price) >= ? AND";
+                $conditions .= " CAST(`price` AS SIGNED) >= ? AND";
                 array_push($params, $this->minPrice);
             }
 
+            // Price value is stored as string. Cast it to INT before comparing
             if (!is_empty($this->maxPrice)) {
-                $this->maxPrice = "%$this->maxPrice%";
-                $conditions .= " LOWER(price) <= ? AND";
+                $conditions .= " CAST(`price` AS SIGNED) <= ? AND";
                 array_push($params, $this->maxPrice);
             }
 

@@ -24,6 +24,15 @@ class DB {
         }
     }
 
+
+    /**
+     * Get's the ID of the last created or updated row
+     * @return int $this->con->insert_id
+     */
+    public function lastID () {
+        return $this->con->insert_id;
+    }
+
     /**
      * Creates a database connection instance
      * @return object self::$instance

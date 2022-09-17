@@ -1,4 +1,5 @@
 <?php
+
 namespace app\src;
 
 use app\assets\DB;
@@ -20,7 +21,8 @@ class ForgotPassword
         return $this->phoneEmail = isset($_POST['phoneEmail']) ? strtolower(trim(strip_tags($_POST['phoneEmail']))) : "";
     }
 
-    public function resetPassword() {
+    public function resetPassword()
+    {
         if (isset($_POST['submit'])) {
 
             // Check if a email or phone number was entered and displays the appropriate feedback
@@ -41,8 +43,7 @@ class ForgotPassword
                 displayMessage("Incorrect <span class='font-bold'>Phone Number or Email</span>.", "text-rose-500");
 
                 return;
-            }
-            else {
+            } else {
                 $newPassword = random_int(10000, 99999);
                 $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
 
@@ -89,8 +90,7 @@ class ForgotPassword
                     displayMessage("Password reset failed. Please try again.", "text-rose-500");
                 }
             }
-        }
-        else {
+        } else {
             displayMessage("Reset your password");
         }
     }

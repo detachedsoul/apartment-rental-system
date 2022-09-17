@@ -65,7 +65,7 @@ class PropertyDetails
         }
 
         while ($house = $getHouse->fetch_object()) : ?>
-            <div class="min-h-[80vh] h-[80vh] grid place-content-center text-center dark:bg-details-banner bg-light-details-banner px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
+            <div class="min-h-[60vh] lg:min-h-[70vh] grid place-content-center text-center bg-details-banner  px-4 bg-fixed bg-center bg-cover text-slate-200 p-4 lg:p-8">
                 <h1 class="header text-3xl">
                     <?= $house->title ?>
                 </h1>
@@ -77,20 +77,20 @@ class PropertyDetails
                     Go back
                 </a>
 
-                <div class="grid gap-4 lg:grid-rows-4 grid-cols-12 mt-8 mb-8">
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-start-1 lg:row-end-5 lg:h-[calc(1035px/2)] lg:col-span-6" src="./assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
+                <div class="grid gap-4 sm:grid-rows-4 grid-cols-12 mt-8 mb-8">
+                    <img class="h-[200px] col-span-12 rounded-xl sm:row-start-1 sm:row-end-5 sm:h-[calc(1035px/2)] sm:col-span-6" src="./assets/img/<?= $house->img_1 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="./assets/img/<?= $house->img_2 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="./assets/img/<?= $house->img_3 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="./assets/img/<?= $house->img_4 ?>" alt="<?= $house->title ?>" />
 
-                    <img class="h-[200px] col-span-12 rounded-xl lg:row-span-2 lg:col-span-3 lg:h-[250px]" src="./assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
+                    <img class="h-[200px] col-span-12 rounded-xl sm:row-span-2 sm:col-span-6 md:col-span-3 sm:h-[250px]" src="./assets/img/<?= $house->img_5 ?>" alt="<?= $house->title ?>" />
                 </div>
 
-                <div class="grid gap-8 lg:grid-cols-12">
-                    <div class="lg:col-span-8 space-y-4">
+                <div class="grid gap-8 sm:grid-cols-12">
+                    <div class="sm:col-span-7 space-y-4">
                         <div class="bg-white space-y-1.5 rounded-xl p-4 dark:bg-slate-800 dark:text-slate-300">
                             <span class=<?= $house->type === 'For Rent' ? "text-green-500 dark:text-green-400" : "text-rose-500 dark:text-rose-400" ?>>
                                 <i class="fr <?= $house->type === 'For Rent' ? 'fi-rr-recycle' : 'fi-rr-thumbtack' ?>"></i>
@@ -116,7 +116,7 @@ class PropertyDetails
                         </div>
                     </div>
 
-                    <div class="lg:col-span-4 max-w-full [display:unset]">
+                    <div class="sm:col-span-5 max-w-full [display:unset]">
                         <div class="sticky top-20">
                             <div class="rounded-t-xl bg-emerald-500 text-white p-4">
                                 <h4 class="header text-xl">
@@ -166,7 +166,8 @@ class PropertyDetails
         endwhile;
     }
 
-    public function sendRequest () {
+    public function sendRequest()
+    {
         $sql = "SELECT email FROM landlords l JOIN properties p WHERE p.id = ? AND p.link = ? AND p.owner_id = l.id";
 
         $ownerDetails = $this->con->prepare($sql, "ss", ...[$this->propertyID, $this->propertyName])->fetch_object()->email;

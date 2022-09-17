@@ -4,19 +4,19 @@ namespace app\src;
 
 use app\assets\DB;
 
-class Index
+class Properties
 {
+    private $con;
 
-    /**
-     * Get recent houses in desc order for the index page
-     */
-    public function showIndexHouses()
+    public function __construct()
     {
-        $con = DB::getInstance();
+        $this->con = DB::getInstance();
+    }
 
-        $houses = $con->select("id, title, index_img, price, summary, location, type, link", "properties", "WHERE status = 'available' ORDER BY id DESC LIMIT 6");
+    public function getAllProperties()
+    {
+        $houses = $this->con->select("id, title, index_img, price, summary, location, type, link", "properties", "WHERE status = 'available' ORDER BY id DESC");
 
-        // Check if there is any available apartment
         if ($houses->num_rows < 1) : ?>
             <p class="text-rose-700 dark:text-rose-500 text-center lg:col-span-12 text-xl lg:text-2xl">
                 No apartment yet. Please check again at a later time.

@@ -361,7 +361,6 @@ class EditProperty
 
                     move_uploaded_file($tempName, $imageFullPath);
                 }
-
             }
 
             foreach ($imagesTempNames as $key => $tempName) {

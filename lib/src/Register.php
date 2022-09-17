@@ -1,4 +1,5 @@
 <?php
+
 namespace app\src;
 
 use app\assets\DB;
@@ -46,28 +47,27 @@ class Register
 
             // Check if a name was entered and displays the appropriate feedback
             if (is_empty($this->setName())) {
-                displayMessage( "<span class='font-bold'>Name</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Name</span> field is required.", "text-rose-500");
 
                 return;
             }
 
             // Check if a phone number was entered and displays the appropriate feedback
             if (is_empty($this->setPhoneNumber())) {
-                displayMessage( "<span class='font-bold'>Phone Number</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Phone Number</span> field is required.", "text-rose-500");
 
                 return;
             }
 
             // Check if a email was entered and displays the appropriate feedback
             if (is_empty($this->setEmail())) {
-                displayMessage( "<span class='font-bold'>Email</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Email</span> field is required.", "text-rose-500");
 
                 return;
-            }
-            else {
+            } else {
                 // Checks if the entered email is a valid one and displays the appropriate feedback
                 if (!filter_var($this->setEmail(), FILTER_VALIDATE_EMAIL)) {
-                    displayMessage( "Invalid email format. Please use a valid email.", "text-rose-500");
+                    displayMessage("Invalid email format. Please use a valid email.", "text-rose-500");
 
                     return;
                 }
@@ -75,7 +75,7 @@ class Register
 
             // Check if a password was entered and displays the appropriate feedback
             if (is_empty($this->setPassword())) {
-                displayMessage( "<span class='font-bold'>Password</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Password</span> field is required.", "text-rose-500");
 
                 return;
             }
@@ -98,18 +98,16 @@ class Register
                 $userExists = $checkIfUserExists->fetch_object();
 
                 if ($userExists->phone === $this->setPhoneNumber() && $userExists->email === $this->setEmail()) {
-                    displayMessage( "<span class='font-bold'>Phone Number and Email</span> already exists.", "text-rose-500");
+                    displayMessage("<span class='font-bold'>Phone Number and Email</span> already exists.", "text-rose-500");
 
                     return;
-                }
-                else if ($userExists->email === $this->setEmail()) {
-                    displayMessage( "<span class='font-bold'>Email</span> is already taken. Please use another one.", "text-rose-500");
+                } else if ($userExists->email === $this->setEmail()) {
+                    displayMessage("<span class='font-bold'>Email</span> is already taken. Please use another one.", "text-rose-500");
 
                     return;
-                }
-                else {
+                } else {
                     if ($userExists->phone === $this->setPhoneNumber()) {
-                        displayMessage( "This <span class='font-bold'>Phone Number</span> already exists.", "text-rose-500");
+                        displayMessage("This <span class='font-bold'>Phone Number</span> already exists.", "text-rose-500");
 
                         return;
                     }
@@ -145,15 +143,14 @@ class Register
             $headers .= "From: Wisdom Ojimah ojimahwisdom@gmail.com";
 
             if (mail($receipientMail, $subject, $message, $headers)) {
-                displayMessage( "Registration successful. You would be redirected to your dashboard shortly. Please check your mail for a confirmation message. If you can't find the mail please check your spam or trash folder.", "text-green-500");
+                displayMessage("Registration successful. You would be redirected to your dashboard shortly. Please check your mail for a confirmation message. If you can't find the mail please check your spam or trash folder.", "text-green-500");
             } else {
-                displayMessage( "Registration successful. You would be redirected to your dashboard shortly.", "text-green-500");
+                displayMessage("Registration successful. You would be redirected to your dashboard shortly.", "text-green-500");
             }
 
             header("Refresh: 3, /admin", true, 301);
-        }
-        else {
-            displayMessage( "Create a free account today");
+        } else {
+            displayMessage("Create a free account today");
         }
     }
 }
