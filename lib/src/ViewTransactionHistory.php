@@ -83,7 +83,7 @@ class ViewTransactionHistory
 
     public function showIndexTransactions()
     {
-        $sql = "SELECT buyer_name, payment_date, property_id, amount FROM `transaction` t JOIN landlords l WHERE l.id = ? ORDER BY t.id DESC LIMIT 3 ";
+        $sql = "SELECT buyer_name, payment_date, t.property_id, amount FROM `transaction` t JOIN tenants f ON t.tenant_id = f.id WHERE f.landlord = ? ORDER BY t.id DESC LIMIT 3 ";
 
         $transactions = $this->con->prepare($sql, "s", $this->ownerID);
 
@@ -143,9 +143,7 @@ class ViewTransactionHistory
 
     public function showIndexTenants()
     {
-        $sql = "SELECT tenant_name, property_bought, agreement_date, property_id FROM `tenants` t JOIN landlords l WHERE l.id = ? ORDER BY t.id DESC LIMIT 3";
-
-        $tenants = $this->con->prepare($sql, "s", $this->ownerID);
+        $tenants = $this->con->select("tenant_name, property_bought, agreement_date, property_id", "tenants", "WHERE landlord = ? ORDER BY id DESC LIMIT 3", $this->ownerID);
 
         if ($tenants->num_rows < 1) : ?>
             <p class="font-bold grid">
