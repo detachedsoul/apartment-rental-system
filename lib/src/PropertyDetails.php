@@ -57,7 +57,7 @@ class PropertyDetails
             header("Location: /404", true, 301);
         }
 
-        $getHouse = $this->con->select("id, img_1, img_2, img_3, img_4, img_5, title, price, description, location, type, owner_id", "properties", "WHERE id = ? AND link = ?", ...[$this->propertyID, $this->propertyName]);
+        $getHouse = $this->con->select("id, img_1, img_2, img_3, img_4, img_5, title, price, description, location, type, owner_id", "properties", "WHERE id = ? AND link = ? AND status = 'available'", ...[$this->propertyID, $this->propertyName]);
 
         // Check if there is any available apartment
         if ($getHouse->num_rows < 1) {
@@ -214,7 +214,7 @@ class PropertyDetails
                 return;
             }
 
-            // Send a welcome mail to the newly registered user
+            // Send a mail to the property owner
             $subject = $this->setSubject();
             $messageBody = wordwrap($this->setMessage(), 70);
             $message = "
