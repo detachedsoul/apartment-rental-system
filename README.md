@@ -96,6 +96,8 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Prevent users from seeing the details of a property that has already been taken.
 
+- Fixed registration form expanding to fill the entire screen on desktop devices when registration is complete.
+
 ## Features
 
 - Admin (property owner login)
