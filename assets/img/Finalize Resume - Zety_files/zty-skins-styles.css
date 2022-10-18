@@ -1,0 +1,1864 @@
+
+/** SRZ1 **/
+
+.page-choose-template .document.skn-srz1 ol,.page-choose-template .document.skn-srz1 ul{list-style:none}
+.page-choose-template .document.skn-srz1 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz1 ul,.page-choose-template .document.skn-srz1 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz1 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz1 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+/*common css*/
+.page-choose-template .document.skn-srz1 .txtBold{font-weight:700}
+.page-choose-template .document.skn-srz1 .paddedline{display:block}
+.page-choose-template .document.skn-srz1 .mt5{margin-top:5px}
+.page-choose-template .document.skn-srz1 .txtRight{text-align:right}
+
+.page-choose-template .document.skn-srz1 table.skills,.page-choose-template .document.skn-srz1 .table_wrapper{margin-top:0;width:100%;word-break:break-all}
+.page-choose-template .document.skn-srz1 table.skills th,.page-choose-template .document.skn-srz1 table.skills td{text-align:center;width:20%}
+.page-choose-template .document.skn-srz1 table.skills .skillname,.page-choose-template  .document.skn-srz1 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz1 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz1 table.skills .skillyears,.page-choose-template  .document.skn-srz1 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz1 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz1 table.skills .pad2,.page-choose-template  .document.skn-srz1 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-srz1{color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;box-sizing:border-box}
+.page-choose-template .document.skn-srz1 .name{font-weight:700;padding:0;position:relative;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-srz1 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz1 .heading{font-weight:700;line-height:15px;margin-bottom:10px}
+.page-choose-template .document.skn-srz1 .sectiontitle{word-break:break-word}
+.page-choose-template .document.skn-srz1 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-srz1 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-srz1 .firstsection{padding-top:0!important}
+.page-choose-template .document.skn-srz1 .section:empty{display:none}
+
+/*Left Box */
+.page-choose-template .document.skn-srz1 .left-box{background:#003D73;display:table-cell;padding:15px;box-sizing:initial}
+.page-choose-template .document.skn-srz1 .left-box .section{position:relative;color:#fff}
+.page-choose-template .document.skn-srz1 .left-box .heading{line-height:1.5;margin-left:-15px;margin-right:-15px;padding:0 15px;position:relative}
+.page-choose-template .document.skn-srz1 .left-box .heading:before{content:'';position:absolute;left:0;top:0;background:#003D73;height:100%;width:100%;filter:brightness(0.8)}
+.page-choose-template .document.skn-srz1 .left-box .sectiontitle{padding:3px 0;text-align:left;position:relative}
+.page-choose-template .document.skn-srz1 .left-box .SECTION_CNTC{padding-top:20px!important}
+.page-choose-template .document.skn-srz1 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+
+/*Right Box */
+.page-choose-template .document.skn-srz1 .right-box{display:table-cell;letter-spacing:.2px;padding:15px;vertical-align:top}
+.page-choose-template .document.skn-srz1 .right-box .section:first-child{padding-top:0}
+.page-choose-template .document.skn-srz1 .right-box .heading{border-bottom:1px solid #d5d6d6;border-top:1px solid #d5d6d6;letter-spacing:0;padding:5px 0}
+.page-choose-template .document.skn-srz1 .right-box .sectiontitle{color:#002e58}
+.page-choose-template .document.skn-srz1 .right-box .paddedline.date-content{position:absolute;margin-left:0;width:65px}
+.page-choose-template .document.skn-srz1 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-srz1 .right-box .summary .paragraph .singlecolumn{margin-left:0}
+.page-choose-template .document.skn-srz1 .education .joblocation,.page-choose-template .document.skn-srz1 .txtItl{font-style:italic}
+
+/* Issues fix for builder page */
+.page-choose-template .document.skn-srz1 > div{min-height:inherit}
+.page-choose-template #displayResume .document.skn-srz1.document{min-height:792px}
+.page-choose-template .document.skn-srz1 .left-box .active *{color:#343434}
+
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz1 .parentContainer{height:1px}}
+.page-choose-template .document.skn-srz1 .word-break{word-wrap:break-word}
+
+.page-choose-template .document.skn-srz1 .left-box .outer-square,.page-choose-template  .document.skn-srz1 right-box .outer-square,.page-choose-template  .document.skn-srz1 .left-box .inner-square,.page-choose-template  .document.skn-srz1 .right-box .inner-square{height:7px;position:relative}
+.page-choose-template .document.skn-srz1 .left-box .inner-square{background:#fff}
+
+.page-choose-template .document.skn-srz1 .right-box .outer-square{background:#d6d6d6}
+.page-choose-template .document.skn-srz1 .right-box .inner-square{background:#003D73;filter:brightness(.8)}
+
+/* For dates fix */
+.page-choose-template .document.skn-srz1 .right-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-srz1 .left-box .hidedates{display:none}
+.page-choose-template .document.skn-srz1 .paragraph.datespara:after{content:'';display:table;clear:both}
+
+.page-choose-template .document.skn-srz1,.page-choose-template  .document.skn-srz1 table{line-height:18px}
+.page-choose-template .document.skn-srz1.pagesize{width:612px}
+.page-choose-template .document.skn-srz1.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz1.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz1 .section{padding-top:20px}
+.page-choose-template .document.skn-srz1 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-srz1 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-srz1 .singlecolumn,.page-choose-template  .document.skn-srz1 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-srz1 .right-box .singlecolumn,.page-choose-template  .document.skn-srz1 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz1 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz1 .jobtitle,.page-choose-template  .document.skn-srz1 .degree,.page-choose-template  .document.skn-srz1 .programline{font-size:14px}
+.page-choose-template .document.skn-srz1 .name{font-size:28px;line-height:34.5px}
+.page-choose-template .document.skn-srz1 .heading{line-height:22px}
+.page-choose-template .document.skn-srz1 .sectiontitle{font-size:16px}
+.page-choose-template .document.skn-srz1 .resumeTitle{font-size:14px;padding-top:3px}
+
+/*Left Box*/
+.page-choose-template .document.skn-srz1 .left-box{background:#003D73;width:154px}
+.page-choose-template .document.skn-srz1 .left-box .section{padding-top:20px}
+.page-choose-template .document.skn-srz1 .left-box .heading{line-height:22px}
+.page-choose-template .document.skn-srz1 .left-box .heading:before{background:#003D73}
+.page-choose-template .document.skn-srz1 .left-box .outer-square:before{background:#003D73;content:'';position:absolute;height:7px;width:100%;filter:brightness(.8)}
+
+/*Right Box*/
+.page-choose-template .document.skn-srz1 .right-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-srz1 .right-box .paddedline.date-content{left:-91px}
+.page-choose-template .document.skn-srz1 .right-box .sectiontitle{color:#003D73}
+.page-choose-template .document.skn-srz1 .right-box .inner-square{background:#003D73}
+
+/* Issues fix for builder page */
+.page-choose-template .document.skn-srz1 .right-box .sortable-item{padding-top:20px}
+.page-choose-template .document.skn-srz1 .left-box > .sortable-item.active > .wrapper .heading:before{background:none}
+.page-choose-template .document.skn-srz1 .left-box .sortable-item.active .outer-square:before{background:#d6d6d6}
+.page-choose-template .document.skn-srz1 .left-box .sortable-item.active .inner-square{background:#003D73}
+
+/* Issues fix for builder page: Phase 2 */
+.page-choose-template .document.skn-srz1._single-parent-drag > .wrapper-bg + div{position:relative;z-index:8}
+.page-choose-template .document.skn-srz1._single-parent-drag .outer-square:before{background:#d6d6d6;content:'';position:absolute;height:7px;width:100%;filter:brightness(0.8)}
+.page-choose-template .document.skn-srz1._single-parent-drag .inner-square{background:#003D73}
+.page-choose-template .document.skn-srz1._single-parent-drag .wrapper-bg + div .paragraph{margin-top:0}
+.page-choose-template .document.skn-srz1 .outer-square,.page-choose-template  .document.skn-srz1 .inner-square{height:7px;position:relative}
+.page-choose-template .document.skn-srz1 .parent-drag.active .wrapper,.page-choose-template  .document.skn-srz1 .sortable-item .sectiontitle{position:relative}
+
+/* support for IE Browser */
+@media screen and (min-width:0\0) {
+.page-choose-template .document.skn-srz1 .left-box{box-sizing:content-box}
+.page-choose-template .document.skn-srz1 .parentContainer{display:flex}
+.page-choose-template .document.skn-srz1 .right-box{width:calc(100% - 154px)}
+.page-choose-template .document.skn-srz1 .left-box,.page-choose-template  .document.skn-srz1 .right-box{background:none;display:inline;position:relative}
+.page-choose-template .document.skn-srz1 .left-box:before{content:'';background:#003D73;position:absolute;left:0;top:0;height:100%;width:100%;opacity:.9}
+}
+
+/** SRZ2 **/
+
+.page-choose-template .document.skn-srz2 ol,.page-choose-template  .document.skn-srz2 ul{list-style:none}
+.page-choose-template .document.skn-srz2 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+.page-choose-template .document.skn-srz2 .word-break{word-wrap:break-word}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz2 ul,.page-choose-template  .document.skn-srz2 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz2 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz2 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-srz2{border-left:120px solid #002e58!important;table-layout:fixed;word-wrap:break-word;box-sizing:border-box;padding:25px;min-height:792px}
+.page-choose-template .document.skn-srz2.hmargins{padding-left:12px!important;padding-right:24px!important}
+.page-choose-template .document.skn-srz2 .name{color:#002e58;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left}
+.page-choose-template .document.skn-srz2 .paragraph{position:relative;clear:both;min-height:10px}
+.page-choose-template .document.skn-srz2 .heading{clear:both;color:#002e58;font-weight:bold}
+.page-choose-template .document.skn-srz2 .address{position:relative;text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;position:inherit;z-index:2;display:table;table-layout:fixed;width:100%;word-wrap:break-word}
+.page-choose-template .document.skn-srz2 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-srz2 table.twocol td{width:50%}
+.page-choose-template .document.skn-srz2 table.skills{width:100%}
+.page-choose-template .document.skn-srz2 table.skills th,.page-choose-template  .document.skn-srz2 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz2 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-srz2 table.skills .skillname,.page-choose-template  .document.skn-srz2 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz2 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz2 table.skills .skillyears,.page-choose-template  .document.skn-srz2 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz2 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz2 table.skills .pad2,.page-choose-template  .document.skn-srz2 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-srz2 span.paddedline{display:block}
+.page-choose-template .document.skn-srz2 span.jobtitle,.page-choose-template  .document.skn-srz2 span.degree,.page-choose-template  .document.skn-srz2 span.programline{font-weight:bold}
+.page-choose-template .document.skn-srz2 .paragraph .dates_wrapper{font-weight:bold;display:block;text-align:right;color:#fff;position:absolute;left:-160px;float:none;margin-left:0!important;width:100px!important}
+.page-choose-template .document.skn-srz2 .singlecolumn{position:relative}
+.page-choose-template .document.skn-srz2 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-srz2 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-srz2 .resumeTitle{text-align:left;color:#002e58;font-weight:400}
+.page-choose-template .document.skn-srz2 td.twocol_2{border-left:1px solid #FEFDFD}
+.page-choose-template .document.skn-srz2 .addressLeft,.page-choose-template  .document.skn-srz2 .addressRight{display:table-cell; width:40%}
+.page-choose-template .document.skn-srz2 .ratingfield p{display:inline}
+
+/*Timeline classes*/
+.page-choose-template .document.skn-srz2 .section{border-left:1px solid #CCC;padding-left:25px;margin-left:12px;position:relative}
+.page-choose-template .document.skn-srz2 .notdraggable{border:none;margin-left:0;padding-left:0}
+.page-choose-template .document.skn-srz2 .heading,.page-choose-template  .document.skn-srz2 .paragraph{position:relative}
+.page-choose-template .document.skn-srz2 .singlecolumn:before{display:block;position:absolute;top:0;left:-30px;content:"";height:8px;width:8px;border:0;background:#002e58;z-index:2;border-radius:100%}
+.page-choose-template .document.skn-srz2 .summary .singlecolumn:before{display:none}
+.page-choose-template .document.skn-srz2 .notdraggable + .section:not(.notdraggable):before{border:1px solid #fff;content:'';position:absolute;top:0;left:-2px;width:3px;background:#fff}
+.page-choose-template .document.skn-srz2 .paragraph + tr.paragraph:before{display:none}
+.page-choose-template .document.skn-srz2 .headingIcon svg circle{fill:#002e58}
+
+/*Icons and Rating*/
+.page-choose-template .document.skn-srz2 .headingIcon{z-index:4;left:-40px;position:absolute}
+.page-choose-template .document.skn-srz2 .headingIcon svg{width:30px;height:30px}
+.page-choose-template .document.skn-srz2 .headingIcon svg path{fill:#fff}
+.page-choose-template .document.skn-srz2 .iconRow{clear:both;padding-bottom:7px;word-wrap:break-word}
+.page-choose-template .document.skn-srz2 .iconRow:last-child{padding-bottom:0}
+.page-choose-template .document.skn-srz2 .iconRow .iconSvg{width:20px;height:20px;float:left;margin-right:5px}
+.page-choose-template .document.skn-srz2 .iconRow svg circle{fill:#002e58}
+.page-choose-template .document.skn-srz2 .iconRow svg path{fill:#fff}
+.page-choose-template .document.skn-srz2 .iconRow .icoTxt{margin-left:25px}
+.page-choose-template .document.skn-srz2 .ratingWrapper{width:150px;float:right;text-align:right}
+.page-choose-template .document.skn-srz2 .ratingWrapper .noLnht{line-height:0}
+.page-choose-template .document.skn-srz2 .ratingWrapper svg{height:13px;margin-top:2px}
+.page-choose-template .document.skn-srz2 .ratingWrapper svg .default-fill{fill:#002e58}
+.page-choose-template .document.skn-srz2 .sortable-item .ratingWrapper span{top:0}
+
+.page-choose-template .document.skn-srz2,.page-choose-template  .document.skn-srz2 table{line-height:16px}
+.page-choose-template .document.skn-srz2{border-left-color:#002e58!important}
+.page-choose-template .document.skn-srz2.pagesize{width:612px}
+.page-choose-template .document.skn-srz2.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz2.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz2 .name{color:#002e58;font-size:36px;line-height:46px}
+.page-choose-template .document.skn-srz2 .address{font-size:11px;line-height:21px;padding-top:15px}
+.page-choose-template .document.skn-srz2 .section{padding-top:15px}
+.page-choose-template .document.skn-srz2 .firstsection,.page-choose-template  .document.skn-srz2 .SECTION_CNTC{padding-top:0}
+.page-choose-template .document.skn-srz2 .heading{padding-bottom:10px}
+.page-choose-template .document.skn-srz2 .jobtitle,.page-choose-template .document.skn-srz2 span.degree,.page-choose-template .document.skn-srz2 span.programline{font-size:14px}
+.page-choose-template .document.skn-srz2 .paragraph{padding-top:5px}
+.page-choose-template .document.skn-srz2 .firstparagraph{padding-top:0!important}
+.page-choose-template .document.skn-srz2 .singlecolumn,.page-choose-template  .document.skn-srz2 .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz2 span.dates_wrapper{line-height:17px}
+.page-choose-template .document.skn-srz2 .sectiontitle,.page-choose-template  .document.skn-srz2 .resumeTitle{color:#002e58;font-size:16px;line-height:21px}
+.page-choose-template .document.skn-srz2 table.skills td{padding-top:2px}
+.page-choose-template .document.skn-srz2 .noPind{margin-left:0}
+
+/*Timeline*/
+.page-choose-template .document.skn-srz2 .notdraggable + .section:not(.notdraggable):before{height:25px}
+.page-choose-template .document.skn-srz2 .singlecolumn:before{background:#002e58;top:4px;margin-left:-0px}
+
+ /*Icons and Rating*/
+.page-choose-template .document.skn-srz2 .headingIcon svg circle{fill:#002e58}
+.page-choose-template .document.skn-srz2 .headingIcon{top:-5px}
+.page-choose-template .document.skn-srz2 .iconRow svg circle{fill:#002e58}
+.page-choose-template .document.skn-srz2 .iconRow .iconSvg{padding-top:-3px}
+
+ /* fixes for builder page */
+.page-choose-template .document.skn-srz2 .sortable-item .section{padding-top:0;padding-bottom:15px}
+.page-choose-template .document.skn-srz2 .sortable-item .nameSec,.page-choose-template   .document.skn-srz2 .sortable-item .SECTION_CNTC{padding-bottom:0}
+
+ /*Phase 2: fixes for builder page*/
+.page-choose-template .parent-drag.active.document.skn-srz2,.page-choose-template  ._single-parent-drag.active.document.skn-srz2{border:0!important}
+.page-choose-template .document.skn-srz2 .ratingWrapper svg .default-fill{fill:#002e58}
+.page-choose-template .document.skn-srz2  .SortanleInner .singlecolumn .ratingfield{word-break:break-word}
+
+/*Hover border style*/
+.page-choose-template .document.skn-srz2.active,.page-choose-template   .document.skn-srz2.active._single-parent-drag{padding-left:1px !important;padding-right:0 !important}
+.page-choose-template .document.skn-srz2.active .section{margin-left:12px;padding-top:0}
+
+
+/** SRZ3 **/
+.page-choose-template .document.skn-srz3 ol,.page-choose-template  .document.skn-srz3 ul{list-style:none}
+.page-choose-template .document.skn-srz3 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*common css*/
+.page-choose-template .document.skn-srz3 .txtBold{font-weight:700}
+.page-choose-template .document.skn-srz3 .paddedline{display:block}
+.page-choose-template .document.skn-srz3 .mt5{margin-top:5px}
+.page-choose-template .document.skn-srz3 .word-break{word-wrap:break-word}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz3 ul,.page-choose-template  .document.skn-srz3 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz3 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz3 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+/*table style*/
+.page-choose-template .document.skn-srz3 table.skills,.page-choose-template .document.skn-srz3 .table_wrapper{margin-top:0;width:100%;word-wrap:break-word}
+.page-choose-template .document.skn-srz3 table.skills th,.page-choose-template table.skills td{text-align:center;width:20%}
+.page-choose-template .document.skn-srz3 table.skills .skillname,.page-choose-template  .document.skn-srz3 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz3 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz3 table.skills .skillyears,.page-choose-template  .document.skn-srz3 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz3 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz3 .skills .pad2,.page-choose-template  .document.skn-srz3 table.skills .pad3{width:1%}
+/*document*/
+.page-choose-template .document.skn-srz3{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
+.page-choose-template .document.skn-srz3 .name{color:#252932;font-weight:700;padding:0;position:relative;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-srz3 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz3 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding-bottom:2px}
+.page-choose-template .document.skn-srz3 .sectiontitle{color:#252932;word-wrap:break-word;display:inline-block;vertical-align:middle}
+.page-choose-template .document.skn-srz3 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-srz3 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-srz3 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-srz3 .section:empty{display:none}
+.page-choose-template .document.skn-srz3 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+.page-choose-template .document.skn-srz3 .left-box,.page-choose-template  .document.skn-srz3 .right-box{padding-left:15px;padding-top:20px}
+.page-choose-template .document.skn-srz3 .left-box,.page-choose-template  .document.skn-srz3 .right-box{padding-left:15px;padding-top:20px}
+.page-choose-template .document.skn-srz3 .left-box{display:table-cell;letter-spacing:.2px;padding-left:0;padding-right:15px;vertical-align:top;box-sizing:initial}
+.page-choose-template .document.skn-srz3 .right-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-srz3 .paragraph{position:relative}
+.page-choose-template .document.skn-srz3 .right-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
+.page-choose-template .document.skn-srz3 .firstsection{padding-top:0!important}
+.page-choose-template .document.skn-srz3 .right-box .section:first-child,.page-choose-template  .document.skn-srz3 .left-box .section:first-child{padding-top:0px!important}
+.page-choose-template .document.skn-srz3 .education .joblocation,.page-choose-template  .document.skn-srz3 .txtItl{font-style:italic}
+.page-choose-template .document.skn-srz3 .summary .singlecolumn{margin-left:0}
+.page-choose-template .document.skn-srz3 .summary.section{padding-top:15px}
+.page-choose-template .document.skn-srz3 .resumetitle{color:#252932;padding-top:10pt}
+/* Only for firefox */
+@-moz-document url-prefix(){.page-choose-template  .document.skn-srz3 .parentContainer{height:1px}}
+/*Rating*/
+.page-choose-template .document.skn-srz3 .ratingWrapper svg{height:10px;stroke:#252932}
+.page-choose-template .document.skn-srz3 .headingIcon svg circle,.page-choose-template  .document.skn-srz3 .ratingWrapper svg .default-fill{fill:#252932}
+.page-choose-template .document.skn-srz3 .ratingRow{position:relative;white-space:nowrap}
+.page-choose-template .document.skn-srz3 .ratingRow .ratingText,.page-choose-template  .document.skn-srz3 .ratingRow .ratingWrapper{width:50%;display:inline-block;word-wrap:break-word;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-srz3 .ratingRow .ratingText+.ratingWrapper{text-align:right;line-height:normal;margin-top:4px}
+/*Icon*/
+.page-choose-template .document.skn-srz3 .headingIcon{display:inline-block;vertical-align:middle;margin-right:3px}
+.page-choose-template .document.skn-srz3 .headingIcon svg{height:30px;width:30px;display:block}
+.page-choose-template .document.skn-srz3 .headingIcon svg path{fill:#fff}
+/* For dates fix */
+.page-choose-template .document.skn-srz3 .right-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-srz3 .left-box .hidedates{display:none}
+.page-choose-template .document.skn-srz3 .paragraph.datespara:after{content:'';display:table;clear:both}
+.page-choose-template .document.skn-srz3 .ratingRow .ratingText:last-child{width:100%}
+.page-choose-template .document.skn-srz3,.page-choose-template  .document.skn-srz3 table{line-height:18px}
+.page-choose-template .document.skn-srz3.pagesize{width:612px}
+.page-choose-template .document.skn-srz3.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz3.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz3.vmargins{padding-top:25px;padding-bottom:25px}
+.page-choose-template .document.skn-srz3.hmargins{padding-left:22px;padding-right:22px}
+.page-choose-template .document.skn-srz3 .section{padding-top:20px}
+.page-choose-template .document.skn-srz3 .left-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-srz3 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-srz3 .singlecolumn,.page-choose-template  .document.skn-srz3 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-srz3 .right-box .singlecolumn,.page-choose-template  .document.skn-srz3 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz3 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz3 .jobdates{font-size:11px}
+.page-choose-template .document.skn-srz3 .jobtitle,.page-choose-template   .document.skn-srz3 .degree,.page-choose-template   .document.skn-srz3 .programline{font-size:14px}
+.page-choose-template .document.skn-srz3 .name{color:#252932;font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-srz3 .heading{line-height:23px}
+.page-choose-template .document.skn-srz3 .sectiontitle,.page-choose-template  .document.skn-srz3 .resumeTitle{font-size:16px;color:#252932}
+.page-choose-template .document.skn-srz3 .left-box{width:156px}
+.page-choose-template .document.skn-srz3 .right-box .paragraph .singlecolumn{margin-left:91px}
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-srz3.document{min-height:792px}
+.page-choose-template .document.skn-srz3 > div{min-height:inherit}
+.page-choose-template .document.skn-srz3 .left-box .sortable-item:first-child >.wrapper>.section,
+.page-choose-template .document.skn-srz3 .right-box .sortable-item:first-child >.wrapper>.section{padding-top:0!important}
+.page-choose-template .document.skn-srz3 > div:not(.topsection),.page-choose-template   .document.skn-srz3 > div:not(.parentContainer){min-height:auto}
+/*Phase 2: Issues fix for builder page*/
+.page-choose-template .document.skn-srz3 .parentContainer .left-box > .sortable-item,
+.page-choose-template .document.skn-srz3 .parentContainer .right-box > .sortable-item{padding-top:20px}
+.page-choose-template .document.skn-srz3 .parentContainer .left-box > .sortable-item:first-child,
+.page-choose-template .document.skn-srz3 .parentContainer .right-box > .sortable-item:first-child{padding-top:0}
+.page-choose-template .document.skn-srz3 .parentContainer .sortable-item.active .heading.sectiontitle{display:inline}
+.page-choose-template .SRZ3.document.skn-srz3 .sortable-item.active .sectiontitle{display:inline}
+/*Icons and Rating*/
+.page-choose-template .document.skn-srz3 .ratingWrapper svg{stroke:#252932}
+.page-choose-template .document.skn-srz3 .headingIcon svg circle,.page-choose-template  .document.skn-srz3 .ratingWrapper svg .default-fill{fill:#252932}
+
+
+/** SRZ4 **/
+.page-choose-template .document.skn-srz4 ol,.page-choose-template  .document.skn-srz4 ul{list-style:none}
+.page-choose-template .document.skn-srz4 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz4 ul,.page-choose-template  .document.skn-srz4 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz4 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz4 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+/*table style*/
+.page-choose-template .document.skn-srz4 table.skills,.page-choose-template .document.skn-srz4 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-srz4 table.skills th,.page-choose-template .document.skn-srz4 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz4 table.skills .skillname,.page-choose-template  .document.skn-srz4 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz4 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz4 table.skills .skillyears,.page-choose-template  .document.skn-srz4 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz4 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz4 .skills .pad2,.page-choose-template  .document.skn-srz4 table.skills .pad3{width:1%}
+/* document */
+.page-choose-template .document.skn-srz4{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
+.page-choose-template .document.skn-srz4 .name{color:#fff;font-weight:700;position:relative;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-srz4 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz4 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+.page-choose-template .document.skn-srz4 .sectiontitle{color:#252932;word-wrap:break-word}
+.page-choose-template .document.skn-srz4 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-srz4 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-srz4 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-srz4 .topsection{background:#373d48;padding:15px 15px 20px}
+.page-choose-template .document.skn-srz4 .section:empty{display:none}
+.page-choose-template .document.skn-srz4 .education .joblocation{font-style:italic}
+.page-choose-template .document.skn-srz4 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;padding-bottom:20px;table-layout:fixed;width:100%}
+.page-choose-template .document.skn-srz4 .resumeTitle{color:#fff;padding-top:7px}
+/*left and right css*/
+.page-choose-template .document.skn-srz4 .right-box,.page-choose-template  .document.skn-srz4 .left-box{padding:15px}
+.page-choose-template .document.skn-srz4 .right-box{background-color:#f4f4f4;box-sizing:content-box;display:table-cell;letter-spacing:.2px;vertical-align:top}
+.page-choose-template .document.skn-srz4 .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-srz4 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-srz4 .left-box .summary .paragraph .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz4 .left-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
+.page-choose-template .document.skn-srz4 .firstsection,.page-choose-template  .document.skn-srz4 .left-box .section:first-child,.page-choose-template  .document.skn-srz4 .right-box .section:first-child{padding-top:0!important}
+/*common css*/
+.page-choose-template .document.skn-srz4 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-srz4 .txtItl{font-style:italic}
+.page-choose-template .document.skn-srz4 .paddedline{display:block}
+.page-choose-template .document.skn-srz4 .mt5{margin-top:5px}
+.page-choose-template .document.skn-srz4 .word-break{word-wrap:break-word}
+.page-choose-template .document.skn-srz4 .ratingWrapper{text-align:right;position:relative}
+.page-choose-template .document.skn-srz4 .ratingWrapper .noLnht{line-height:0}
+.page-choose-template .document.skn-srz4 svg{height:13px}
+.page-choose-template .document.skn-srz4 > div:not(.topsection){min-height:inherit}
+.page-choose-template /* Issues fix for builder page */
+.page-choose-template .document.skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz4 .parentContainer{height:1px}}
+/* For dates fix */
+.page-choose-template .document.skn-srz4 .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-srz4 .right-box .hidedates{display:none}
+.page-choose-template .document.skn-srz4 .paragraph.datespara:after{content:'';display:table;clear:both}
+.page-choose-template .document.skn-srz4,.page-choose-template  .document.skn-srz4 table{line-height:18px}
+.page-choose-template .document.skn-srz4.pagesize{width:612px}
+.page-choose-template .document.skn-srz4.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz4.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz4 .section{padding-top:20px}
+.page-choose-template .document.skn-srz4 .right-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-srz4 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-srz4 .singlecolumn,.page-choose-template  .document.skn-srz4 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-srz4 .left-box .singlecolumn,.page-choose-template  .document.skn-srz4 .left-box maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz4 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz4 .jobtitle,.page-choose-template   .document.skn-srz4 .degree,.page-choose-template   .document.skn-srz4 .programline{font-size:14px}
+.page-choose-template .document.skn-srz4 .name{font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-srz4 .topsection{background-color:#373d48}
+.page-choose-template .document.skn-srz4 .heading{line-height:22px}
+.page-choose-template .document.skn-srz4 .sectiontitle{font-size:16px;color:#373d48}
+.page-choose-template .document.skn-srz4 .right-box{width:154px}
+.page-choose-template .document.skn-srz4 .left-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-srz4 .left-box .paddedline.date-content{left:-91px}
+.page-choose-template .document.skn-srz4 .resumeTitle{font-size:18px}
+.page-choose-template .document.skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+/*fixes for builder page*/
+.page-choose-template #displayResume .document.skn-srz4.document{min-height:792px}
+.page-choose-template .document.skn-srz4 .sortable-item .rating-wrapper span{top:0}
+.page-choose-template .document.skn-srz4 .left-box > .sortable-item,.page-choose-template  .document.skn-srz4 .right-box > .sortable-item{padding-top:20px}
+
+
+/** SRZ5 **/
+.page-choose-template .document.skn-srz5 ol,.page-choose-template  .document.skn-srz5 ul{list-style:none}
+.page-choose-template .document.skn-srz5 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz5 ul,.page-choose-template  .document.skn-srz5 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz5 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz5 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-srz5 span.paddedline{display:block}
+.page-choose-template .document.skn-srz5 span.jobtitle,.page-choose-template  .document.skn-srz5 span.degree,.page-choose-template  .document.skn-srz5 span.programline{font-weight:bold}
+.page-choose-template .document.skn-srz5 .pb5{padding-bottom:5px}
+.page-choose-template .document.skn-srz5 span.dates_wrapper{font-weight:bold;display:block;float:left;text-align:left;padding-right:10px;box-sizing:border-box}
+.page-choose-template .document.skn-srz5 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-srz5 .txtBold{font-weight:bold}
+
+.page-choose-template .document.skn-srz5{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-srz5 .nameSec{padding-top:24px!important}
+.page-choose-template .document.skn-srz5 .name{color:#FFF;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left;position:relative;z-index:2}
+.page-choose-template .document.skn-srz5 .name .fName{font-weight:normal}
+.page-choose-template .document.skn-srz5 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-srz5 .heading{clear:both;color:#373d48;font-weight:bold}
+.page-choose-template .document.skn-srz5 .address{color:#fff;text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;white-space:nowrap;position:relative;z-index:2}
+.page-choose-template .document.skn-srz5 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-srz5 .addressLeft,.page-choose-template  .document.skn-srz5 .addressRight{width:49%;padding:0 1% 0 0;white-space:normal;display:inline-block;vertical-align:top}
+.page-choose-template .document.skn-srz5 .addressRight{padding:0 0 0 1%}
+.page-choose-template .document.skn-srz5 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-srz5 table.twocol td{width:50%}
+.page-choose-template .document.skn-srz5 table.skills{width:100%}
+.page-choose-template .document.skn-srz5 table.skills th,.page-choose-template  .document.skn-srz5 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz5 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-srz5 table.skills .skillname,.page-choose-template  .document.skn-srz5 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz5 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz5 table.skills .skillyears,.page-choose-template  .document.skn-srz5 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz5 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz5 table.skills .pad2,.page-choose-template  .document.skn-srz5 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-srz5 .resumeTitle{text-align:left;color:#fff!important;z-index:2;position:relative;font-weight:400}
+.page-choose-template .document.skn-srz5 td.twocol_2{border-left:1px solid #FEFDFD}
+
+/*Full color bleed calculation*/
+.page-choose-template .document.skn-srz5 .nameSec,.page-choose-template  .document.skn-srz5 .SECTION_CNTC{position:relative}
+.page-choose-template .document.skn-srz5 .nameSec:before,.page-choose-template  .document.skn-srz5 .SECTION_CNTC:before{background:#373d48;content:"";display:block;position:absolute;z-index:1;width:100%;height:100%;left:0;top:0}
+
+/*Timeline classes*/
+.page-choose-template .document.skn-srz5 .section{border-left:1px solid #d7d7d7;padding-left:25px;margin-left:12px;position:relative}
+.page-choose-template .document.skn-srz5 .summary{border:none;margin-left:0;padding-left:0}
+.page-choose-template .document.skn-srz5 .firstsection,.page-choose-template  .document.skn-srz5 .SECTION_CNTC{border:none}
+.page-choose-template .document.skn-srz5 .firstsection{padding-bottom:0}
+.page-choose-template .document.skn-srz5 .heading,.page-choose-template  .document.skn-srz5 .singlecolumn{position:relative}
+.page-choose-template .document.skn-srz5 .singlecolumn:before{display:block;position:absolute;top:0;left:-30px;content:"";height:9px;width:9px;border:0;background:#373d48;z-index:2;transform:rotate(45deg)}
+.page-choose-template .document.skn-srz5 .summary .singlecolumn:before{display:none}
+.page-choose-template .document.skn-srz5 .section.notdraggable + .section:not(.notdraggable):before{border:3px solid #fff;content:'';position:absolute;top:0;left:-2px}
+.page-choose-template .document.skn-srz5 .paragraph + tr.paragraph:before{display:none}
+.page-choose-template .document.skn-srz5 .notdraggable{border:0}
+
+/*Icon*/
+.page-choose-template .document.skn-srz5 .headingIcon{left:-45px;top:-7px;position:absolute}
+.page-choose-template .document.skn-srz5 .headingIcon svg{height:40px;width:40px;position:relative}
+
+.page-choose-template .document.skn-srz5 .headingIcon svg rect{transform:rotate(45deg);fill:#373d48}
+.page-choose-template .document.skn-srz5 .headingIcon svg path{fill:#fff}
+.page-choose-template .document.skn-srz5 .ratingRect{float:right;text-align:right}
+.page-choose-template .document.skn-srz5 .ratingRect .noLnht{line-height:0}
+.page-choose-template .document.skn-srz5 .ratingRect svg rect{transform:rotate(45deg)}
+.page-choose-template .document.skn-srz5 .ratingfield p{display:inline}
+
+/* fixes for builder page */
+.page-choose-template .document.skn-srz5 .sortable-item .nameSec,.page-choose-template  .document.skn-srz5 .sortable-item .SECTION_CNTC{padding-bottom:0}
+.page-choose-template .document.skn-srz5 .sortable-item .summary{margin-left:0;padding-left:0}
+.page-choose-template .document.skn-srz5 .ratingRect .default-fill{fill:#373d48}
+.page-choose-template .document.skn-srz5 .sortable-item .rating-wrapper span{top:0}
+.page-choose-template .document.skn-srz5 .sortableInner .ratingfield{vertical-align:top;}
+.page-choose-template .document.skn-srz5 .sortableInner .sortable-item .singlecolumn{line-height:normal}
+.page-choose-template .document.skn-srz5,.page-choose-template  .document.skn-srz5 table{line-height:16px}
+.page-choose-template .document.skn-srz5.pagesize{width:612px}
+.page-choose-template .document.skn-srz5.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz5.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz5.vmargins{padding-bottom:24px}
+.page-choose-template .document.skn-srz5.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-srz5 .section{padding-top:20px}
+.page-choose-template .document.skn-srz5 .heading{padding-bottom:10px;color:#373d48}
+.page-choose-template .document.skn-srz5 .jobtitle,.page-choose-template .document.skn-srz5 span.degree,.page-choose-template .document.skn-srz5 span.programline{font-size:14px}
+.page-choose-template .document.skn-srz5 .paragraph{padding-top:10px}
+.page-choose-template .document.skn-srz5 .SECTION_CNTC,.page-choose-template  .document.skn-srz5 .firstparagraph{padding-top:0!important}
+.page-choose-template .document.skn-srz5 .firstparagraph .singlecolumn.maincolumn,.page-choose-template  .document.skn-srz5 .singlecolumn.paragraphindent{margin-left:0}
+.page-choose-template .document.skn-srz5 .singlecolumn,.page-choose-template  .document.skn-srz5 .maincolumn{margin-left:70px}
+.page-choose-template .document.skn-srz5 span.dates_wrapper{width:70px;font-size:11px;line-height:17px}
+.page-choose-template .document.skn-srz5 .sectiontitle,.page-choose-template  .document.skn-srz5 .resumeTitle{font-size:16px;line-height:21px}
+.page-choose-template .document.skn-srz5 .name{font-size:36px;line-height:46px}
+.page-choose-template .document.skn-srz5 .address{font-size:11px;line-height:21px;padding-top:10px;padding-bottom:15px}
+.page-choose-template .document.skn-srz5 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz5 .noPind{margin-left:0}
+.page-choose-template .document.skn-srz5 .nameSec:before,.page-choose-template  .document.skn-srz5 .SECTION_CNTC:before{background:#373d48}
+
+/*Full color bleed calculation*/
+.page-choose-template .document.skn-srz5 .nameSec,.page-choose-template  .document.skn-srz5 .SECTION_CNTC{margin-left:-24px!important;margin-right:-24px!important;padding-left:24px;padding-right:24px}
+
+/*Timeline*/
+.page-choose-template .document.skn-srz5 .section.notdraggable + .section:not(.notdraggable):before{height:30px}
+.page-choose-template .document.skn-srz5 .singlecolumn:before{background:#373d48;top:4px}
+.page-choose-template .document.skn-srz5 .paragraph .dates_wrapper + .singlecolumn:before{left:-100px}
+ 
+/*Icon*/
+.page-choose-template .document.skn-srz5 .headingIcon svg rect{fill:#373d48}
+.page-choose-template .document.skn-srz5 .headingIcon{top:-8px}
+
+/*fixes for builder page*/
+.page-choose-template .document.skn-srz5 .sortableInner .sortable-item .singlecolumn.maincolumn,.page-choose-template   ._single-parent-drag.active.document.skn-srz5 .singlecolumn.maincolumn{display:table;width:100%}
+.page-choose-template .document.skn-srz5 .SortableInner .singlecolumn.maincolumn > span,
+.page-choose-template .document.skn-srz5 .SortableInner .singlecolumn.maincolumn > .rating-wrapper,
+.page-choose-template ._single-parent-drag.active.document.skn-srz5 .singlecolumn.maincolumn > span,
+.page-choose-template ._single-parent-drag.active.document.skn-srz5 .singlecolumn.maincolumn > .rating-wrapper{display:table-cell;float:none}
+.page-choose-template .document.skn-srz5 .sortableInner .sortable-item.active .wrapper-bg + div,
+.page-choose-template ._single-parent-drag.active.document.skn-srz5 .wrapper-bg + div{position:relative;z-index:11}
+.page-choose-template .document.skn-srz5 .ratingRect .default-fill{fill:#373d48}
+ 
+/* support for IE Browser */
+@media screen and (min-width:0\0) {
+.page-choose-template .document.skn-srz5 .headingIcon svg{position:relative}
+.page-choose-template .document.skn-srz5 .headingIcon svg rect{fill:transparent}
+.page-choose-template .document.skn-srz5 .headingIcon:before{content:'';position:absolute;left:0;right:0;top:-5px;bottom:0;margin:auto;background:#373d48;height:25px;width:25px;transform:rotate(45deg)}
+}
+
+/** SRZ6 **/
+.page-choose-template .document.skn-srz6 table{font-size:inherit;color:inherit}
+.page-choose-template .document.skn-srz6 a img{border:none}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz6 ul,.page-choose-template  .document.skn-srz6 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz6 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template  .document.skn-srz6 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+/*table style*/
+.page-choose-template .document.skn-srz6 table{border-collapse:collapse;border-spacing:0}
+.page-choose-template .document.skn-srz6 table.skills,.page-choose-template  .document.skn-srz6 .table_wrapper{margin-top:0;width:100%;word-wrap:break-word}
+.page-choose-template .document.skn-srz6 table.skills th,.page-choose-template  .document.skn-srz6 table.skills td{text-align:center;width:20%}
+.page-choose-template .document.skn-srz6 table.skills .skillname,.page-choose-template  .document.skn-srz6 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz6 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz6 table.skills .skillyears,.page-choose-template  .document.skn-srz6 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz6 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz6 table.skills .pad2,.page-choose-template  .document.skn-srz6 table.skills .pad3{width:1%}
+
+/*document*/
+.page-choose-template .document.skn-srz6{color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;box-sizing:border-box}
+.page-choose-template .document.skn-srz6 .name{font-weight:700;padding:0;position:relative;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-srz6 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz6 .heading{font-weight:700;line-height:15px;margin-bottom:10px}
+.page-choose-template .document.skn-srz6 .sectiontitle{word-wrap:break-word}
+.page-choose-template .document.skn-srz6 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-srz6 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-srz6 .firstsection{padding-top:0!important}
+.page-choose-template .document.skn-srz6 .section:empty{display:none}
+.page-choose-template .document.skn-srz6 .education .joblocation{font-style:italic}
+
+/*right box*/
+.page-choose-template .document.skn-srz6 .right-box{background:#003D73;box-sizing:initial;display:table-cell;padding:15px;box-sizing:content-box}
+.page-choose-template .document.skn-srz6 .right-box .section{position:relative;color:#fff}
+.page-choose-template .document.skn-srz6 .right-box .heading{line-height:1.5;margin-left:-15px;margin-right:-15px;padding:0 15px;position:relative}
+.page-choose-template .document.skn-srz6 .right-box .heading:before{content:'';position:absolute;left:0;top:0;background:#003D73;height:100%;width:100%;filter:brightness(0.8)}
+.page-choose-template .document.skn-srz6 .right-box .sectiontitle{padding:3px 0;text-align:left;position:relative}
+.page-choose-template .document.skn-srz6 .right-box .SECTION_CNTC{padding-top:20px!important}
+.page-choose-template .document.skn-srz6 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+
+/*left box*/
+.page-choose-template .document.skn-srz6 .left-box{display:table-cell;letter-spacing:.2px;padding:15px;vertical-align:top}
+.page-choose-template .document.skn-srz6 .left-box .section:first-child{padding-top:0}
+.page-choose-template .document.skn-srz6 .left-box .heading{border-bottom:1px solid #d5d6d6;border-top:1px solid #d5d6d6;letter-spacing:0;padding:5px 0}
+.page-choose-template .document.skn-srz6 .left-box .sectiontitle{color:#002e58}
+.page-choose-template .document.skn-srz6 .left-box .paddedline.date-content{position:absolute;margin-left:0;width:65px}
+.page-choose-template .document.skn-srz6 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-srz6 .left-box .summary .singlecolumn{margin-left:0!important}
+
+/*common css*/
+.page-choose-template .document.skn-srz6 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-srz6 .txtItl{font-style:italic}
+.page-choose-template .document.skn-srz6 .paddedline{display:block}
+.page-choose-template .document.skn-srz6 .mt5{margin-top:5px}
+.page-choose-template .document.skn-srz6 .txtRight{text-align:right}
+.page-choose-template .document.skn-srz6 .word-break{word-wrap:break-word}
+ 
+.page-choose-template .document.skn-srz6 .right-box .outer-square,.page-choose-template  .document.skn-srz6 .right-box .inner-square,.page-choose-template  .document.skn-srz6 .left-box .outer-square,.page-choose-template  .document.skn-srz6 .left-box .inner-square{height:7px;position:relative}
+.page-choose-template .document.skn-srz6 .right-box .inner-square{background:#fff}
+.page-choose-template .document.skn-srz6 .left-box .outer-square{background:#d6d6d6}
+.page-choose-template .document.skn-srz6 .left-box .inner-square{background:#003D73}
+.page-choose-template .document.skn-srz6 > div{min-height:inherit}
+ 
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-srz6.document{min-height:792px}
+.page-choose-template .document.skn-srz6 .right-box .outer-square:before,.page-choose-template  .document.skn-srz6 .right-box .sortable-item.active .inner-square{background:#003D73}
+.page-choose-template .document.skn-srz6 .right-box .sortable-item.active .singlecolumn,.page-choose-template   .document.skn-srz6 .right-box .sortable-item.active .maincolumn{z-index:10}
+.page-choose-template .document.skn-srz6 .right-box .active *{color:#343434}
+
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz6 .parentContainer{height:1px}}
+.page-choose-template .document.skn-srz6,.page-choose-template  .document.skn-srz6 table{line-height:18px}
+.page-choose-template .document.skn-srz6.pagesize{width:612px}
+.page-choose-template .document.skn-srz6.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz6.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz6 .section{padding-top:20px}
+.page-choose-template .document.skn-srz6 .right-box .section{padding-top:20px}
+.page-choose-template .document.skn-srz6 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-srz6 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-srz6 .singlecolumn,.page-choose-template  .document.skn-srz6 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-srz6 .left-box .singlecolumn,.page-choose-template  .document.skn-srz6 .left-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz6 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz6 .jobdates{font-size:11px}
+.page-choose-template .document.skn-srz6 .jobtitle,.page-choose-template  .document.skn-srz6 .degree,.page-choose-template  .document.skn-srz6 .programline{font-size:14px}
+.page-choose-template .document.skn-srz6 .name{font-size:28px;line-height:31.5px}
+.page-choose-template .document.skn-srz6 .heading{line-height:22px}
+.page-choose-template .document.skn-srz6 .right-box .heading{line-height:22px}
+.page-choose-template .document.skn-srz6 .right-box .heading:before{background:#003D73}
+.page-choose-template .document.skn-srz6 .sectiontitle{font-size:16px}
+.page-choose-template .document.skn-srz6 .resumeTitle{font-size:14px;padding-top:3px}
+.page-choose-template .document.skn-srz6 .right-box{background:#003D73;width:154px}
+.page-choose-template .document.skn-srz6 .left-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-srz6 .left-box .paddedline.date-content{left:-91px}
+.page-choose-template .document.skn-srz6 .right-box .outer-square:before{background:#003D73;content:'';position:absolute;height:7px;width:100%;filter:brightness(.8)}
+.page-choose-template .document.skn-srz6 .left-box .inner-square{background:#003D73;filter:brightness(.8)}
+.page-choose-template .document.skn-srz6 .left-box .sectiontitle{color:#003D73}
+
+/* Issues fix for builder page */
+.page-choose-template .document.skn-srz6 .left-box .sortable-item{padding-top:20px}
+.page-choose-template .document.skn-srz6 .right-box > .sortable-item.active > .wrapper .heading:before{background:none}
+.page-choose-template .document.skn-srz6 .right-box .sortable-item.active .outer-square:before{background:#d6d6d6}
+.page-choose-template .document.skn-srz6 .right-box .sortable-item.active .inner-square,.page-choose-template  .document.skn-srz6 .right-box .heading:before{background:#003D73}
+
+/* Phase 2: Issues fix for builder page */
+.page-choose-template .document.skn-srz6._single-parent-drag > .wrapper-bg + div{position:relative;z-index:8}
+.page-choose-template .document.skn-srz6._single-parent-drag .outer-square:before{background:#d6d6d6;content:'';position:absolute;height:7px;width:100%;filter:brightness(0.8)}
+.page-choose-template .document.skn-srz6._single-parent-drag .inner-square {background:#003D73}
+.page-choose-template .document.skn-srz6._single-parent-drag .wrapper-bg + div .paragraph {margin-top:0}
+.page-choose-template .document.skn-srz6 .outer-square, .page-choose-template  .document.skn-srz6 .inner-square {height:7px;position:relative}
+.page-choose-template .document.skn-srz6 .wrapper{position:static}
+.page-choose-template .document.skn-srz6 .parent-drag.active .wrapper,.page-choose-template  .document.skn-srz6 .sortable-item .sectiontitle{position:relative}
+.page-choose-template /*.SRZ6.document.skn-srz6 .right-box .SortableItem-sibling{background:#003D73}*/
+
+/*Hover border style*/
+.page-choose-template .document.skn-srz6.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-srz6.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-srz6.active .acr-edit,.page-choose-template  .document.skn-srz6.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-srz6.active .acr-move{right:-59px !important}
+
+/* support for IE Browser */
+@media screen and (min-width:0\0) {
+.page-choose-template .document.skn-srz6 .right-box{box-sizing:content-box}
+.page-choose-template .document.skn-srz6 .parentContainer{display:flex;}
+.page-choose-template .document.skn-srz6 .left-box{width:calc(100% - 154px)}
+.page-choose-template .document.skn-srz6 .left-box,.page-choose-template  .document.skn-srz6 .right-box{background:none;display:inline;position:relative}
+.page-choose-template .document.skn-srz6 .right-box:before{content:''; background:#003D73; position:absolute; left:0; top:0; height:100%; width:100%; opacity:.9}
+}
+
+
+/** SRZ7 **/
+.page-choose-template .document.skn-srz7 ol,.page-choose-template  .document.skn-srz7 ul{list-style:none}
+.page-choose-template .document.skn-srz7 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz7 ul,.page-choose-template  .document.skn-srz7 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz7 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template  .document.skn-srz7 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-srz7{box-sizing:border-box}
+.page-choose-template .document.skn-srz7 .name{color:#252932;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left}
+.page-choose-template .document.skn-srz7 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-srz7 .heading{clear:both;font-weight:bold;color:#252932;border-bottom:1px solid #CCC}
+.page-choose-template .document.skn-srz7 .sectiontitle{color:#252932;word-wrap:break-word;vertical-align:middle;display:inline}
+.page-choose-template .document.skn-srz7 .address{position:relative;text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0}
+.page-choose-template .document.skn-srz7 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-srz7 table.twocol td{width:50%}
+.page-choose-template .document.skn-srz7 table.skills{width:100%}
+.page-choose-template .document.skn-srz7 table.skills th,.page-choose-template  .document.skn-srz7 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz7 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-srz7 table.skills .skillname,.page-choose-template  .document.skn-srz7 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz7 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz7 table.skills .skillyears,.page-choose-template  .document.skn-srz7 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz7 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz7 table.skills .pad2,.page-choose-template  .document.skn-srz7 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-srz7 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-srz7 .resumeTitle{text-align:left;color:#252932;font-weight:500}
+.page-choose-template .document.skn-srz7 td.twocol_2{border-left:1px  solid #FEFDFD}
+.page-choose-template .document.skn-srz7 .addressright, .page-choose-template  .document.skn-srz7 .addressleft{display:table-cell; width:40%}
+
+.page-choose-template .document.skn-srz7 span.paddedline{display:block}
+.page-choose-template .document.skn-srz7 .txtRight{text-align:right;clear:both}
+.page-choose-template .document.skn-srz7 span.jobtitle,.page-choose-template  .document.skn-srz7 span.degree,.page-choose-template  .document.skn-srz7 span.programline{font-weight:bold}
+.page-choose-template .document.skn-srz7 span.dates_wrapper{font-weight:bold;display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-srz7 .txtItalics{font-style:italic}
+
+/*Icons*/
+.page-choose-template .document.skn-srz7 .iconRow{clear:both;padding-bottom:7px;word-wrap:break-word}
+.page-choose-template .document.skn-srz7 .iconRow .iconSvg{width:20px;height:20px;float:left;margin-right:5px}
+.page-choose-template .document.skn-srz7 .iconRow .icoTxt{margin-left:25px}
+
+.page-choose-template .document.skn-srz7 .headingIcon{display:inline-block;vertical-align:middle;margin-right:5px}
+.page-choose-template .document.skn-srz7 .headingIcon svg{height:30px;width:30px;display:block}
+
+.page-choose-template .document.skn-srz7 .iconRow svg rect,.page-choose-template  .document.skn-srz7 .headingIcon svg rect{fill:#252932}
+.page-choose-template .document.skn-srz7 .iconRow svg path,.page-choose-template  .document.skn-srz7 .headingIcon svg path{fill:#fff}
+ 
+.page-choose-template .document.skn-srz7 .ratingWrapper{float:right;text-align:right;height:10px;padding:3px 0}
+.page-choose-template .document.skn-srz7 .rtngSec .txtRight{position:relative;top:-3px}
+.page-choose-template .document.skn-srz7 .ratingWrapper svg{height:13px}
+.page-choose-template .document.skn-srz7 .ratingWrapper .default-fill{fill:#252932}
+ 
+.page-choose-template .document.skn-srz7,.page-choose-template .document.skn-srz7 table{line-height:16px}
+.page-choose-template .document.skn-srz7.pagesize{width:612px}
+.page-choose-template .document.skn-srz7.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz7.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz7.vmargins{padding-top:24px;padding-bottom:24px}
+.page-choose-template .document.skn-srz7.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-srz7 .section{padding-top:20px}
+.page-choose-template .document.skn-srz7 .address{font-size:11px;line-height:21px;padding-top:15px}
+.page-choose-template .document.skn-srz7 .heading{margin-bottom:10px}
+.page-choose-template .document.skn-srz7 .jobtitle,.page-choose-template .document.skn-srz7 span.degree,.page-choose-template .document.skn-srz7 span.programline{font-size:14px}
+.page-choose-template .document.skn-srz7 .paragraph{padding-top:10px}
+.page-choose-template .document.skn-srz7 .rtngSec .paragraph{padding-top:5px}
+.page-choose-template .document.skn-srz7 .firstsection,.page-choose-template  .document.skn-srz7 .firstparagraph,.page-choose-template  .document.skn-srz7 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-srz7 .singlecolumn,.page-choose-template  .document.skn-srz7 .maincolumn{margin-left:120px}
+.page-choose-template .document.skn-srz7 .sectiontitle,.page-choose-template  .document.skn-srz7 .resumeTitle{font-size:16px;line-height:21px}
+.page-choose-template .document.skn-srz7 .name{font-size:36px;line-height:46px}
+.page-choose-template .document.skn-srz7 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz7 .noPind{margin-left:0}
+.page-choose-template .document.skn-srz7 .name,.page-choose-template  .document.skn-srz7 .sectiontitle,.page-choose-template  .document.skn-srz7 .resumeTitle{color:#252932}
+.page-choose-template .document.skn-srz7  span.dates_wrapper{width:110px;font-size:11px;line-height:17px}
+
+/* Icon */
+.page-choose-template .document.skn-srz7 .iconRow svg rect,.page-choose-template  .document.skn-srz7 .headingIcon svg rect{fill:#252932}
+.page-choose-template .document.skn-srz7 .ratingfield p{display:inline}
+
+/*Phase 2: fixes for builder page*/
+.page-choose-template .document.skn-srz7 .sortable-item .sectiontitle,.page-choose-template  body.SRZ7 .parent-drag.active.document.skn-srz7 .sectiontitle{display:inline}
+.page-choose-template .document.skn-srz7 .sortableInner .sortable-item.active .wrapper-bg + div,
+.page-choose-template body.SRZ7 .document.skn-srz7  ._single-parent-drag.active.document.skn-srz7 .wrapper-bg + div{position:relative;z-index:11}
+.page-choose-template .document.skn-srz7 .sortable-item .singlecolumn span:first-child,
+.page-choose-template body.SRZ7 ._single-parent-drag.active.document.skn-srz7 .singlecolumn span:first-child{display:inline-block}
+.page-choose-template .document.skn-srz7 .ratingWrapper .default-fill{fill:#252932}
+
+/** SRZ8 **/
+.page-choose-template .document.skn-srz8 ol,.page-choose-template  .document.skn-srz8 ul{list-style:none}
+.page-choose-template .document.skn-srz8 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz8 ul,.page-choose-template  .document.skn-srz8 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz8 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template  .document.skn-srz8 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+.page-choose-template .document.skn-srz8 span.jobtitle,.page-choose-template  .document.skn-srz8 span.degree,.page-choose-template  .document.skn-srz8 span.programline{font-weight:bold}
+.page-choose-template .document.skn-srz8 span.paddedline{display:block}
+.page-choose-template .document.skn-srz8 span.dates_wrapper{font-weight:bold;display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-srz8 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-srz8 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-srz8 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-srz8{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-srz8 .nameSec{padding-top:24px!important}
+.page-choose-template .document.skn-srz8 .name{color:#FFF;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left;position:relative;z-index:2}
+.page-choose-template .document.skn-srz8 .resumeTitle{font-weight:400;color:#fff;position:relative;z-index:2}
+.page-choose-template .document.skn-srz8 .name .fName{font-weight:normal}
+.page-choose-template .document.skn-srz8 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-srz8 .heading{clear:both;color:#373d48;font-weight:bold}
+.page-choose-template .document.skn-srz8 .sectiontitle{border-bottom:1px solid #CCC}
+.page-choose-template .document.skn-srz8 .address{color:#FFF;text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;white-space:nowrap;position:relative;z-index:2}
+.page-choose-template .document.skn-srz8 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-srz8 .addressLeft,.page-choose-template  .document.skn-srz8 .addressRight{width:49%;padding:0 1% 0 0;white-space:normal;display:inline-block;vertical-align:top}
+.page-choose-template .document.skn-srz8 .addressRight{padding:0 0 0 1%}
+.page-choose-template .document.skn-srz8 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-srz8 table.twocol td{width:50%}
+.page-choose-template .document.skn-srz8 table.skills{width:100%}
+.page-choose-template .document.skn-srz8 table.skills th,.page-choose-template  .document.skn-srz8 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz8 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-srz8 table.skills .skillname,.page-choose-template  .document.skn-srz8 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz8 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz8 table.skills .skillyears,.page-choose-template  .document.skn-srz8 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz8 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz8 table.skills .pad2,.page-choose-template  .document.skn-srz8 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-srz8 td.twocol_2{border-left:1px  solid #FEFDFD}
+/*Rating bar*/
+.page-choose-template .document.skn-srz8 .rating-wrapper{white-space:nowrap}
+.page-choose-template .document.skn-srz8 .rating-text,.page-choose-template  .document.skn-srz8 .rating-svg{width:68%;padding:0 1% 0 0;display:inline-block;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-srz8 .rating-svg{width:30%;text-align:right;padding:0}
+.page-choose-template .document.skn-srz8 .outer-square{height:7px;background:#d5d6d6}
+.page-choose-template .document.skn-srz8 .inner-square{background:#373d48;height:7px}
+/*Full color bleed calculation*/
+.page-choose-template .document.skn-srz8 .nameSec,.page-choose-template  .document.skn-srz8 .SECTION_CNTC{position:relative}
+.page-choose-template .document.skn-srz8 .nameSec:before,.page-choose-template  .document.skn-srz8 .SECTION_CNTC:before{background:#373d48;content:"";display:block;position:absolute;z-index:1;width:100%;height:100%;left:0;top:0}
+.page-choose-template .document.skn-srz8,.page-choose-template  .document.skn-srz8 table{line-height:16px}
+.page-choose-template .document.skn-srz8.pagesize{width:612px}
+.page-choose-template .document.skn-srz8.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz8.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz8.vmargins{padding-bottom:24px}
+.page-choose-template .document.skn-srz8.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-srz8 .section{padding-top:15px}
+.page-choose-template .document.skn-srz8 .heading{color:#373d48;padding-bottom:10px}
+.page-choose-template .document.skn-srz8 .jobtitle,.page-choose-template .document.skn-srz8 span.degree,.page-choose-template .document.skn-srz8 span.programline{font-size:14px}
+.page-choose-template .document.skn-srz8 .paragraph{padding-top:10px}
+.page-choose-template .document.skn-srz8 .rtngSec .paragraph{padding-top:5px}
+.page-choose-template .document.skn-srz8 .SECTION_CNTC,.page-choose-template  .document.skn-srz8 .firstparagraph{padding-top:0!important}
+.page-choose-template .document.skn-srz8 .singlecolumn,.page-choose-template  .document.skn-srz8 .maincolumn{margin-left:120px}
+.page-choose-template .document.skn-srz8 span.dates_wrapper{width:110px;font-size:11px;line-height:17px}
+.page-choose-template .document.skn-srz8 .sectiontitle,.page-choose-template  .document.skn-srz8 .resumeTitle{font-size:16px;line-height:21px}
+.page-choose-template .document.skn-srz8 .name{font-size:36px;line-height:46px}
+.page-choose-template .document.skn-srz8 .address{font-size:11px;line-height:21px;padding-top:10px;padding-bottom:15px}
+.page-choose-template .document.skn-srz8 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz8 .noPind{margin-left:0}
+.page-choose-template .document.skn-srz8 .nameSec:before,.page-choose-template  .document.skn-srz8 .SECTION_CNTC:before,.page-choose-template  .document.skn-srz8 .inner-square{background:#373d48}
+/*Rating bar*/
+.page-choose-template .document.skn-srz8 .rating-svg{padding-top:5px}
+/*Full color bleed calculation*/
+.page-choose-template .document.skn-srz8 .nameSec,.page-choose-template  .document.skn-srz8 .SECTION_CNTC{margin-left:-24px!important;margin-right:-24px!important;padding-left:24px;padding-right:24px}
+/*phase 2: Fixes for builder page*/
+.page-choose-template .document.skn-srz8 .sortableInner .sortable-item.active > .wrapper-bg + div[data-section]{position:relative;z-index:8}
+
+
+/** SRZ9 **/
+.page-choose-template .document.skn-srz9 ol,.page-choose-template  .document.skn-srz9 ul{list-style:none}
+.page-choose-template .document.skn-srz9 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-srz9 ul,.page-choose-template  .document.skn-srz9 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-srz9 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz9 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+/*common css*/
+.page-choose-template .document.skn-srz9 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-srz9 .paddedline{display:block}
+.page-choose-template .document.skn-srz9 .word-break{word-wrap:break-word}
+.page-choose-template .document.skn-srz9 table.skills,.page-choose-template .document.skn-srz9 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-srz9 table.skills th,.page-choose-template .document.skn-srz9 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-srz9 table.skills .skillname,.page-choose-template  .document.skn-srz9 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-srz9 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-srz9 table.skills .skillyears,.page-choose-template  .document.skn-srz9 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-srz9 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-srz9 .skills .pad2,.page-choose-template  .document.skn-srz9 table.skills .pad3{width:1%}
+/* document */
+.page-choose-template .document.skn-srz9{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px}
+.page-choose-template .document.skn-srz9 .name{display:table;width:100%;color:#002e58;font-weight:700;overflow:hidden;padding:0;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-srz9 .flname{font-weight:400;vertical-align:top}
+.page-choose-template .document.skn-srz9 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz9 .heading{font-weight:700;line-height:15px;margin-bottom:10px;padding-left:15px;position:relative}
+.page-choose-template .document.skn-srz9 .heading:before{background:#002e58;border-radius:50%;content:'';height:5px;left:1px;position:absolute;top:8px;width:5px}
+.page-choose-template .document.skn-srz9 .sectiontitle{color:#002e58;word-wrap:break-word}
+.page-choose-template .document.skn-srz9 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-srz9 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-srz9 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-srz9 .section:empty{display:none}
+/*monogram*/
+.page-choose-template .document.skn-srz9 .right-box{position:relative}
+.page-choose-template .document.skn-srz9 .monogram,.page-choose-template   .document.skn-srz9 .flname{display:table-cell}
+.page-choose-template .document.skn-srz9 .monogram{width:92px;min-height:92px;vertical-align:top}
+.page-choose-template .document.skn-srz9 .flname{padding-left:20px}
+.page-choose-template .document.skn-srz9 .monogram svg text{font-size:28px;font-style:italic;font-weight:400;text-transform:lowercase}
+/*left and right css*/
+.page-choose-template .document.skn-srz9 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+.page-choose-template .document.skn-srz9 .left-box,.page-choose-template  .document.skn-srz9 .right-box{padding-left:15px;vertical-align:top;display:table-cell}
+.page-choose-template .document.skn-srz9 .left-box{box-sizing:initial;letter-spacing:.2px;padding-left:0;padding-right:15px}
+.page-choose-template .document.skn-srz9 .right-box .section:first-child,.page-choose-template  .document.skn-srz9 .left-box .section:first-child,.page-choose-template  .document.skn-srz9 .summary{padding-top:0}
+.page-choose-template .document.skn-srz9 .right-box .paddedline.date-content{position:absolute;margin-left:0;width:65px}
+.page-choose-template .document.skn-srz9 .paragraph{position:relative}
+.page-choose-template .document.skn-srz9 .right-box .experience .paragraph,.page-choose-template  .document.skn-srz9 .right-box .summary .paragraph{margin-left:0}
+.page-choose-template .document.skn-srz9 .summary .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-srz9 > div:not(.topsection),.page-choose-template  .document.skn-srz9 > div:not(.parentContainer){min-height:auto}
+.page-choose-template .document.skn-srz9 .resumeTitle{color:#002e58;font-weight:500}
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-srz9.document{min-height:792px}
+.page-choose-template .document.skn-srz9 > div{min-height:inherit}
+.page-choose-template .document.skn-srz9 .left-box .sortable-item .notdraggable,.page-choose-template  .document.skn-srz9 .right-box .sortable-item .notdraggable{padding-top:0px}
+.page-choose-template .document.skn-srz9 .right-box .sortable-item .summary{padding-top:20px}
+.page-choose-template .document.skn-srz9 .sortable-item .name{padding-bottom:0}
+.page-choose-template .document.skn-srz9 .ratingWrapper .default-fill{fill:#002e58}
+.page-choose-template .document.skn-srz9 .sortable-item .ratingWrapper span{top:0}
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-srz9 .parentContainer{height:1px}}
+/*Icons*/
+.page-choose-template .document.skn-srz9 .iconRow{clear:both;padding-bottom:7px;word-wrap:break-word}
+.page-choose-template .document.skn-srz9 .iconRow .iconSvg{width:20px;height:20px;float:left;margin-right:5px}
+.page-choose-template .document.skn-srz9 .iconRow .iconSvg svg:first-child{width:20px;height:20px}
+.page-choose-template .document.skn-srz9 .iconRow svg circle{fill:#002e58}
+.page-choose-template .document.skn-srz9 .iconRow svg path{fill:#fff}
+.page-choose-template .document.skn-srz9 .iconRow .icoTxt{margin-left:25px}
+.page-choose-template .document.skn-srz9 .ratingWrapper{text-align:right}
+.page-choose-template .document.skn-srz9 .ratingWrapper .noLnht{line-height:0}
+.page-choose-template .document.skn-srz9 .ratingWrapper svg{height:13px}
+/* For dates fix */
+.page-choose-template .document.skn-srz9 .right-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-srz9 .left-box .hidedates{display:none}
+.page-choose-template .document.skn-srz9 .paragraph.datespara:after{content:'';display:table;clear:both}
+.page-choose-template .document.skn-srz9,.page-choose-template  .document.skn-srz9 table{line-height:18px}
+.page-choose-template .document.skn-srz9.pagesize{width:612px}
+.page-choose-template .document.skn-srz9.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-srz9.fontsize{font-size:11px}
+.page-choose-template .document.skn-srz9.vmargins{padding-top:22px;padding-bottom:22px}
+.page-choose-template .document.skn-srz9.hmargins{padding-left:22px;padding-right:22px}
+.page-choose-template .document.skn-srz9 .section{padding-top:20px}
+.page-choose-template .document.skn-srz9 .left-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-srz9 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-srz9 .singlecolumn,.page-choose-template  .document.skn-srz9 .maincolumn{word-break:break-word}
+.page-choose-template .document.skn-srz9 .right-box .singlecolumn,.page-choose-template  .document.skn-srz9 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-srz9 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-srz9 .jobtitle, .page-choose-template  .document.skn-srz9 .degree,.page-choose-template   .document.skn-srz9 .programline{font-size:14px}
+.page-choose-template .document.skn-srz9 .name{color:#002e58;font-size:36px;line-height:43px}
+.page-choose-template .document.skn-srz9 .monogram svg circle,.page-choose-template  .document.skn-srz9 .iconRow svg circle{fill:#002e58}
+.page-choose-template .document.skn-srz9 .heading{line-height:22px}
+.page-choose-template .document.skn-srz9 .sectiontitle,.page-choose-template   .document.skn-srz9 .resumeTitle,.page-choose-template   .document.skn-srz9 .heading:before{font-size:16px;color:#002e58}
+.page-choose-template .document.skn-srz9 .resumeTitle{line-height:22px}
+.page-choose-template .document.skn-srz9 .heading:before{background:#002e58;top:9px}
+.page-choose-template .document.skn-srz9 .left-box{width:165px}
+.page-choose-template .document.skn-srz9 .right-box .paragraph .singlecolumn{margin-left:91px}
+/*Icons*/
+.page-choose-template .document.skn-srz9 .iconRow .iconSvg{padding-top:-2px}
+/*fixes for builder page*/
+.page-choose-template .document.skn-srz9 .left-box .sortable-item .section,.page-choose-template  .document.skn-srz9 .right-box .sortable-item .section{padding-top:20px}
+.page-choose-template .document.skn-srz9 .ratingWrapper .default-fill{fill:#002e58}
+/*Hover border style*/
+.page-choose-template .document.skn-srz9.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-srz9.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-srz9.active .acr-edit,.page-choose-template  .document.skn-srz9.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-srz9.active .acr-move{right:-59px !important}
+
+
+
+
+/*TRZ1 css*/
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz1 ol,.page-choose-template .document.skn-trz1 ul{list-style:none}
+.page-choose-template .document.skn-trz1 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz1 ul,.page-choose-template .document.skn-trz1 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz1 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz1 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-trz1 span.paddedline{display:block}
+.page-choose-template .document.skn-trz1 span.jobtitle,.page-choose-template .document.skn-trz1 span.degree,.page-choose-template .document.skn-trz1 span.programline{font-weight:bold}
+.page-choose-template .document.skn-trz1 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-trz1 span.dates_wrapper{display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-trz1 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-trz1 .txtBold{font-weight:bold}
+
+.page-choose-template .document.skn-trz1{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-trz1 .name{color:#002e58;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left}
+.page-choose-template .document.skn-trz1 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-trz1 .heading{clear:both;font-weight:bold}
+.page-choose-template .document.skn-trz1 .sectiontitle{color:#002e58}
+.page-choose-template .document.skn-trz1 .address{text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;white-space:nowrap;position:relative;z-index:2}
+.page-choose-template .document.skn-trz1 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-trz1 .addressLeft,.page-choose-template .document.skn-trz1 .addressRight{width:49%;padding:0 1% 0 0;white-space:normal;display:inline-block;vertical-align:top}
+.page-choose-template .document.skn-trz1 .addressRight{padding:0 0 0 1%}
+.page-choose-template .document.skn-trz1 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-trz1 table.twocol td{width:50%}
+.page-choose-template .document.skn-trz1 table.skills{width:100%}
+.page-choose-template .document.skn-trz1 table.skills th,.page-choose-template .document.skn-trz1 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz1 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-trz1 table.skills .skillname,.page-choose-template .document.skn-trz1 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz1 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz1 table.skills .skillyears,.page-choose-template .document.skn-trz1 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz1 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz1 table.skills .pad2,.page-choose-template .document.skn-trz1 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-trz1 .resumeTitle{color:#002e58;font-weight:400;text-align:left;padding-bottom:7px}
+.page-choose-template .document.skn-trz1 td.twocol_2{border-left:1px  solid #FEFDFD}
+
+/*Rating bar*/
+.page-choose-template .document.skn-trz1 .rating-wrapper{white-space:nowrap}
+.page-choose-template .document.skn-trz1 .rating-text,.page-choose-template .document.skn-trz1 .rating-svg{width:68%;padding:0 1% 0 0;display:inline-block;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz1 .rating-svg{width:30%;text-align:right;padding:0}
+.page-choose-template .document.skn-trz1 .outer-square{height:7px;background:#d5d6d6}
+.page-choose-template .document.skn-trz1 .inner-square{background:#002e58;height:7px}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz1,.page-choose-template .document.skn-trz1 table{line-height:19px}
+.page-choose-template .document.skn-trz1.pagesize{width:612px}
+.page-choose-template .document.skn-trz1.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz1.fontface{font-family:"Times New Roman", Times, serif}
+.page-choose-template .document.skn-trz1.vmargins{padding-top:25px;padding-bottom:25px}
+.page-choose-template .document.skn-trz1.hmargins{padding-left:37px;padding-right:37px}
+.page-choose-template .document.skn-trz1 .section{padding-top:18px}
+.page-choose-template .document.skn-trz1 .address{font-size:11px;line-height:27px;padding-top:16px}
+.page-choose-template .document.skn-trz1 .heading{padding-bottom:13px}
+.page-choose-template .document.skn-trz1 .jobtitle,.page-choose-template .document.skn-trz1 span.degree,.page-choose-template .document.skn-trz1 span.programline{font-size:14px}
+.page-choose-template .document.skn-trz1 .paragraph{padding-top:18px}
+.page-choose-template .document.skn-trz1 .firstsection,.page-choose-template .document.skn-trz1 .firstparagraph, .page-choose-template .document.skn-trz1 .SECTION_CNTC{padding-top:0}
+.page-choose-template .document.skn-trz1 .singlecolumn,.page-choose-template .document.skn-trz1 .maincolumn{margin-left:100px}
+.page-choose-template .document.skn-trz1 span.dates_wrapper{width:90px;font-size:11px;line-height:20px}
+.page-choose-template .document.skn-trz1 .sectiontitle,.page-choose-template .document.skn-trz1 .resumeTitle{font-size:15px;line-height:23px}
+.page-choose-template .document.skn-trz1 .name{font-size:36px;line-height:52px}
+.page-choose-template .document.skn-trz1 table.skills td{padding-top:9px}
+.page-choose-template .document.skn-trz1 .noPind{margin-left:0}
+.page-choose-template .document.skn-trz1 .name,.page-choose-template .document.skn-trz1 .sectiontitle,.page-choose-template .document.skn-trz1 .resumeTitle{color:#000000}
+.page-choose-template .document.skn-trz1 .inner-square{background:#000000}
+
+/*Rating bar*/
+.page-choose-template .document.skn-trz1 .rating-svg{padding-top:6px}
+.page-choose-template .document.skn-trz1 .sortableInner .sortable-item.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+
+/* trz2 css*/
+/****** STATIC STYLING ******/
+
+.page-choose-template .document.skn-trz2 ol,.page-choose-template  .document.skn-trz2 ul{list-style:none}
+.page-choose-template .document.skn-trz2 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz2 ul,.page-choose-template  .document.skn-trz2 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz2 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz2 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+/*table style*/
+.page-choose-template .document.skn-trz2 table.skills,.page-choose-template .document.skn-trz2 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-trz2 table.skills th,.page-choose-template table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz2 table.skills .skillname,.page-choose-template  .document.skn-trz2 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz2 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz2 table.skills .skillyears,.page-choose-template  .document.skn-trz2 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz2 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz2 .skills .pad2,.page-choose-template  .document.skn-trz2 table.skills .pad3{width:1%}
+/*document*/
+.page-choose-template .document.skn-trz2{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;position:relative;word-wrap:break-word}
+.page-choose-template .document.skn-trz2 .topbg{background:#003d73;box-sizing:border-box;color:#fff;font-size:14px;margin-left:0;margin-top:-22px;padding:30px 0 20px 22px;position:relative;text-align:left;vertical-align:bottom;width:100%}
+.page-choose-template .document.skn-trz2 .topbgborder{bottom:-10px;height:14px;left:23px;position:absolute;width:26px}
+.page-choose-template .document.skn-trz2 .name{color:#003d73;font-weight:700;padding:60px 20px 0px;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-trz2 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz2 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+.page-choose-template .document.skn-trz2 .sectiontitle{color:#003d73;word-wrap:break-word}
+.page-choose-template .document.skn-trz2 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-trz2 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-trz2 .firstsection,.page-choose-template  .document.skn-trz2 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-trz2 .education .joblocation{font-style:italic}
+.page-choose-template .document.skn-trz2 .resumeTitle{color:#003d73;padding:7px 20px 15px;font-style:italic}
+/*leftBox and rightBox css*/
+.page-choose-template .document.skn-trz2 .left-box{box-sizing:initial;display:table-cell;padding:20px 10px 20px 15px;position:relative}
+.page-choose-template .document.skn-trz2 .left-box .sectiontitle{text-align:left}
+/* fixes for grey border */
+.page-choose-template .document.skn-trz2 .left-box .section{position:relative}
+.page-choose-template .document.skn-trz2 .right-box{display:table-cell;letter-spacing:.2px;padding:20px 20px 20px 18px;vertical-align:top}
+.page-choose-template .document.skn-trz2 .right-box .section{border-left:1px solid #d5d6d6;padding-left:23px;position:relative}
+.page-choose-template .document.skn-trz2 .right-box .section:first-child{padding-top:0}
+.page-choose-template .document.skn-trz2 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+/*topsection css*/
+.page-choose-template .document.skn-trz2 .topsection .left-box:before{background:#003d73;box-sizing:border-box;color:#fff;content:'Resume';font-family:"Century Gothic";left:0;padding:30px 24px 15px;position:absolute;top:0;width:98%}
+.page-choose-template .document.skn-trz2 .topsection .left-box:after{color:#003d73;content:'\25C6';font-family:"Century Gothic";font-size:24px;height:20px;left:20px;position:absolute;top:51px;width:20px}
+.page-choose-template .document.skn-trz2 .topsection .right-box:before{background:#003d73;bottom:0;box-sizing:border-box;color:#fff;content:'';font-family:"Century Gothic";padding:30px 24px 31px;position:absolute;right:0;width:50%}
+.page-choose-template .document.skn-trz2 .topsection .right-box:after{bottom:49px;color:#003d73;content:'\25C6';font-family:"Century Gothic";font-size:24px;height:20px;position:absolute;right:20px;width:20px}
+.page-choose-template .document.skn-trz2 .topsection .left-box{float:left;padding-bottom:0;padding-left:0;padding-right:0;width:50%}
+.page-choose-template .document.skn-trz2 .topsection .right-box{padding-bottom:0;padding-left:0;padding-top:76px;width:50%}
+.page-choose-template .document.skn-trz2 .topsection .right-box .section{border:0;padding-left:0}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box .section:first-child:before{background:#fff;content:"";height:10px;left:-3px;position:absolute;top:0;width:5px;z-index:1}
+.page-choose-template .document.skn-trz2 .right-box .section .icon-heading,.page-choose-template  .document.skn-trz2 .right-box .section:first-child .icon-heading{height:25px;left:-8px;position:absolute;top:3px;width:25px;z-index:10}
+.page-choose-template .document.skn-trz2 .right-box .section .icon-heading{top:8px}
+.page-choose-template .document.skn-trz2 .right-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-trz2 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-trz2 .section:empty,.page-choose-template  .document.skn-trz2 .parentContainer .left-box svg{display:none}
+.page-choose-template .document.skn-trz2 .right-box .education .paragraph,.page-choose-template  .document.skn-trz2 .right-box .experience .paragraph,.page-choose-template  .document.skn-trz2 .right-box .summary .paragraph{margin-left:0}
+.page-choose-template .document.skn-trz2 .right-box .summary .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz2 .parentContainer svg.rating{display:inline-block;height:11px;box-sizing:content-box}
+.page-choose-template .document.skn-trz2 .rating-wrapper{position:relative;white-space:nowrap}
+.page-choose-template .document.skn-trz2 .rating-text{word-wrap:break-word}
+.page-choose-template .document.skn-trz2 .rating-text,.page-choose-template  .document.skn-trz2 .rating-svg{width:50%;display:inline-block;word-wrap:break-word;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz2 .rating-svg{text-align:right;line-height:normal}
+.page-choose-template .document.skn-trz2 .rating-text:last-child {width: 100%;}
+/*common css*/
+.page-choose-template .document.skn-trz2 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz2 .txtItl{font-style:italic}
+.page-choose-template .document.skn-trz2 .paddedline{display:block}
+.page-choose-template .document.skn-trz2 .pt5{padding-top:5px}
+.page-choose-template .document.skn-trz2 .word-break{word-wrap:break-word}
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-trz2.document{min-height:792px}
+/* finalize page Timeline */
+.page-choose-template .document.skn-trz2 .parentContainer .left-box:after,.page-choose-template   .document.skn-trz2 .parentContainer .right-box:after {content:' ';display:block;height:80px;width:100%}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box > .sortable-item .section .icon-heading{top:3px}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box > .sortable-item:first-child .section .icon-heading{top:3px}
+.page-choose-template .document.skn-trz2 .parentContainer .left-box > .sortable-item:first-child .section,.page-choose-template   .document.skn-trz2 .parentContainer .right-box > .sortable-item:first-child .section{padding-top:0}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box > .sortable-item .section:first-child:before{background:none}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box > .sortable-item:first-child .section:before{height:20px;top:-3px;background:#fff}
+.page-choose-template .document.skn-trz2 > div:not(.topsection),.page-choose-template   .document.skn-trz2 > div:not(.parentContainer){min-height:auto}
+.page-choose-template .document.skn-trz2 .rating .default-fill{fill:#003d73}
+.page-choose-template .document.skn-trz2 .sortable-item .rating-wrapper{display:block}
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz2 .parentContainer{height:1px}}
+.page-choose-template .document.skn-trz2,.page-choose-template  .document.skn-trz2 table{line-height:18px}
+.page-choose-template .document.skn-trz2.pagesize{width:612px}
+.page-choose-template .document.skn-trz2.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz2.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz2 .section{padding-top:20px}
+.page-choose-template .document.skn-trz2 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-trz2 .paragraph{margin-top:20px}
+.page-choose-template .document.skn-trz2 .singlecolumn,.page-choose-template  .document.skn-trz2 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-trz2 .right-box .singlecolumn,.page-choose-template  .document.skn-trz2 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-trz2 table.skills td{padding-top:10px}
+.page-choose-template .document.skn-trz2 .jobtitle,.page-choose-template  .document.skn-trz2 .degree,.page-choose-template  .document.skn-trz2 .programline{font-size:14px}
+.page-choose-template .document.skn-trz2 .name{color:#003d73;font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-trz2 .heading{line-height:22px}
+.page-choose-template .document.skn-trz2 .left-box .heading{line-height:22px}
+.page-choose-template .document.skn-trz2 .sectiontitle{font-size:16px;color:#003d73}
+.page-choose-template .document.skn-trz2 .right-box .section .icon1,.page-choose-template  .document.skn-trz2 .right-box .section .icon2{fill:#003d73}
+.page-choose-template .document.skn-trz2 .topbg{background-color:#003d73}
+.page-choose-template .document.skn-trz2 .topbgborder svg polyline{fill:#003d73}
+.page-choose-template .document.skn-trz2 .left-box{width:153px}
+.page-choose-template .document.skn-trz2 .right-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-trz2 .right-box .paddedline.date-content{left:-91px}
+.page-choose-template .document.skn-trz2 .topsection .left-box:before,.page-choose-template  .document.skn-trz2 .topsection .right-box:before{background-color:#003d73}
+.page-choose-template .document.skn-trz2 .topsection .left-box:after,.page-choose-template  .document.skn-trz2 .topsection .right-box:after{color:#003d73}
+.page-choose-template .document.skn-trz2 .rating-wrapper{margin-top:10px}
+.page-choose-template .document.skn-trz2 .rating-wrapper *{font-size:11px}
+.page-choose-template .document.skn-trz2 .resumeTitle{color:#003d73;font-size:17px}
+.page-choose-template .document.skn-trz2 .parentContainer svg.rating{padding-top:5.5px}
+/*fixes for finalize page*/
+.page-choose-template .document.skn-trz2 .parentContainer .left-box > .sortable-item .section,.page-choose-template   .document.skn-trz2 .parentContainer .right-box > .sortable-item .section{padding-top:20px}
+.page-choose-template .document.skn-trz2 .parentContainer .right-box > .sortable-item:first-child .section:before{background:#fff;content:"";height:10px;left:-3px;position:absolute;top:0;width:5px;z-index:1}
+.page-choose-template .document.skn-trz2.active svg.rating{height:11px}
+.page-choose-template .document.skn-trz2 .topsection .left-box > .sortable-item{background:none}
+.page-choose-template .document.skn-trz2 .rating .default-fill{fill:#003d73}
+.page-choose-template .document.skn-trz2 .right-box .doc-item .icon-heading{left:-32px}
+/*Hover border style*/
+.page-choose-template .document.skn-trz2.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-trz2.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-trz2.active .acr-edit,.page-choose-template  .document.skn-trz2.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-trz2.active .acr-move{right:-59px !important}
+
+/* TRZ3 */
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz3 ol,.page-choose-template .document.skn-trz3 ul{list-style:none}
+.page-choose-template .document.skn-trz3 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz3 ul,.page-choose-template .document.skn-trz3 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz3 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz3 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+/*table style*/
+.page-choose-template .document.skn-trz3 table.skills,.page-choose-template .document.skn-trz3 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-trz3 table.skills th,.page-choose-template table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz3 table.skills .skillname,.page-choose-template .document.skn-trz3 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz3 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz3 table.skills .skillyears,.page-choose-template .document.skn-trz3 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz3 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz3 .skills .pad2,.page-choose-template .document.skn-trz3 table.skills .pad3{width:1%}
+
+/*document*/
+.page-choose-template .document.skn-trz3{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;padding:20px;word-wrap:break-word}
+.page-choose-template .document.skn-trz3 .name{color:#003d73;font-weight:700;padding:0;position:relative;text-align:left;word-wrap:break-word}
+.page-choose-template .document.skn-trz3 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz3 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+.page-choose-template .document.skn-trz3 .sectiontitle{color:#003d73;word-wrap:break-word}
+.page-choose-template .document.skn-trz3 .firstsection,.page-choose-template .document.skn-trz3 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-trz3 .education .joblocation{font-style:italic}
+.page-choose-template .document.skn-trz3 .resumeTitle{color:#003d73;padding:7px 0 15px;font-style:italic}
+
+/*leftBox and rightBox css*/
+.page-choose-template .document.skn-trz3 .left-box{display:table-cell;padding:0;position:relative}
+.page-choose-template .document.skn-trz3 .left-box .section{position:relative}
+.page-choose-template .document.skn-trz3 .left-box .sectiontitle{text-align:left}
+.page-choose-template .document.skn-trz3 .right-box{display:table-cell;letter-spacing:.2px;padding:0 0 0 18px;vertical-align:top}
+.page-choose-template .document.skn-trz3 .right-box .section{border-left:1px solid #d5d6d6;padding-left:23px;position:relative}
+.page-choose-template .document.skn-trz3 .right-box .section:first-child{padding-top:0}
+.page-choose-template .document.skn-trz3 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+.page-choose-template .document.skn-trz3 .parentContainer .left-box,.page-choose-template .document.skn-trz3 .parentContainer .right-box{padding-bottom:20px;padding-top:20px}
+.page-choose-template .document.skn-trz3 .parentContainer .left-box{padding-right:10px}
+
+.page-choose-template .document.skn-trz3 .topsection .right-box .section{border:0;padding-left:0}
+.page-choose-template .document.skn-trz3 .parentContainer .right-box .section:first-child:before{background:#fff;content:"";height:21px;left:-3px;position:absolute;top:0;width:5px;z-index:1}
+.page-choose-template .document.skn-trz3 .right-box .section .icon-heading,.page-choose-template .document.skn-trz3 .right-box .section:first-child .icon-heading{height:25px;left:-8px;position:absolute;top:3px;width:25px;z-index:10}
+/*.page-choose-template .document.skn-trz3 .icon1{opacity:.75}*/
+.page-choose-template .document.skn-trz3 .right-box .section .icon-heading{top:14px}
+.page-choose-template .document.skn-trz3 .right-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-trz3 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-trz3 .section:empty,.page-choose-template .document.skn-trz3 .parentContainer .left-box svg{display:none}
+.page-choose-template .document.skn-trz3 .topsection .left-box,.page-choose-template .document.skn-trz3 .topsection .right-box{width:50%;float:left;box-sizing:border-box}
+.page-choose-template .document.skn-trz3 .right-box .education .paragraph,.page-choose-template .document.skn-trz3 .right-box .experience .paragraph,.page-choose-template .document.skn-trz3 .right-box .summary .paragraph{margin-left:0}
+.page-choose-template .document.skn-trz3 .right-box .summary .singlecolumn{margin-left:0!important}
+
+/* fixes for grey border */
+.page-choose-template .document.skn-trz3 .left-box .section{position:relative}
+
+.page-choose-template .document.skn-trz3 .parentContainer svg.rating{display:inline-block;height:11px;box-sizing:content-box}
+.page-choose-template .document.skn-trz3 .rating-wrapper{position:relative;white-space:nowrap}
+.page-choose-template .document.skn-trz3 .rating-text{word-wrap:break-word}
+.page-choose-template .document.skn-trz3 .rating-text,.page-choose-template .document.skn-trz3 .rating-svg{width:50%;display:inline-block;word-wrap:break-word;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz3 .rating-svg{text-align:right;line-height:normal}
+.page-choose-template .document.skn-trz3 .rating-text:last-child {width: 100%;}
+
+/*common css*/
+.page-choose-template .document.skn-trz3 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz3 .txtItl{font-style:italic}
+.page-choose-template .document.skn-trz3 .paddedline{display:block}
+.page-choose-template .document.skn-trz3 .pt5{padding-top:5px}
+.page-choose-template .document.skn-trz3 .ptb3{padding:3px 0}
+.page-choose-template .document.skn-trz3 .word-break{word-wrap:break-word}
+
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-trz3.document{min-height:792px}
+.page-choose-template .document.skn-trz3 > div{min-height:inherit}
+
+/* finalize page Timeline */
+.page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item .section .icon-heading{top:3px}
+.page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item:first-child .section .icon-heading{top:3px}
+.page-choose-template .document.skn-trz3 .parentContainer .left-box > .sortable-item:first-child .section, .page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item:first-child .section{padding-top:0}
+.page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item .section:first-child:before{background:none}
+.page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item:first-child .section:before{height:20px;top:-3px;background:#fff}
+.page-choose-template .document.skn-trz3 > div:not(.topsection), .page-choose-template .document.skn-trz3 > div:not(.parentContainer){min-height:auto}
+.page-choose-template .document.skn-trz3 .rating .default-fill{fill:#003d73}
+.page-choose-template .document.skn-trz3 .sortable-item .rating-wrapper{display:block}
+/*.page-choose-template .document.skn-trz3 .sortable-item .rating-wrapper > div{display:flex;position:relative;white-space:nowrap}*/
+
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz3 .parentContainer{height:1px}}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz3,.page-choose-template .document.skn-trz3 table{line-height:18px}
+.page-choose-template .document.skn-trz3.pagesize{width:612px}
+.page-choose-template .document.skn-trz3.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz3.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz3 .section{padding-top:20px}
+.page-choose-template .document.skn-trz3 .firstparagraph{margin-top:0!important}
+.page-choose-template .document.skn-trz3 .paragraph{margin-top:20px}
+.page-choose-template .document.skn-trz3 .singlecolumn,.page-choose-template .document.skn-trz3 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-trz3 .right-box .singlecolumn,.page-choose-template .document.skn-trz3 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-trz3 table.skills td{padding-top:10px}
+.page-choose-template .document.skn-trz3 .jobtitle,.page-choose-template .document.skn-trz3 .degree,.page-choose-template .document.skn-trz3 .programline{font-size:14px}
+.page-choose-template .document.skn-trz3 .name{color:#003d73;font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-trz3 .heading{line-height:22px}
+.page-choose-template .document.skn-trz3 .left-box .heading{line-height:22px}
+.page-choose-template .document.skn-trz3 .sectiontitle{font-size:16px;color:#003d73}
+.page-choose-template .document.skn-trz3 .right-box .section .icon1,.page-choose-template .document.skn-trz3 .right-box .section .icon2{fill:#003d73}
+.page-choose-template .document.skn-trz3 .left-box{width:153px}
+.page-choose-template .document.skn-trz3 .right-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-trz3 .right-box .paddedline.date-content{left:-91px}
+.page-choose-template .document.skn-trz3 .rating-wrapper *{font-size:11px}
+.page-choose-template .document.skn-trz3 .resumeTitle{color:#003d73;font-size:17px}
+.page-choose-template .document.skn-trz3 .rating-wrapper{margin-top:10px}
+
+/*fixes for finalize page*/
+.page-choose-template .document.skn-trz3 .parentContainer .left-box > .sortable-item .section, .page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item .section{padding-top:20px}
+.page-choose-template .document.skn-trz3 .parentContainer .right-box > .sortable-item:first-child .section:before{background:#fff;content:"";height:10px;left:-3px;position:absolute;top:0;width:5px;z-index:1}
+.page-choose-template .document.skn-trz3 .parentContainer .left-box .sortable-item .section:before{right:39.5px}
+.page-choose-template .document.skn-trz3 .parentContainer svg.rating{padding-top:5.5px}
+.page-choose-template .document.skn-trz3.active svg.rating{height:11px}
+.page-choose-template .document.skn-trz3 .rating .default-fill{fill:#003d73}
+.page-choose-template .document.skn-trz3 .right-box .doc-item .icon-heading{left:-32px}
+
+/* TRZ4 */
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz4 ol,.page-choose-template .document.skn-trz4 ul{list-style:none}
+.page-choose-template .document.skn-trz4 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz4 ul,.page-choose-template .document.skn-trz4 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz4 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz4 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-trz4{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-trz4 .name{color:#252932;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left}
+.page-choose-template .document.skn-trz4 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-trz4 .heading{clear:both;font-weight:bold}
+.page-choose-template .document.skn-trz4 .sectiontitle{color:#252932;border-bottom:1px solid #CCC}
+.page-choose-template .document.skn-trz4 .address{text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;white-space:nowrap;position:relative;z-index:2}
+.page-choose-template .document.skn-trz4 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-trz4 .addressLeft,.page-choose-template .document.skn-trz4 .addressRight{width:49%;padding:0 1% 0 0;white-space:normal;display:inline-block;vertical-align:top}
+.page-choose-template .document.skn-trz4 .addressRight{padding:0 0 0 1%}
+.page-choose-template .document.skn-trz4 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-trz4 table.twocol td{width:50%}
+.page-choose-template .document.skn-trz4 table.skills{width:100%}
+.page-choose-template .document.skn-trz4 table.skills th,.page-choose-template .document.skn-trz4 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz4 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-trz4 table.skills .skillname,.page-choose-template .document.skn-trz4 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz4 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz4 table.skills .skillyears,.page-choose-template .document.skn-trz4 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz4 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz4 table.skills .pad2,.page-choose-template .document.skn-trz4 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-trz4 span.paddedline{display:block}
+.page-choose-template .document.skn-trz4 span.jobtitle,.page-choose-template .document.skn-trz4 span.degree,.page-choose-template .document.skn-trz4 span.programline{font-weight:bold}
+.page-choose-template .document.skn-trz4 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-trz4 span.dates_wrapper{font-weight:bold;display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-trz4 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-trz4 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz4 .resumeTitle{text-align:left;font-weight:400;color:#252932}
+.page-choose-template .document.skn-trz4 td.twocol_2{border-left:1px  solid #FEFDFD}
+
+/*Rating bar*/
+.page-choose-template .document.skn-trz4 .rating-wrapper{white-space:nowrap}
+.page-choose-template .document.skn-trz4 .rating-text,.page-choose-template .document.skn-trz4 .rating-svg{width:68%;padding:0 1% 0 0;display:inline-block;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz4 .rating-svg{width:30%;text-align:right;padding:0}
+.page-choose-template .document.skn-trz4 .ratingValue{margin-top:-1px}
+.page-choose-template .document.skn-trz4 .rating .default-fill{fill:#252932}
+.page-choose-template .document.skn-trz4 .rating-svg .noLnht{line-height:0}
+.page-choose-template .document.skn-trz4 svg{height:13px}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz4,.page-choose-template .document.skn-trz4 table{line-height:16px}
+.page-choose-template .document.skn-trz4.pagesize{width:612px}
+.page-choose-template .document.skn-trz4.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz4.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz4.vmargins{padding-top:24px;padding-bottom:24px}
+.page-choose-template .document.skn-trz4.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-trz4 .section{padding-top:20px}
+.page-choose-template .document.skn-trz4 .address{font-size:11px;line-height:21px;padding-top:10px}
+.page-choose-template .document.skn-trz4 .heading{padding-bottom:10px}
+.page-choose-template .document.skn-trz4 .jobtitle,.page-choose-template .document.skn-trz4 span.degree,.page-choose-template .document.skn-trz4 span.programline{font-size:14px}
+.page-choose-template .document.skn-trz4 .paragraph{padding-top:10px}
+.page-choose-template .document.skn-trz4 .rtngSec .paragraph{padding-top:5px}
+.page-choose-template .document.skn-trz4 .firstsection,.page-choose-template .document.skn-trz4 .firstparagraph,.page-choose-template .document.skn-trz4 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-trz4 .singlecolumn,.page-choose-template .document.skn-trz4 .maincolumn{margin-left:120px}
+.page-choose-template .document.skn-trz4 span.dates_wrapper{width:110px;font-size:11px;line-height:17px}
+.page-choose-template .document.skn-trz4 .sectiontitle,.page-choose-template .document.skn-trz4 .resumeTitle{font-size:16px;line-height:21px}
+.page-choose-template .document.skn-trz4 .name{font-size:36px;line-height:46px}
+.page-choose-template .document.skn-trz4 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-trz4 .noPind{margin-left:0}
+.page-choose-template .document.skn-trz4 .name,.page-choose-template .document.skn-trz4 .sectiontitle,.page-choose-template .document.skn-trz4 .resumeTitle{color:#252932}
+.page-choose-template .document.skn-trz4 .rating-svg{padding-top:2px}
+
+/* Fixes for builder page */
+.page-choose-template .document.skn-trz4 .sortableInner .sortable-item.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+.page-choose-template .document.skn-trz4 .sortable-item .ratingValue{margin-top:0}
+.page-choose-template .document.skn-trz4 .rating .default-fill{fill:#252932}
+
+/* TRZ5 */
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz5 ol,.page-choose-template .document.skn-trz5 ul{list-style:none}
+.page-choose-template .document.skn-trz5 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz5 ul,.page-choose-template .document.skn-trz5 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz5 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix(){.page-choose-template .document.skn-trz5 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-trz5{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-trz5 .name{color:#002e58;font-size:15px;line-height:17px;font-weight:bold;padding:0;text-align:left}
+.page-choose-template .document.skn-trz5 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-trz5 .heading{clear:both;font-weight:bold}
+.page-choose-template .document.skn-trz5 .sectiontitle{color:#002e58;padding-left:5px}
+.page-choose-template .document.skn-trz5 .address{position:relative;text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;display:table;width:100%;table-layout:fixed}
+.page-choose-template .document.skn-trz5 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-trz5 table.twocol td{width:50%}
+.page-choose-template .document.skn-trz5 table.skills{width:100%}
+.page-choose-template .document.skn-trz5 table.skills th,.page-choose-template .document.skn-trz5 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz5 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-trz5 table.skills .skillname,.page-choose-template .document.skn-trz5 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz5 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz5 table.skills .skillyears,.page-choose-template .document.skn-trz5 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz5 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz5 table.skills .pad2,.page-choose-template .document.skn-trz5 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-trz5 span.paddedline{display:block}
+.page-choose-template .document.skn-trz5 .txtRight{text-align:right;clear:both}
+.page-choose-template .document.skn-trz5 span.jobtitle,.page-choose-template .document.skn-trz5 span.degree,.page-choose-template .document.skn-trz5 span.programline{font-weight:bold}
+.page-choose-template .document.skn-trz5 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-trz5 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-trz5 span.dates_wrapper{display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-trz5 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz5 .resumeTitle{text-align:left;color:#002e58;font-weight:400}
+.page-choose-template .document.skn-trz5 td.twocol_2{border-left:1px  solid #FEFDFD}
+.page-choose-template .document.skn-trz5 .addressleft,.page-choose-template .document.skn-trz5 .addressright{display:table-cell; width:40%}
+
+/*Icon*/
+.page-choose-template .document.skn-trz5 .headingIcon{position:relative;top:10px}
+.page-choose-template .document.skn-trz5 .headingIcon svg{height:30px;width:30px}
+.page-choose-template .document.skn-trz5 .headingIcon svg rect{fill:#002e58}
+.page-choose-template .document.skn-trz5 .headingIcon svg path{fill:#fff}
+.page-choose-template .document.skn-trz5 .ratingfield p{display:inline}
+
+/*Bar Graph*/
+.page-choose-template .document.skn-trz5 .ratingBar{background:#d5d6d6;width:150px;float:right;margin:2px 0}
+.page-choose-template .document.skn-trz5 .innerRating{background-color:#002e58;height:7px;width:60%}
+.page-choose-template .document.skn-trz5 .rtngSec .txtRight{position:relative;top:-5px}
+/****** DYNAMIC STYLING ******/
+
+.page-choose-template .document.skn-trz5,.page-choose-template .document.skn-trz5 table{line-height:16px}
+.page-choose-template .document.skn-trz5.pagesize{width:612px}
+.page-choose-template .document.skn-trz5.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz5.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz5.vmargins{padding-top:24px;padding-bottom:24px}
+.page-choose-template .document.skn-trz5.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-trz5 .section{padding-top:20px}
+.page-choose-template .document.skn-trz5 .address{font-size:11px;line-height:21px;padding-top:10px}
+.page-choose-template .document.skn-trz5 .heading{padding-bottom:15px}
+.page-choose-template .document.skn-trz5 .jobtitle,.page-choose-template .document.skn-trz5 span.degree,.page-choose-template .document.skn-trz5 span.programline{font-size:14px}
+.page-choose-template .document.skn-trz5 .paragraph{padding-top:15px}
+.page-choose-template .document.skn-trz5 .rtngSec .paragraph{padding-top:7px}
+.page-choose-template .document.skn-trz5 .firstsection,.page-choose-template .document.skn-trz5 .firstparagraph,.page-choose-template .document.skn-trz5 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-trz5 .singlecolumn,.page-choose-template .document.skn-trz5 .maincolumn{margin-left:70px}
+.page-choose-template .document.skn-trz5 span.dates_wrapper{width:60px;font-size:11px;line-height:17px}
+.page-choose-template .document.skn-trz5 .sectiontitle,.page-choose-template .document.skn-trz5 .resumeTitle{font-size:16px;line-height:21px;color:#002e58}
+.page-choose-template .document.skn-trz5 .name{font-size:36px;line-height:46px;color:#002e58}
+.page-choose-template .document.skn-trz5 table.skills td{padding-top:7px}
+.page-choose-template .document.skn-trz5 .noPind{margin-left:0}
+
+/*Icon*/
+.page-choose-template .document.skn-trz5 .headingIcon svg rect{fill:#002e58}
+
+/*Bar Graph */
+.page-choose-template .document.skn-trz5 .ratingBar{margin:2px 0}
+.page-choose-template .document.skn-trz5 .innerRating{background-color:#002e58}
+
+/*Fixes for builder page*/
+.page-choose-template .document.skn-trz5 .sortable-item .singlecolumn.maincolumn > span:first-child,
+.page-choose-template .document.skn-trz5.active .singlecolumn.maincolumn > span:first-child{display:inline-block;line-height:normal}
+.page-choose-template .document.skn-trz5 .sortableInner .sortable-item.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+.page-choose-template .document.skn-trz5.active .headingIcon,.page-choose-template .document.skn-trz5.TRZ5 div.headingIcon{position:static;display:inline-block}/*do not remove div class*/
+.page-choose-template .document.skn-trz5.active .sectiontitle,.page-choose-template .document.skn-trz5.TRZ5 div.sectiontitle{display:inline;vertical-align:middle}/*do not remove div class*/
+/*Hover border style*/
+.page-choose-template .document.skn-trz5.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-trz5.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-trz5.active .acr-edit,.page-choose-template .document.skn-trz5.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-trz5.active .acr-move{right:-59px !important}
+
+/* TRZ6 */
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz6 ol,.page-choose-template .document.skn-trz6 ul{list-style:none}
+.page-choose-template .document.skn-trz6 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz6 ul,.page-choose-template .document.skn-trz6 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz6 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz6 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+/*common style*/
+.page-choose-template .document.skn-trz6 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz6 .paddedline{display:block}
+.page-choose-template .document.skn-trz6 .pt5{padding-top:5px}
+.page-choose-template .document.skn-trz6 .pb5{padding-bottom:5px}
+.page-choose-template .document.skn-trz6 .word-break{word-wrap:break-word}
+.page-choose-template .document.skn-trz6 .disp-n{display:none}/*For resume title - to be remove later*/
+
+/* table skills */
+.page-choose-template .document.skn-trz6 table.skills,.page-choose-template .document.skn-trz6 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-trz6 table.skills th,.page-choose-template table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz6 table.skills .skillname,.page-choose-template .document.skn-trz6 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz6 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz6 table.skills .skillyears,.page-choose-template .document.skn-trz6 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz6 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz6 .skills .pad2,.page-choose-template .document.skn-trz6 table.skills .pad3{width:1%}
+
+/* document */
+.page-choose-template .document.skn-trz6{box-sizing:border-box;padding:20px 20px 20px 0;border-left:85px solid transparent!important;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px}
+.page-choose-template .document.skn-trz6 .name{color:#373d48;font-weight:700;overflow:hidden;text-align:left;display:table-cell;min-height:86px;padding-bottom:10px}
+.page-choose-template .document.skn-trz6 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz6 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-trz6 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-trz6 .heading{font-weight:700;margin-bottom:10px;position:relative}
+.page-choose-template .document.skn-trz6 .sectiontitle{color:#373d48;line-height:21px;word-wrap:break-word}
+.page-choose-template .document.skn-trz6 .firstparagraph{padding-top:0!important}
+.page-choose-template .document.skn-trz6 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+
+/*monogram*/
+.page-choose-template .document.skn-trz6 .monogram{position:absolute;left:-103px;top:0;bottom:0}
+.page-choose-template .document.skn-trz6 .monogram svg text{font-size:28px;font-style:italic;font-weight:400;text-transform:lowercase}
+
+/*leftBox and rightBox css*/
+.page-choose-template .document.skn-trz6 .left-box,.page-choose-template .document.skn-trz6 .right-box{box-sizing:initial;display:table-cell;padding-left:15px;vertical-align:top}
+.page-choose-template .document.skn-trz6 .left-box .firstsection{margin:0;padding:0;min-height:101px}
+.page-choose-template .document.skn-trz6 .left-box .paddedline.date-content{position:absolute;margin-left:0;width:65px;left:-97px}
+.page-choose-template .document.skn-trz6 .paragraph,.page-choose-template .document.skn-trz6 .left-box .singlecolumn{position:relative}
+.page-choose-template .document.skn-trz6 .left-box .paragraph{margin-left:0}
+.page-choose-template .document.skn-trz6 .section:empty{display:none}
+.page-choose-template .document.skn-trz6 .left-box .section{border-left:1px solid #d7d7d7;margin-left:12px;padding-left:25px;position:relative}
+.page-choose-template .document.skn-trz6 .left-box{padding-left:0;padding-right:15px}
+.page-choose-template .document.skn-trz6 .left-box > .section:first-child{border:0}
+
+.page-choose-template .document.skn-trz6 .firstsection + .section:before{border:1px solid #fff;content:'';left:-1px;position:absolute;top:0}
+.page-choose-template .document.skn-trz6 .left-box .singlecolumn:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;left:-29px;position:absolute;width:8px;z-index:2}
+.page-choose-template .document.skn-trz6 .right-box .sectiontitle{padding-left:35px}
+.page-choose-template .document.skn-trz6 .headingIcon svg circle,.page-choose-template .document.skn-trz6 .monogram svg circle{fill:#373d48}
+
+
+/* Icon */
+.page-choose-template .document.skn-trz6 .headingIcon svg{width:30px;height:30px}
+.page-choose-template .document.skn-trz6 .headingIcon{z-index:4}
+.page-choose-template .document.skn-trz6 .left-box .headingIcon{left:-40px;position:absolute}
+.page-choose-template .document.skn-trz6 .right-box .headingIcon{left:0;position:absolute}
+.page-choose-template .document.skn-trz6 .headingIcon svg path{fill:#fff}
+.page-choose-template .document.skn-trz6 .ratingWrapper{text-align:right}
+.page-choose-template .document.skn-trz6 .ratingWrapper .noLnht{line-height:0}
+.page-choose-template .document.skn-trz6 .ratingWrapper svg{height:13px}
+
+/* Issues fix for builder page */
+.page-choose-template #displayResume div .document.skn-trz6.document{min-height:792px}
+.page-choose-template .document.skn-trz6 > div{min-height:inherit}
+.page-choose-template .document.skn-trz6 > div:not(.topsection),.page-choose-template .document.skn-trz6 > div:not(.parentContainer){min-height:auto}
+.page-choose-template .document.skn-trz6 .right-box > .sortable-item:first-child .section{padding-top:10px!important}
+.page-choose-template .document.skn-trz6 .SortableInner > .sortable-item:last-of-type .singlecolumn > .pb5{margin-bottom:0}
+.page-choose-template .document.skn-trz6 .left-box > .sortable-item:first-child .section,.page-choose-template .document.skn-trz6 .right-box > .sortable-item:first-child .section{padding-top:0}
+.page-choose-template .document.skn-trz6 .left-box .sortable-item:first-child > .section{border:0}
+.page-choose-template .document.skn-trz6 .left-box .sortable-item:first-child + .sortable-item > .section{padding-top:0!important}
+.page-choose-template .document.skn-trz6 .ratingWrapper .default-fill{fill:#373d48}
+.page-choose-template .document.skn-trz6 .sortable-item .ratingWrapper span{top:0;line-height:inherit}
+.page-choose-template .finalize-resume-preview.TRZ6 >  .document.skn-trz6{border:1px solid #e3e7e9!important;}
+.page-choose-template .finalize-resume-preview.TRZ6 >  .document.skn-trz6 .left-box{padding-left:85px}
+
+/* Only for firefox */
+@-moz-document url-prefix(){.page-choose-template .document.skn-trz6 .parentContainer{height:1px}}
+
+.page-choose-template .document.skn-trz6 .resumeTitle{font-weight:normal}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz6,.page-choose-template .document.skn-trz6 table{line-height:18px}
+.page-choose-template .document.skn-trz6.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz6.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz6.pagesize{width:612px}
+.page-choose-template .document.skn-trz6 .section{padding-top:15px}
+.page-choose-template .document.skn-trz6 .left-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-trz6 .paragraph{padding-bottom:15px}
+.page-choose-template .document.skn-trz6 .rtngSec .paragraph{padding-bottom:5px}
+.page-choose-template .document.skn-trz6 .singlecolumn,.page-choose-template .document.skn-trz6 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-trz6 left-box .singlecolumn,.page-choose-template .document.skn-trz6 left-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-trz6 table.skills td{padding-top:2.5px}
+.page-choose-template .document.skn-trz6 .jobtitle, .page-choose-template .document.skn-trz6 .degree, .page-choose-template .document.skn-trz6 .programline{font-size:14px}
+.page-choose-template .document.skn-trz6 .name{color:#373d48;font-size:36px;line-height:42.5px}
+.page-choose-template .document.skn-trz6 .monogram svg circle{fill:#373d48}
+.page-choose-template .document.skn-trz6 .sectiontitle, .page-choose-template .document.skn-trz6 .resumeTitle{font-size:16px;line-height:23px}
+.page-choose-template .document.skn-trz6 .sectiontitle{color:#373d48}
+.page-choose-template .document.skn-trz6 .right-box{width:155px}
+.page-choose-template .document.skn-trz6 .firstsection + .section:before{height:-3.5px}
+.page-choose-template .document.skn-trz6 .left-box .heading ~ .paragraph .date-content:before{background:#373d48}
+.page-choose-template .document.skn-trz6 .left-box .singlecolumn:before{background:#373d48;top:5.5px}
+.page-choose-template .document.skn-trz6 .left-box .paddedline.date-content{line-height:19px}
+.page-choose-template .document.skn-trz6 .left-box .section.notdraggable+.section{padding-top:0px}
+
+/* Icon */
+.page-choose-template .document.skn-trz6 .headingIcon svg circle{fill:#373d48}
+.page-choose-template .document.skn-trz6 .headingIcon{top:-3.5px}
+
+/*Fixes for builder page*/
+.page-choose-template .document.skn-trz6 .sortableInner .sortable-item.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+.parent-drag.active.page-choose-template .document.skn-trz6,._single-parent-drag.active.page-choose-template .document.skn-trz6{border:0!important}
+.page-choose-template .document.skn-trz6 .ratingWrapper .default-fill{fill:#373d48}
+
+/*Hover border style*/
+.page-choose-template .document.skn-trz6.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-trz6.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-trz6.active .acr-edit,.page-choose-template .document.skn-trz6.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-trz6.active .acr-move{right:-59px !important}
+
+/* TRZ7*/
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz7 ol,.page-choose-template .document.skn-trz7 ul{list-style:none}
+.page-choose-template .document.skn-trz7 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz7 ul,.page-choose-template .document.skn-trz7 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz7 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz7 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-trz7 table.skills,.page-choose-template .document.skn-trz7 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-trz7 table.skills th,.page-choose-template table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz7 table.skills .skillname,.page-choose-template .document.skn-trz7 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz7 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz7 table.skills .skillyears,.page-choose-template .document.skn-trz7 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz7 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz7 .skills .pad2,.page-choose-template .document.skn-trz7 table.skills .pad3{width:1%}
+
+/* document */
+.page-choose-template .document.skn-trz7{color:#343434;line-height:16px;font-variant-ligatures:none;min-height:792px;box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-trz7 .name{color:#002e58;font-weight:bold;padding:0 0 6px 0;text-align:left;position:relative;word-wrap:break-word}
+.page-choose-template .document.skn-trz7 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz7 .resumeTitle{color:#002e58;font-style:italic;font-weight:400}
+
+/* Heading */
+.page-choose-template .document.skn-trz7 .heading{border-bottom:1px solid #d5d6d6;padding:0 0 3px;letter-spacing:0;font-weight:bold;line-height:15px;margin-bottom:10px}
+.page-choose-template .document.skn-trz7 .sectiontitle{color:#002e58;word-wrap:break-word}
+.page-choose-template .document.skn-trz7 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-trz7 .locationGap{margin-top:4px}
+.page-choose-template .document.skn-trz7 .firstparagraph{margin-top:0!important}
+
+/* section */
+.page-choose-template .document.skn-trz7 .firstsection{padding-top:0!important}
+.page-choose-template .document.skn-trz7 .section:empty {display:none}
+.page-choose-template .document.skn-trz7 .education .joblocation{font-style:italic}
+
+/* style for top section container */
+.page-choose-template .document.skn-trz7 .topsection > div{padding-bottom:20px}
+
+/* style for left and right box */
+.page-choose-template .document.skn-trz7 .parentContainer{display:table;width:100%;min-height:inherit;table-layout:fixed;border-collapse:collapse}
+.page-choose-template .document.skn-trz7 .left-box,.page-choose-template .document.skn-trz7 .right-box{padding-left:15px}
+.page-choose-template .document.skn-trz7 .left-box{padding-left:0;padding-right:15px}
+.page-choose-template .document.skn-trz7 .left-box{box-sizing:initial;display:table-cell;letter-spacing:0.2px}
+.page-choose-template .document.skn-trz7 .right-box .section:first-child,.page-choose-template .document.skn-trz7 .left-box .section:first-child{padding-top:0px!important}
+.page-choose-template .document.skn-trz7 .right-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-trz7 .paragraph{position:relative}
+.page-choose-template .document.skn-trz7 .summary .singlecolumn{margin-left:0}
+.page-choose-template .document.skn-trz7 .right-box{display:table-cell;letter-spacing:0.2px}
+.page-choose-template .document.skn-trz7 .summary.section{padding-top:15px}
+
+.page-choose-template .document.skn-trz7 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz7 .txtItl{font-style:italic}
+.page-choose-template .document.skn-trz7 .paddedline{display:block}
+.page-choose-template .document.skn-trz7 .mt5{margin-top:5px}
+.page-choose-template .document.skn-trz7 .word-break{word-wrap:break-word}
+
+/*Rating*/
+.page-choose-template .document.skn-trz7 .ratingWrapper svg{height:10px;stroke:#002e58}
+.page-choose-template .document.skn-trz7 .ratingWrapper .noLnht{line-height:0}
+.page-choose-template .document.skn-trz7 .headingIcon svg circle,.page-choose-template .document.skn-trz7 .ratingWrapper svg .default-fill{fill:#002e58}
+.page-choose-template .document.skn-trz7 .ratingRow{position:relative;white-space:nowrap}
+.page-choose-template .document.skn-trz7 .ratingRow .ratingText,.page-choose-template .document.skn-trz7 .ratingRow .ratingWrapper{width:50%;display:inline-block;word-break:break-word;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz7 .ratingRow .ratingText+.ratingWrapper{text-align:right}
+.page-choose-template .document.skn-trz7 .SortableItem .ratingRow .ratingText+.ratingWrapper{margin-top:5px;padding-top:0}
+.page-choose-template .document.skn-trz7 .SortableItem .ratingWrapper span{top:0;line-height:inherit}
+
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz7 .parentContainer{height:1px}}
+
+.page-choose-template .document.skn-trz7 .ratingRow .ratingText:last-child{width:100%}
+
+/* For dates fix */
+.page-choose-template .document.skn-trz7 .right-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-trz7 .left-box .hidedates{display:none}
+.page-choose-template .document.skn-trz7 .paragraph.datespara:after{content:'';display:table;clear:both}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz7,.page-choose-template .document.skn-trz7 table{line-height:18px}
+.page-choose-template .document.skn-trz7.pagesize{width:612px}
+.page-choose-template .document.skn-trz7.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz7.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz7.vmargins{padding-top:20px;padding-bottom:20px}
+.page-choose-template .document.skn-trz7.hmargins{padding-left:20px;padding-right:20px}
+.page-choose-template .document.skn-trz7 .section{padding-top:20px}
+.page-choose-template .document.skn-trz7 .left-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-trz7 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-trz7 .singlecolumn,.page-choose-template .document.skn-trz7 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-trz7 .right-box .singlecolumn,.page-choose-template .document.skn-trz7 .right-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-trz7 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-trz7 .jobtitle, .page-choose-template .document.skn-trz7 .degree, .page-choose-template .document.skn-trz7 .programline{font-size:14px}
+.page-choose-template .document.skn-trz7 .name{color:#002e58;font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-trz7 .heading{line-height:22px}
+.page-choose-template .document.skn-trz7 .sectiontitle{font-size:16px;color:#002e58}
+.page-choose-template .document.skn-trz7 .left-box{width:161px}
+.page-choose-template .document.skn-trz7 .right-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-trz7 svg{stroke:#002e58}
+.page-choose-template .document.skn-trz7 .resumeTitle{font-size:16px;color:#002e58;line-height:16px}
+.page-choose-template .document.skn-trz7 .ratingWrapper{padding-top:4px}
+.page-choose-template .document.skn-trz7 .ratingWrapper svg{stroke:#002e58}
+.page-choose-template .document.skn-trz7 .headingIcon svg circle,.page-choose-template .document.skn-trz7 .ratingWrapper svg .default-fill{fill:#002e58}
+
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-trz7.document{min-height:792px}
+.page-choose-template .document.skn-trz7 .SortableList{margin-bottom:0!important}
+.page-choose-template .document.skn-trz7 .SortableList, .page-choose-template .document.skn-trz7 > div{min-height:inherit}
+.page-choose-template .document.skn-trz7 .left-box .SortableItem:first-child >.wrapper>.section{padding-top:0!important}
+.page-choose-template .document.skn-trz7 > div:not(.topsection), .page-choose-template .document.skn-trz7 > div:not(.parentContainer){min-height:auto}
+
+/* Phase 2: Issues fix for builder page */
+.page-choose-template .document.skn-trz7 .parentContainer .left-box > .SortableItem,
+.page-choose-template .document.skn-trz7 .parentContainer .right-box > .SortableItem{padding-top:20px}
+.page-choose-template .document.skn-trz7 .parentContainer .left-box > .SortableItem:first-child,
+.page-choose-template .document.skn-trz7 .parentContainer .right-box > .SortableItem:first-child{padding-top:0}
+
+
+/*Hover border style*/
+.page-choose-template .document.skn-trz7.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-trz7.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-trz7.active .acr-edit,.page-choose-template .document.skn-trz7.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-trz7.active .acr-move{right:-59px !important}
+
+/* TRZ8*/
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz8 ol,.page-choose-template .document.skn-trz8 ul{list-style:none}
+.page-choose-template .document.skn-trz8 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz8 ul,.page-choose-template .document.skn-trz8 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz8 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz8 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+.page-choose-template .document.skn-trz8 span.paddedline{display:block}
+.page-choose-template .document.skn-trz8 span.jobtitle,.page-choose-template .document.skn-trz8 span.degree,.page-choose-template .document.skn-trz8 span.programline{font-weight:bold}
+.page-choose-template .document.skn-trz8 .mb5{margin-bottom:5px}
+.page-choose-template .document.skn-trz8 .txtItalics{font-style:italic}
+.page-choose-template .document.skn-trz8 .txtBold{font-weight:bold}
+
+.page-choose-template .document.skn-trz8{box-sizing:border-box;word-wrap:break-word}
+.page-choose-template .document.skn-trz8 .name{color:#252932;font-size:15px;line-height:17px;font-weight:bold;font-style:italic;padding:0;text-align:left;letter-spacing:-2px}
+.page-choose-template .document.skn-trz8 .paragraph{position:relative;clear:both}
+.page-choose-template .document.skn-trz8 .heading{clear:both;font-weight:bold;font-style:italic}
+.page-choose-template .document.skn-trz8 .sectiontitle{color:#252932;border-bottom:1px solid #CCC;letter-spacing:-.5px}
+.page-choose-template .document.skn-trz8 .address{text-align:left;font-size:0.917em;line-height:1.25em;margin-top:0;white-space:nowrap;position:relative;z-index:2}
+.page-choose-template .document.skn-trz8 .address .txtBold{margin-right:3px}
+.page-choose-template .document.skn-trz8 .addressLeft,.page-choose-template .document.skn-trz8 .addressRight{width:49%;padding:0 1% 0 0;white-space:normal;display:inline-block;vertical-align:top}
+.page-choose-template .document.skn-trz8 .addressRight{padding:0 0 0 1%}
+.page-choose-template .document.skn-trz8 .table_wrapper{width:100%;margin-top:0}
+.page-choose-template .document.skn-trz8 table.twocol td{width:50%}
+.page-choose-template .document.skn-trz8 table.skills{width:100%}
+.page-choose-template .document.skn-trz8 table.skills th,.page-choose-template .document.skn-trz8 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz8 table.skills th{text-decoration:underline}
+.page-choose-template .document.skn-trz8 table.skills .skillname,.page-choose-template .document.skn-trz8 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz8 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz8 table.skills .skillyears,.page-choose-template .document.skn-trz8 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz8 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz8 table.skills .pad2,.page-choose-template .document.skn-trz8 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-trz8 span.dates_wrapper{font-weight:bold;display:block;float:left;text-align:left;padding-right:10px}
+.page-choose-template .document.skn-trz8 .resumeTitle{text-align:left;color:#252932;font-weight:700;padding-bottom:5px}
+.page-choose-template .document.skn-trz8 td.twocol_2{border-left:1px  solid #FEFDFD}
+
+/*fixes for builder page*/
+.page-choose-template .document.skn-trz8 .sortableInner span.dates_wrapper{box-sizing:initial}
+.page-choose-template .document.skn-trz8 .rating-wrapper .default-fill{fill:#252932}
+
+/*Rating bar*/
+.page-choose-template .document.skn-trz8 .rating-wrapper{white-space:nowrap}
+.page-choose-template .document.skn-trz8 .rating-text,.page-choose-template .document.skn-trz8 .rating-svg{width:68%;padding:0 1% 0 0;display:inline-block;white-space:normal;vertical-align:top}
+.page-choose-template .document.skn-trz8 .rating-svg{width:30%;text-align:right;padding:0}
+.page-choose-template .document.skn-trz8 .rating-svg .noLnht{line-height:0}
+.page-choose-template .document.skn-trz8 svg{height:13px}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz8,.page-choose-template .document.skn-trz8 table{line-height:16px}
+.page-choose-template .document.skn-trz8.pagesize{width:612px}
+.page-choose-template .document.skn-trz8.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz8.fontface{font-family:Georgia, serif}
+.page-choose-template .document.skn-trz8.vmargins{padding-top:24px;padding-bottom:24px}
+.page-choose-template .document.skn-trz8.hmargins{padding-left:24px;padding-right:24px}
+.page-choose-template .document.skn-trz8 .section{padding-top:20px}
+.page-choose-template .document.skn-trz8 .address{font-size:11px;line-height:21px;padding-top:10px}
+.page-choose-template .document.skn-trz8 .heading{padding-bottom:10px}
+.page-choose-template .document.skn-trz8 .jobtitle,.page-choose-template .document.skn-trz8 span.degree,.page-choose-template .document.skn-trz8 span.programline{font-size:14px}
+.page-choose-template .document.skn-trz8 .paragraph{padding-top:10px}
+.page-choose-template .document.skn-trz8 .rtngSec .paragraph{padding-top:5px}
+.page-choose-template .document.skn-trz8 .firstsection,.page-choose-template .document.skn-trz8 .firstparagraph,.page-choose-template .document.skn-trz8 .SECTION_CNTC{padding-top:0!important}
+.page-choose-template .document.skn-trz8 .singlecolumn,.page-choose-template .document.skn-trz8 .maincolumn{margin-left:120px}
+.page-choose-template .document.skn-trz8 span.dates_wrapper{width:110px;font-size:11px;line-height:17px}
+.page-choose-template .document.skn-trz8 .sectiontitle,.page-choose-template .document.skn-trz8 .resumeTitle{font-size:16px;line-height:21px}
+.page-choose-template .document.skn-trz8 .name{font-size:36px;line-height:46px}
+.page-choose-template .document.skn-trz8 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-trz8 .noPind{margin-left:0}
+.page-choose-template .document.skn-trz8 .name,.page-choose-template .document.skn-trz8 .sectiontitle,.page-choose-template .document.skn-trz8 .resumeTitle{color:#252932}
+.page-choose-template .document.skn-trz8 .rating-svg{padding-top:2px}
+
+/* Phase 2: Issues fix for builder page */
+.page-choose-template .document.skn-trz8 .sortableInner .SortableItem.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+.page-choose-template .document.skn-trz8 .SortableItem .ratingValue, .page-choose-template .document.skn-trz8.active .ratingValue{margin-top:0}
+.page-choose-template .document.skn-trz8 .rating-wrapper .default-fill{fill:#252932}
+
+/* TRZ9*/
+/****** STATIC STYLING ******/
+.page-choose-template .document.skn-trz9 ol,.page-choose-template .document.skn-trz9 ul{list-style:none}
+.page-choose-template .document.skn-trz9 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+/*START content disc style for LI*/
+.page-choose-template .document.skn-trz9 ul,.page-choose-template .document.skn-trz9 li{margin:0;padding:0;list-style-type:disc}
+.page-choose-template .document.skn-trz9 ul li{margin:0 0 0 16px;padding:0}
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz9 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+/*END content disc style for LI*/
+
+/* document */
+.page-choose-template .document.skn-trz9{color:#343434;line-height:16px;font-variant-ligatures:none;min-height:792px;box-sizing:border-box}
+.page-choose-template .document.skn-trz9 .name{color:#002E58;font-weight:bold;padding:0px;text-align:left;position:relative;word-wrap:break-word}
+.page-choose-template .document.skn-trz9 .address .singlecolumn{margin-left:0!important}
+.page-choose-template .document.skn-trz9 table.skills,.page-choose-template .document.skn-trz9 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+.page-choose-template .document.skn-trz9 table.skills th,.page-choose-template .document.skn-trz9 table.skills td{width:20%;text-align:center}
+.page-choose-template .document.skn-trz9 table.skills .skillname,.page-choose-template .document.skn-trz9 table.skills .skillrating{text-align:left;width:35%}
+.page-choose-template .document.skn-trz9 table.skills .skillrating{width:20%}
+.page-choose-template .document.skn-trz9 table.skills .skillyears,.page-choose-template .document.skn-trz9 table.skills .skilllast{width:19%}
+.page-choose-template .document.skn-trz9 table.skills .pad1{width:5%}
+.page-choose-template .document.skn-trz9 .skills .pad2,.page-choose-template .document.skn-trz9 table.skills .pad3{width:1%}
+.page-choose-template .document.skn-trz9 .txtBold{font-weight:bold}
+.page-choose-template .document.skn-trz9 .txtItl{font-style:italic}
+.page-choose-template .document.skn-trz9 .paddedline{display:block}
+.page-choose-template .document.skn-trz9 .txtRight{text-align:right}
+.page-choose-template .document.skn-trz9 .mt5{margin-top:5px}
+.page-choose-template .document.skn-trz9 .word-break{word-wrap:break-word}
+.page-choose-template .document.skn-trz9 .resumeTitle{color:#002e58;font-weight:500;padding-top:10pt!important}
+.page-choose-template .document.skn-trz9 .summary{padding-top:10px!important}
+
+/* Heading */
+.page-choose-template .document.skn-trz9 .heading{border-bottom:1px solid #d5d6d6;padding:0 0 4px;letter-spacing:0;font-weight:bold;line-height:15px;margin-bottom:10px}
+.page-choose-template .document.skn-trz9 .sectiontitle{color:#002E58;word-wrap:break-word;padding-left:5px}
+.page-choose-template .document.skn-trz9 .firstparagraph{margin-top:0!important}
+
+/* section */
+.page-choose-template .document.skn-trz9 .firstsection{padding-top:0!important}
+.page-choose-template .document.skn-trz9 .section:empty {display:none}
+.page-choose-template .document.skn-trz9 .education .joblocation{font-style:italic}
+.page-choose-template .document.skn-trz9 .degreeGap{margin-bottom:4px}
+.page-choose-template .document.skn-trz9 .locationGap{margin-top:4px}
+
+/* style for left and right box */
+.page-choose-template .document.skn-trz9 .parentContainer{display:table;width:100%;min-height:inherit;table-layout:fixed;border-collapse:collapse}
+.page-choose-template .document.skn-trz9 .right-box,.page-choose-template .document.skn-trz9 .left-box{padding-top:20px;padding-right:15px}
+.page-choose-template .document.skn-trz9 .right-box{box-sizing:initial;display:table-cell;letter-spacing:0.2px;padding-left:15px;padding-right:0}
+.page-choose-template .document.skn-trz9 .left-box .section:first-child,.page-choose-template .document.skn-trz9 .right-box .section:first-child{padding-top:0px!important}
+.page-choose-template .document.skn-trz9 .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+.page-choose-template .document.skn-trz9 .paragraph .singlecolumn{position:relative}
+.page-choose-template .document.skn-trz9 .summary .singlecolumn{margin-left:0}
+.page-choose-template .document.skn-trz9 .left-box{display:table-cell;letter-spacing:0.2px}
+
+/*Icon*/
+.page-choose-template .document.skn-trz9 .headingIcon{position:relative;top:9px}
+.page-choose-template .document.skn-trz9 .headingIcon svg{height:30px;width:30px}
+.page-choose-template .document.skn-trz9 .headingIcon svg rect{fill:#002e58}
+.page-choose-template .document.skn-trz9 .headingIcon svg path{fill:#fff}
+
+/* Bar Graph*/
+.page-choose-template .document.skn-trz9 .ratingBar{background:#d5d6d6}
+.page-choose-template .document.skn-trz9 .innerRating{height:7px;background:#002e58}
+
+/* Issues fix for builder page */
+.page-choose-template #displayResume .document.skn-trz9.document{min-height:792px}
+.page-choose-template .document.skn-trz9 .SortableList{margin-bottom:0!important}
+.page-choose-template .document.skn-trz9 .SortableList, .page-choose-template .document.skn-trz9 > div{min-height:inherit}
+.page-choose-template .document.skn-trz9 .SortableList .heading{padding-bottom:2px}
+.page-choose-template .document.skn-trz9.TRZ9 div.headingIcon{position:static;display:inline-block} /*do not remove div class*/
+.page-choose-template .document.skn-trz9.TRZ9 div.sectiontitle{display:inline;vertical-align:middle} /*do not remove div class*/
+
+.page-choose-template .document.skn-trz9 > div:not(.topsection), .page-choose-template .document.skn-trz9 > div:not(.parentContainer){min-height:auto}
+
+/* Only for firefox */
+@-moz-document url-prefix() {.page-choose-template .document.skn-trz9 .parentContainer{height:1px}}
+
+/* For dates fix */
+.page-choose-template .document.skn-trz9 .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+.page-choose-template .document.skn-trz9 .right-box .hidedates{display:none}
+.page-choose-template .document.skn-trz9 .paragraph.datespara:after{content:'';display:table;clear:both}
+
+/****** DYNAMIC STYLING ******/
+.page-choose-template .document.skn-trz9,.page-choose-template .document.skn-trz9 table{line-height:18px}
+.page-choose-template .document.skn-trz9.pagesize{width:612px}
+.page-choose-template .document.skn-trz9.fontface{font-family:"Century Gothic", Helvetica, sans-serif}
+.page-choose-template .document.skn-trz9.fontsize{font-size:11px}
+.page-choose-template .document.skn-trz9.vmargins{padding-top:25px;padding-bottom:25px}
+.page-choose-template .document.skn-trz9.hmargins{padding-left:25px;padding-right:25px}
+.page-choose-template .document.skn-trz9 .section{padding-top:20px}
+.page-choose-template .document.skn-trz9 .right-box .section:after{padding-bottom:10px}
+.page-choose-template .document.skn-trz9 .paragraph{margin-top:10px}
+.page-choose-template .document.skn-trz9 .rtngSec .paragraph{margin-top:5px; page-break-inside:avoid;}
+.page-choose-template .document.skn-trz9 .singlecolumn,.page-choose-template .document.skn-trz9 .maincolumn{word-wrap:break-word}
+.page-choose-template .document.skn-trz9 .left-box .singlecolumn,.page-choose-template .document.skn-trz9 .left-box .maincolumn{margin-left:0px}
+.page-choose-template .document.skn-trz9 table.skills td{padding-top:5px}
+.page-choose-template .document.skn-trz9 .jobtitle, .page-choose-template .document.skn-trz9 .degree, .page-choose-template .document.skn-trz9 .programline{font-size:14px}
+.page-choose-template .document.skn-trz9 .name{color:#003d74;font-size:36px;line-height:39.5px}
+.page-choose-template .document.skn-trz9 .heading{line-height:22px}
+.page-choose-template .document.skn-trz9 .sectiontitle, .page-choose-template .document.skn-trz9 .resumeTitle{font-size:16px;color:#003d74}
+.page-choose-template .document.skn-trz9 .right-box{width:144px}
+.page-choose-template .document.skn-trz9 .left-box .paragraph .singlecolumn{margin-left:91px}
+.page-choose-template .document.skn-trz9 .left-box .paddedline.date-content{left:-91px}
+/*Icon*/
+.page-choose-template .document.skn-trz9 .headingIcon svg rect{fill:#003d74}
+
+/* Bar Graph */
+.page-choose-template .document.skn-trz9 .innerRating{background-color:#003d74}
+/*fixes for builder*/
+.page-choose-template .document.skn-trz9 .left-box > .SortableItem-sibling,
+.page-choose-template .document.skn-trz9 .right-box > .SortableItem-sibling{padding-top:20px}
+.page-choose-template .document.skn-trz9 .left-box > .SortableItem-sibling:first-child,.page-choose-template .document.skn-trz9 .right-box > .SortableItem-sibling:first-child{padding-top:0!important}
+.page-choose-template .document.skn-trz9 .sortableInner .SortableItem.active > .wrapper-bg+div[data-section]{position:relative;z-index:8}
+
+/*Hover border style*/
+.page-choose-template .document.skn-trz9.active .wrapper-bg{left:-62px !important;right:-62px !important}
+.page-choose-template .document.skn-trz9.active .acrs-bdr{left:-60px !important}
+.page-choose-template .document.skn-trz9.active .acr-edit,.page-choose-template .document.skn-trz9.active .acr-delete{left:-59px !important}
+.page-choose-template .document.skn-trz9.active .acr-move{right:-59px !important}

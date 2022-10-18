@@ -40,7 +40,7 @@ class AddTenant
     public function addNewTenant()
     {
         if ($this->getProperties()->num_rows < 1) {
-            displayMessage("You do not have any property yet. Upload a property to attract potential tenants.", "header text-xl lg:col-span-12 text-center mb-4 text-rose-500", "h3");
+            displayMessage("You do not have any property yet. Upload a property to attract potential tenants.", "header text-xl lg:col-span-12 text-center mb-4 text-rose-500 dark:text-rose-500", "h3");
 
             return;
         }
@@ -57,7 +57,7 @@ class AddTenant
 
             foreach($fields as $field) {
                 if (is_empty($field)) {
-                    displayMessage("All fields are required. Please <a href='/admin/add-tenant'>try again</a>", "header text-xl text-center mb-4 lg:col-span-12 text-rose-500");
+                    displayMessage("All fields are required. Please <a href='/admin/add-tenant'>try again</a>", "header text-xl text-center mb-4 lg:col-span-12 text-rose-500 dark:text-rose-500");
 
                     return;
                 }
@@ -73,7 +73,7 @@ class AddTenant
 
             $this->con->update("properties", "status = 'taken'", "WHERE id = ?", ...[$getSpecificID]);
 
-            displayMessage("Tenant added successfully.", "text-green-500 header text-xl text-center mb-4 lg:col-span-12");
+            displayMessage("Tenant added successfully.", "text-green-500 header text-xl text-center mb-4 lg:col-span-12 dark:text-green-500");
 
             header("Refresh: 3, /admin/tenants", true, 301);
 

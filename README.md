@@ -88,7 +88,9 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Fixed a bug where the price column was a string and as such the search form wasn't comparing the values correctly.
 
-- Carried out minor desig harmonization.
+- Carried out minor design harmonization.
+
+- Fixed a bug where the transaction history and list of tenants was shown on the admin dashboard without checking if the logged admin is the property owner and initiator of the transaction.
 
 ## Features
 
@@ -102,11 +104,11 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 ## Installation
 
-This system uses Apache and MySQL. It is therefore necessary to have an Apache server (XAMP or Laragon would do). PHP 8 or later is also required. For XAMP it comes automatically with the latest version of the software. For Laragon download th latest version of PHP from [https://www.php.net/downloads.php](https://www.php.net/downloads.php). In most cases you also need to update your Apache. Nothing a quick Google search won't solve (you can [reach me if you have issues setting it up on your own](https://w.me/+2348105008304)).
+This system uses Apache and MySQL. It is therefore necessary to have an Apache server (XAMPP or Laragon would do). PHP 8 or later is also required. For XAMPP it comes automatically with the latest version of the software. For Laragon download the latest version of PHP from [https://www.php.net/downloads.php](https://www.php.net/downloads.php). In most cases you also need to update your Apache. Nothing a quick Google search won't solve (you can [reach me if you have issues setting it up on your own](https://w.me/+2348105008304)).
 
-After setting up your local server, copy clone this repo to the `www` folder in Laragon. To get this folder go the `C:\laragon`. Inside the cloned repo there is an `installation folder.` Open the folder, open your database management system (MySQL Workbench or the database that comes with either XAMP or Laragon would do) and create a new database called `housingquest` and then import the `db.sql` file that's found in the `installation folder.`
+After setting up your local server, clone this repo to the `www` folder for Laragon users and the `htdocs` folder for XAMPP users. To get the `www` folder go the `C:\laragon`, while the `htdocs` folder can be located by going to `C:\xampp`. Inside the cloned repo there is an `installation folder.` Open the folder, open your database management system (MySQL Workbench or the database that comes with either XAMPP or Laragon would do) and create a new database called `housingquest` and then import the `db.sql` file that's found in the `installation folder.`
 
-If everything is set up right, open your browser and go to `localhost/hosuingquest` for XAMP users or `housingquest.test` for Laragon users.
+If everything is set up right, open your browser and go to `localhost/hosuingquest` for XAMPP users or `housingquest.test` for Laragon users.
 
 ## Screenshots
 
@@ -130,4 +132,6 @@ Below are snapshots of some parts of the system:
 
 ## Going Forward
 
-After the defense of this work, I would be a graduate. Aside PHP, I also work with JavaScript and its frameworks (React, React Native, NextJs and a some I'll learn after now). I'm need of a job. You can go through my GitHub account and see some other projects I've worked on. You can reach me via [WhatsApp](https://w.me/+2348105008304), [Email](https://mailto:vindicatedwisdom@gmail.com) or via [Phone Call](https://tel:+2348105008304).
+After the defense of this work, I would be a graduate. Aside PHP, I also work with JavaScript and its frameworks (React, React Native, NextJs and a some I'll learn after now). I'm in need of a job. You can go through my GitHub account and see some other projects I've worked on. You can reach me via [WhatsApp](https://w.me/+2348105008304), [Email](https://mailto:vindicatedwisdom@gmail.com) or via [Phone Call](https://tel:+2348105008304).
+
+If you think of ways to improve this application please do well to reach me via the communication mediums listed above, or you can create a pull request.
