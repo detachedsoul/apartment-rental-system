@@ -92,6 +92,8 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Fixed a bug where the transaction history and list of tenants was shown on the admin dashboard without checking if the logged admin is the property owner and initiator of the transaction.
 
+- Implemented a feature where a success email is sent to the tenant once the property has been assigned to him/her.
+
 ## Features
 
 - Admin (property owner login)
