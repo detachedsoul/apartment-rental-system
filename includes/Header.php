@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/icons/uicons-regular-rounded/css/uicons-regular-rounded.min.css">
 </head>
 
-<body>
+<body class="">
 
     <header>
         <a href="/" aria-label="HousingQuest logo">
