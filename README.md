@@ -94,6 +94,8 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Implemented a feature where a success email is sent to the tenant once the property has been assigned to him/her.
 
+- Prevent users from seeing the details of a property that has already been taken.
+
 ## Features
 
 - Admin (property owner login)
