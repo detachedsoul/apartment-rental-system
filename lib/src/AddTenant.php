@@ -80,6 +80,7 @@ class AddTenant
 
             // Send a confirmation mail and then update the records accordingly
             $subject = "Property Allocation Successful";
+            $amountPaid = number_format($this->amountPaid);
             $message = "
                 <html>
                     <head>
@@ -116,7 +117,7 @@ class AddTenant
 
                             <div>
                                 <h2>Amount Paid</h2>
-                                <p>{number_format($this->amountPaid)}</p>
+                                <p>{$amountPaid}</p>
                             </div>
 
                             <div>
@@ -128,28 +129,26 @@ class AddTenant
                 </html>
             ";
 
-            print_r($message);
+            $message = wordwrap($message, 70);
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+            $headers .= "From: {$_SESSION['user']} {$getPropertyOwnerEmail}";
 
-            // $message = wordwrap($message, 70);
-            // $headers = "MIME-Version: 1.0" . "\r\n";
-            // $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-            // $headers .= "From: {$_SESSION['user']} {$getPropertyOwnerEmail}";
+            if (mail($this->userEmail, $subject, $message, $headers)) {
+                $addTenant = $this->con->insert("tenants", ["tenant_name", "agreement_date", "property_bought", "property_id", "landlord"], ...[$this->tenantName, $this->agreementDate, $this->propertyBought, $getSpecificID, $this->ownerID]);
 
-            // if (mail($this->userEmail, $subject, $message, $headers)) {
-            //     $addTenant = $this->con->insert("tenants", ["tenant_name", "agreement_date", "property_bought", "property_id", "landlord"], ...[$this->tenantName, $this->agreementDate, $this->propertyBought, $getSpecificID, $this->ownerID]);
+                $tenantID = $this->con->lastID();
 
-            //     $tenantID = $this->con->lastID();
+                $addTransactionHistory = $this->con->insert("transaction", ["buyer_name", "payment_date", "amount", "property_id", "tenant_id"], ...[$this->tenantName, $this->agreementDate, $this->amountPaid, $getSpecificID, $tenantID]);
 
-            //     $addTransactionHistory = $this->con->insert("transaction", ["buyer_name", "payment_date", "amount", "property_id", "tenant_id"], ...[$this->tenantName, $this->agreementDate, $this->amountPaid, $getSpecificID, $tenantID]);
+                $this->con->update("properties", "status = 'taken'", "WHERE id = ?", ...[$getSpecificID]);
 
-            //     $this->con->update("properties", "status = 'taken'", "WHERE id = ?", ...[$getSpecificID]);
+                displayMessage("Tenant added successfully.", "text-green-500 header text-xl text-center mb-4 lg:col-span-12 dark:text-green-500");
 
-            //     displayMessage("Tenant added successfully.", "text-green-500 header text-xl text-center mb-4 lg:col-span-12 dark:text-green-500");
-
-            //     header("Refresh: 3, /admin/tenants", true, 301);
-            // } else {
-            //     displayMessage("There was an error completing this operation. Please <a class='text-sky-500 hover:underline focus:underline underline-offset-[7px]' href='/admin/add-tenant'>try again</a>", "header text-xl text-center mb-4 lg:col-span-12 text-rose-500 dark:text-rose-500");
-            // }
+                header("Refresh: 3, /admin/tenants", true, 301);
+            } else {
+                displayMessage("There was an error completing this operation. Please <a class='text-sky-500 hover:underline focus:underline underline-offset-[7px]' href='/admin/add-tenant'>try again</a>", "header text-xl text-center mb-4 lg:col-span-12 text-rose-500 dark:text-rose-500");
+            }
 
         } else {
             $this->getTenantForm();
