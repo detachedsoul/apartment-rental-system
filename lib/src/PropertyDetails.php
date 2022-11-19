@@ -181,20 +181,20 @@ class PropertyDetails
 
             // Check if a name was entered and displays the appropriate feedback
             if (is_empty($this->setName())) {
-                displayMessage("<span class='font-bold'>Name</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Name</span> field is required.");
 
                 return;
             }
 
             // Check if a email was entered and displays the appropriate feedback
             if (is_empty($this->setEmail())) {
-                displayMessage("<span class='font-bold'>Email</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Email</span> field is required.");
 
                 return;
             } else {
                 // Checks if the entered email is a valid one and displays the appropriate feedback
                 if (!filter_var($this->setEmail(), FILTER_VALIDATE_EMAIL)) {
-                    displayMessage("Invalid email format. Please use a valid email.", "text-rose-500");
+                    displayMessage("Invalid email format. Please use a valid email.");
 
                     return;
                 }
@@ -202,7 +202,7 @@ class PropertyDetails
 
             // Check if a subject was entered and displays the appropriate feedback
             if (is_empty($this->setSubject())) {
-                displayMessage("<span class='font-bold'>Subject</span> field is required.", "text-rose-500");
+                displayMessage("<span class='font-bold'>Subject</span> field is required.");
 
                 return;
             }
@@ -217,12 +217,16 @@ class PropertyDetails
             // Send a mail to the property owner
             $subject = $this->setSubject();
             $messageBody = wordwrap($this->setMessage(), 70);
+            $buildingName = ucwords(str_replace('-', ' ', $this->propertyName));
             $message = "
                 <html>
                 <head>
                     <title>{$this->setSubject()}</title>
                 </head>
                 <body>
+                    <p>
+                        This is a message for {$buildingName} property with property ID of $this->propertyID.
+                    </p>
                     {$messageBody}
                 </body>
                 </html>

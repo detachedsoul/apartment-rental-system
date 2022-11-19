@@ -98,6 +98,8 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 - Fixed registration form expanding to fill the entire screen on desktop devices when registration is complete.
 
+- Imporved the information contained in the user request for apartment email. Details such as the apartment choosen is now included.
+
 ## Features
 
 - Admin (property owner login)
