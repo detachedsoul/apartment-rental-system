@@ -20,7 +20,7 @@ class ViewTransactionHistory
      */
     public function showTransactionHistory()
     {
-        $sql = "SELECT buyer_name, payment_date, property_id, amount FROM `transaction` t JOIN landlords l WHERE l.id = ? ORDER BY t.id DESC";
+        $sql = "SELECT buyer_name, payment_date, t.property_id, amount FROM `transaction` t JOIN tenants f ON t.tenant_id = f.id WHERE f.landlord = ? ORDER BY t.id DESC";
 
         $transactions = $this->con->prepare($sql, "s", $this->ownerID);
 
