@@ -1,4 +1,4 @@
-# Wisdom Ojimah's Final Year Project
+# Apartment Rental System
 
 ## Intro
 
@@ -140,6 +140,4 @@ Below are snapshots of some parts of the system:
 
 ## Going Forward
 
-After the defense of this work, I would be a graduate. Aside PHP, I also work with JavaScript and its frameworks (React, React Native, NextJs and a some I'll learn after now). I'm in need of a job. You can go through my GitHub account and see some other projects I've worked on. You can reach me via [WhatsApp](https://w.me/+2348105008304), [Email](https://mailto:vindicatedwisdom@gmail.com) or via [Phone Call](https://tel:+2348105008304).
-
-If you think of ways to improve this application please do well to reach me via the communication mediums listed above, or you can create a pull request.
+Pull Requests are welcome.
