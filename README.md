@@ -6,7 +6,7 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 ## Stages
 
-- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.000webhostapp.com/](https://housingquest.000webhostapp.com/)
+- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.unaux.com/](https://housingquest.unaux.com/)
 
 - Made the contact, register, login, and reset password pages.
 
@@ -109,6 +109,9 @@ The aim of this work is to ease the process of searching for suitable accomodati
 - Property deletion
 - Admin profile management (names, emails, phone numbers, profile picture, etc can be changed anytime)
 - Other features that make usage of this system enjoyable
+
+### N/B
+Due to free hosting limitations, PHP's mail functionality might be disabled making it impossible to receive emails. You can alternatively use PHPMailer (you can contact me if you don't know how to set it up).
 
 ## Installation
 
