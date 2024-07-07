@@ -6,7 +6,7 @@ The aim of this work is to ease the process of searching for suitable accomodati
 
 ## Stages
 
-- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [https://housingquest.unaux.com/](https://housingquest.unaux.com/)
+- Completed the first version of the static home page and hosted it on GitHub pages and Netlify. The live demo url can be found on [http://housingquest.unaux.com/](http://housingquest.unaux.com/)
 
 - Made the contact, register, login, and reset password pages.
 
